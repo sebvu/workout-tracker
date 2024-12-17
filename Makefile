@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Iinclude -Ilibs -Wall -Wextra -O2
+CXXFLAGS = -Iinclude -Ilib -Wall -Wextra -O2
 SOURCES = $(wildcard src/*.cpp) # pulls all iterations of .cpp in src
 OBJECTS = $(SOURCES:src/%.cpp=obj/%.o) # gets all sources and replaces src/%.cpp to obj/%.o
 TARGET = exec-main

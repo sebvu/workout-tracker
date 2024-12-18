@@ -16,6 +16,8 @@
 # - forearm_extensors (2)
 # - cardio (4)
 
+# NOTE: secondary_muscles may or may not be contained in some entries, please make sure to check before parsing
+
 totalExercises = 277
 
 categories = [
@@ -75,63 +77,135 @@ instructions = [
 
 [chest.bench_press]
 name = "Bench Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps"]
+commentary = "A bench press is a weightlifting exercise that involves lying on a bench and pressing a barbell upward from chest level to arm's length, and then lowering it back down. It is one of the best chest exercises you can do."
+instructions = [
+  "Lie on the bench, pull your shoulder blades together and down, and slightly arch your back.",
+  "Grip the bar slightly wider than shoulder-width apart.",
+  "Inhale, hold your breath, and unrack the bar.",
+  "Lower the bar with control, until it touches your chest somewhere close to your sternum.",
+  "Push the bar up to the starting position while exhaling.",
+  "Take another breath while in the top position, and repeat for reps.",
+]
 
 [chest.bench_press_against_band]
 name = "Bench Press Against Band"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps"]
+commentary = "The bench press against bands is a variation of the bench press in which resistance bands increase the tension as you press up. This makes it more challenging to lock out the lift, enhancing strength and power. It’s typically used to improve explosive strength and stability. Make sure to use the safety racks or to have a spotter while performing this exercise."
+instructions = [
+  "Attach the resistance band under the bench, loop it around the barbell, and back under the bench.",
+  "Lie on the bench with feet flat, back slightly arched, and shoulder blades retracted.",
+  "Grip the barbell at your preferred width.",
+  "Unrack the barbell and position it above your chest.",
+  "Lower the barbell to your chest, keeping tension in your upper body.",
+  "Press the barbell back up to the starting position against the band.",
+  "Repeat for reps.",
+]
 
 [chest.board_press]
 name = "Board Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps"]
+commentary = "The board press is a variation of the bench press where you place a board on your chest to limit the range of motion. This makes it easier to move heavier weights since the range of motion gets shortened. It’s typically used for improving lockout strength."
+instructions = [
+  "Lie on a bench and have a partner place a board on your chest. Alternatively, secure it with a band on the barbell.",
+  "Grip the barbell at your desired width and unrack the weight.",
+  "Lower the bar until it touches the board, and make sure to keep the tension in your upper body to maintain position.",
+  "Press the barbell back up to the starting position in a controlled, explosive movement.",
+]
 
 [chest.cable_chest_press]
 name = "Cable Chest Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest"]
+secondary_muscles = ["Front Deltoid", "Triceps"]
+commentary = "Cable chest press is a pressing exercise with a different resistance curve than for example dumbbell chest press, as the direction of resistance comes more from the sides. That might make it easier to keep tension on the chest muscles throughout the whole movement, and thus possibly benefit muscle growth."
+instructions = [
+  "Fasten a pair of handles in the top position of a cable cross. Grip the handles, step forward, and lean slightly forward.",
+  "Push the handles forward until they meet in front of your body.",
+  "With control, let the handles go back to the starting position.",
+]
 
 [chest.close_grip_bench_press]
 name = "Close Grip Bench Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Triceps"]
+secondary_muscles = ["Chest", "Front Deltoid"]
+commentary = "The close-grip bench press is a variant of the bench press where you transfer more of the work to the triceps, and away from the chest and front deltoid. This means that most people will have to use less weight in the close-grip bench press than in the regular bench press. Many use the close-grip bench press as an assistance lift for the bench press in order to strengthen their triceps. For certain shoulder issues, the close-grip bench press might serve as a viable substitute for regular bench presses."
+instructions = [
+  "Lie on the bench, pull your shoulder blades together and down, and slightly arch your back.",
+  "Grip the bar narrower than in a regular bench press so that your hands are directly above your shoulders or even closer.",
+  "Take a breath and hold it, and unrack the bar.",
+  "Lower the bar with control until it touches your chest somewhere where the ribs end.",
+  "Push the bar up to the starting position while exhaling.",
+  "Take another breath in the top position, and repeat for reps.",
+]
 
 [chest.close_grip_feet_up_bench_press]
 name = "Close Grip Feet Up Bench Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Triceps"]
+secondary_muscles = ["Chest", "Front Deltoid"]
+commentary = "Close-grip bench press is a variant of the bench press where you transfer more of the work to the triceps, and away from the chest and front deltoid. This means that most people will have to use less weight in the close-grip bench press than in the regular bench press. Many use close-grip bench press as an assitance lift for the bench press in order to strengthen their triceps. For certain shoulder issues, the close-grip bench press might serve as a viable substitute for regular bench presses. By raising your feet you will get to practice creating stability in your upper body instead, and you will generally also have less of an arch, which might contribute to a longer range of motion."
+instructions = [
+  "Lie on the bench, pull your shoulderblades together and down, and raise your chest up.",
+  "Grip the bar narrower than in a regular bench press, so that your hands are directly above your shoulders or even closer.",
+  "Lift your feet up and hold them in the air.",
+  "Take a breath and hold it, and unrack the bar.",
+  "Lower the bar with control, until it touches your chest somewhere where the ribs end.",
+  "Take another breath in the top position, and repeat for reps.",
+]
 
 [chest.decline_bench_press]
 name = "Decline Bench Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest"]
+secondary_muscles = ["Triceps", "Front Deltoid"]
+commentary = "The decline bench press is a bench press variation that shifts more of the load to your lower chest muscle fibers. Remember to set up safety racks on your sides while decline benching, as you cannot roll the bar down your belly if you fail."
+instructions = [
+  "Set a bench so that it is in decline, either by adjusting the backrest or by elevating the foot.",
+  "Lie down on the bench, pull your shoulder blades together and down, with a proud chest.",
+  "Grip the bar slightly wider than shoulder-width apart.",
+  "Take a breath and hold it, and unrack the bar.",
+  "Lower the bar with control until it touches your chest.",
+  "Push the bar up while exhaling.",
+  "Take another breath in the top position, and repeat for reps.",
+]
 
 [chest.decline_push_up]
 name = "Decline Push Up"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps", "Abs"]
+commentary = "The push-up is a classic bodyweight exercise for the upper body, with the benefit that you don’t need any equipment to perform it. In push-ups, you lift about 70% of your own body weight, but you can increase or decrease that amount by placing your feet or hands, respectively, on an elevation. This version of the push-up increases the load since your feet are elevated to a sofa, chair, bench, weight plates, or whatever you are using. You can also vary the exercise by placing your hands closer och wider apart, which will transfer more of the load to the triceps or chest, respectively. A hidden bonus with push-ups is that you also get some static training of your core, similar to that of the plank exercise. To get even more core training, you can do your push-ups with either your hands or feet in a pair of suspended gymnastic rings or similar."
+instructions = [
+  "Assume the starting position, with hands slightly wider than shoulder-width apart and your feet on a small elevation.",
+  "Try to form a straight line from head to feet, and brace your abdomen slightly.",
+  "Lower yourself as deep as you can, while inhaling.",
+  "Reverse the motion, and push yourself up to straight arms again while exhaling.",
+  "Repeat for reps.",
+]
 
 [chest.dumbbell_chest_fly]
 name = "Dumbbell Chest Fly"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest"]
+secondary_muscles = ["Front Deltoid"]
+commentary = "The dumbbell fly, also known as the dumbbell chest fly, is an upper body exercise that works muscle groups in your chest, shoulders, and arms. A dumbbell fly is performed by lying on a flat bench and lowering a pair of dumbbells to your sides while keeping relatively straight arms with slightly bent elbows."
+instructions = [
+  "Lie on a bench, and lift a pair of dumbbells up to the starting position.",
+  "With almost completely straight arms, lower the dumbbells out to your sides.",
+  "When you’ve lowered the dumbbells as deep as possible, reverse the motion and return the dumbbells to the starting position.",
+  "Repeat for reps.",
+]
 
 [chest.dumbbell_chest_press]
 name = "Dumbbell Chest Press"
-primary_muscles = []
-commentary = ""
-instructions = []
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps"]
+commentary = "The dumbbell chest press is a pressing exercise similar to the barbell bench press, except that it is performed with dumbbells. Using dumbbells decreases the stability compared to using a barbell, which increases the demands on stabilization from your shoulder musculature, and it might also decrease the total amount of weight you are able to lift. In return, many experience that they can lift in a better position and with a better range of motion when they use dumbbells instead of a bar."
+instructions = [
+  "Lie on a bench, and lift a pair of dumbbells up to the starting position.",
+  "Press the dumbbells up to straight arms, while exhaling.",
+  "Inhale at the top, or while lowering the dumbbells with control back to your shoulders.",
+  "Repeat for reps.",
+]
 
 [chest.dumbbell_decline_chest_press]
 name = "Dumbbell Decline Chest Press"

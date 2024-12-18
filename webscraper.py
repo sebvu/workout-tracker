@@ -31,7 +31,7 @@ MODEL = "gpt-4o-mini"
 def cardioGPTResponse(exercise: str, steps: int) -> list:
     instructions = []
     chatLog = []
-    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order."
+    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order. In your text, do NOT specify the step you are on like 'Step X:'. Just explain the step itself. Make sure this is a smaller response then usual as this is instructions on a list."
 
     chatLog.append({"role": "system", "content": SYSTEM_CONTEXT})
 
@@ -202,8 +202,8 @@ def writeToFile(file, sections) -> None:
             else:
                 print(f"{LIGHTPURPLE}Div container for instructions not found{CLEAR}\n")
         else:
+            listItems = []
             if not AUTOMODE:
-                listItems = []
                 instructionStep = 1
                 while True:
                     newInstruction = input(
@@ -213,11 +213,11 @@ def writeToFile(file, sections) -> None:
                         break
                     listItems.append(newInstruction)
                     instructionStep += 1
-                for list in listItems:
-                    file.write(f'\t"{list.text}",\n')
-                file.write("]\n")
             else:
-                cardioGPTResponse(name, 5)
+                listItems = cardioGPTResponse(name, 5)
+            for list in listItems:
+                file.write(f'\t"{list.text}",\n')
+            file.write("]\n")
 
     file.write(f"{header}\n\n# total exercises: {total}")
     printSummary()
@@ -225,7 +225,7 @@ def writeToFile(file, sections) -> None:
 
     for section in sections:
         if counter != 1:
-            file.write("\n\n###\n\n")
+            file.write("###\n\n")
         file.write(f"[{section["muscleGroup"]}]\n\ntotal = {section["total"]}\n\n")
         for exercise in section["exercises"]:
             PAGE_TO_SCRAPE = requests.get(exercise["URL"])

@@ -1,2 +1,6 @@
+# folders
 obj/
+
+# files
 exec-main
+compile_commands.json

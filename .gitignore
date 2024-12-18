@@ -1,6 +1,8 @@
 # folders
 obj/
+env/
 
 # files
 exec-main
 compile_commands.json
+creds.py

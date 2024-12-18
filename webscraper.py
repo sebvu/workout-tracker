@@ -31,7 +31,7 @@ MODEL = "gpt-4o-mini"
 def cardioGPTResponse(exercise: str, steps: int) -> list:
     instructions = []
     chatLog = []
-    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order. In your text, do NOT specify the step you are on like 'Step X:'. Just explain the step itself. Make sure this is a smaller response then usual as this is instructions on a list."
+    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order. In your text, do NOT specify the step you are on like 'Step X:'. Just explain the step itself. Make sure this is a smaller response then usual as this is instructions on a list. Do NOT include quotes in your text."
 
     chatLog.append({"role": "system", "content": SYSTEM_CONTEXT})
 
@@ -52,7 +52,7 @@ def cardioGPTResponse(exercise: str, steps: int) -> list:
 def gptRespone(exercise: str) -> str:
     # VARIABLES
     chatLog = []
-    SYSTEM_CONTEXT = f"You are describing the exercise {exercise} for a configuration file. The description of {exercise} should be a paragraph long. The user will talk to you and adjust your response as needed."
+    SYSTEM_CONTEXT = f"You are describing the exercise {exercise} for a configuration file. The description of {exercise} should be a paragraph long. The user will talk to you and adjust your response as needed. Do NOT include quotes in your text."
 
     initialPrompt = f"Could you describe {exercise} please?"
     print(f"describing {exercise}..")
@@ -133,7 +133,7 @@ def writeToFile(file, sections) -> None:
             file.write(f"# - {section["muscleGroup"]}: {section["total"]}\n")
 
     def tableName(name: str, group: str) -> str:
-        return f"{group}.{name.replace("-", "_").replace(" ", "_").lower()}"
+        return f"{group}.{name.replace("-", "_").replace("(", "").replace(")", "").replace(" ", "_").lower()}"
 
     def primaryMuscle(SOUP, muscleGroup):
         primaryMuscleHeader = SOUP.find("h3", string=re.compile(r"Primary*", re.I))
@@ -218,6 +218,7 @@ def writeToFile(file, sections) -> None:
                     instructionStep += 1
             else:
                 listItems = cardioGPTResponse(name, 5)
+            file.write("instructions = [\n")
             for listItem in listItems:
                 file.write(f'\t"{listItem}",\n')
             file.write("]\n")
@@ -262,10 +263,6 @@ with open(FILE_TO_OPEN, "w") as file:
         SOUP = BeautifulSoup(PAGE_TO_SCRAPE.text, "html.parser")
         # Setup sections key value pair array
         sections = findSections(SOUP)
-        # for sec in sections:
-        # print(f"----\n{sec["muscleGroup"]}\n{sec["total"]}")
-        # for exercisePair in sec["exercises"]:
-        #     print(f"{exercisePair["Name"]} = {exercisePair["URL"]}")
         # Map to TOML
         writeToFile(file, sections)
     else:

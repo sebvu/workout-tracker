@@ -202,19 +202,22 @@ def writeToFile(file, sections) -> None:
             else:
                 print(f"{LIGHTPURPLE}Div container for instructions not found{CLEAR}\n")
         else:
-            listItems = []
-            instructionStep = 1
-            while True:
-                newInstruction = input(
-                    f"{LIGHTPURPLE}Please provide step {instructionStep} for {name}. (type [end] when done): {CLEAR}"
-                )
-                if newInstruction.lower() == "end":
-                    break
-                listItems.append(newInstruction)
-                instructionStep += 1
-            for list in listItems:
-                file.write(f'\t"{list.text}",\n')
-            file.write("]\n")
+            if not AUTOMODE:
+                listItems = []
+                instructionStep = 1
+                while True:
+                    newInstruction = input(
+                        f"{LIGHTPURPLE}Please provide step {instructionStep} for {name}. (type [end] when done): {CLEAR}"
+                    )
+                    if newInstruction.lower() == "end":
+                        break
+                    listItems.append(newInstruction)
+                    instructionStep += 1
+                for list in listItems:
+                    file.write(f'\t"{list.text}",\n')
+                file.write("]\n")
+            else:
+                cardioGPTResponse(name, 5)
 
     file.write(f"{header}\n\n# total exercises: {total}")
     printSummary()

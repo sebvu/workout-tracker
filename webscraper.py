@@ -31,7 +31,7 @@ MODEL = "gpt-4o-mini"
 def cardioGPTResponse(exercise: str, steps: int) -> list:
     instructions = []
     chatLog = []
-    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order. In your text, do NOT specify the step you are on like 'Step X:'. Just explain the step itself. Make sure this is a smaller response then usual as this is instructions on a list. Do NOT include quotes in your text."
+    SYSTEM_CONTEXT = f"You are to explain the steps for how to perform {exercise}. There will be {steps} steps in total. Respond one step at a time in chronological order. In your text, do NOT specify the step you are on like 'Step X:'. Just explain the step itself. Make sure this is a smaller response then usual as this is instructions on a list."
 
     chatLog.append({"role": "system", "content": SYSTEM_CONTEXT})
 
@@ -43,7 +43,7 @@ def cardioGPTResponse(exercise: str, steps: int) -> list:
         assistant_response = response.choices[0].message.content.strip("\n").strip()
 
         chatLog.append({"role": "assistant", "content": assistant_response})
-        instructions.append(assistant_response)
+        instructions.append(assistant_response.replace('"', "'"))
 
         print(f"{BLUE}Step {step}: {assistant_response}{CLEAR}")
     return instructions
@@ -52,7 +52,7 @@ def cardioGPTResponse(exercise: str, steps: int) -> list:
 def gptRespone(exercise: str) -> str:
     # VARIABLES
     chatLog = []
-    SYSTEM_CONTEXT = f"You are describing the exercise {exercise} for a configuration file. The description of {exercise} should be a paragraph long. The user will talk to you and adjust your response as needed. Do NOT include quotes in your text."
+    SYSTEM_CONTEXT = f"You are describing the exercise {exercise} for a configuration file. The description of {exercise} should be a paragraph long. The user will talk to you and adjust your response as needed. However, ONLY respond with the paragraph and do NOT make any new unecessary lines or ask if the user would like any more help."
 
     initialPrompt = f"Could you describe {exercise} please?"
     print(f"describing {exercise}..")
@@ -80,7 +80,7 @@ def gptRespone(exercise: str) -> str:
             assistant_response = response.choices[0].message.content.strip("\n").strip()
             chatLog.append({"role": "assistant", "content": assistant_response})
             print(f"{BLUE}{assistant_response}{CLEAR}")
-    return assistant_response
+    return assistant_response.replace('"', "'")
 
 
 def findSections(SOUP) -> list:
@@ -171,7 +171,8 @@ def writeToFile(file, sections) -> None:
         commentaryHeader = SOUP.find("h2", string=re.compile(r"^Commentary$", re.I))
         if commentaryHeader:
             commentary = commentaryHeader.find_next_sibling("p")
-            file.write(f'commentary = "{commentary.text}"\n')
+            commentaryText = commentary.text.replace('"', "'")
+            file.write(f'commentary = "{commentaryText}"\n')
         else:
             if not AUTOMODE:
                 choice = input(
@@ -184,7 +185,7 @@ def writeToFile(file, sections) -> None:
                         return
                     case _:
                         newCommentary = input(
-                            f"{LIGHTPURPLE}Please provide commentary for {name}: {CLEAR}"
+                            f"{LIGHTPURPLE}Please provide commentary for {name} (DO NOT INCLUDE DOUBLE QUOTES): {CLEAR}"
                         )
                         file.write(f'commentary = "{newCommentary}"\n')
                         return
@@ -200,7 +201,8 @@ def writeToFile(file, sections) -> None:
                 listItems = orderedInstructionList.find_all("li")
                 file.write("instructions = [\n")
                 for listItem in listItems:
-                    file.write(f'\t"{listItem.text}",\n')
+                    listItemText = listItem.text.replace('"', "'")
+                    file.write(f'\t"{listItemText}",\n')
                 file.write("]\n")
             else:
                 print(f"{LIGHTPURPLE}Div container for instructions not found{CLEAR}\n")
@@ -210,7 +212,7 @@ def writeToFile(file, sections) -> None:
                 instructionStep = 1
                 while True:
                     newInstruction = input(
-                        f"{LIGHTPURPLE}Please provide step {instructionStep} for {name}. (type [end] when done): {CLEAR}"
+                        f"{LIGHTPURPLE}Please provide step {instructionStep} for {name}. (type [end] when done) (DO NOT INCLUDE QUOTES): {CLEAR}"
                     )
                     if newInstruction.lower() == "end":
                         break

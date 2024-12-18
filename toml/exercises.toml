@@ -1,304 +1,1797 @@
 # defined exercises for unambiguous naming conventions and having a select premade list
-# sourced directly from https://www.strengthlog.com/exercise-directory/
+# sourced directly from https://www.strengthlog.com/exercise_directory/ (with my small additions to it)
+#
+# tables
+# total number of exercises (277)
+# - chest (38)
+# - shoulder (38)
+# - biceps (16)
+# - triceps (11)
+# - legs (42)
+# - back (59)
+# - glute (25)
+# - abs (24)
+# - calves (6)
+# - forearm_flexors_and_grip (12)
+# - forearm_extensors (2)
+# - cardio (4)
 
-[chest]
-assisted-dip = "Assisted Dip"
-band-assisted-bench-press = "Band Assisted Bench Press"
-bar-dip = "Bar Dip"
-bench-press = "Bench Press"
-bench-press-against-band = "Bench Press Against Band"
-board-press = "Board Press"
-cable-chest-press = "Cable Chest Press"
-close-grip-bench-press = "Close Grip Bench Press"
-close-grip-feet-up-bench-press = "Close Grip Feet Up Bench Press"
-decline-bench-press = "Decline Bench Press"
-decline-push-up = "Decline Push Up"
-dumbbell-chest-fly = "Dumbbell Chest Fly"
-dumbbell-chest-press = "Dumbbell Chest Press"
-dumbbell-decline-chest-press = "Dumbbell Decline Chest Press"
-dumbbell-floor-press = "Dumbbell Floor Press"
-dumbbell-pullover = "Dumbbell Pullover"
-feet-up-bench-press = "Feet Up Bench Press"
-floor-press = "Floor Press"
-incline-bench-press = "Incline Bench Press"
-incline-dumbbell-press = "Incline Dumbbell Press"
-incline-push-up = "Incline Push Up"
-kettlebell-floor-press = "Kettlebell Floor Press"
-kneeling-incline-push-up = "Kneeling Incline Push Up"
-kneeling-push-up = "Kneeling Push Up"
-machine-chest-fly = "Machine Chest Fly"
-machine-chest-press = "Machine Chest Press"
-pec-deck = "Pec Deck"
-pin-bench-press = "Pin Bench Press"
-push-up = "Push Up"
-push-up-against-wall = "Push Up Against Wall"
-push-ups-with-feet-in-rings = "Push Ups With Feet In Rings"
-resistance-band-chest-fly = "Resistance Band Chest Fly"
-ring-dip = "Ring Dip"
-smith-machine-bench-press = "Smith Machine Bench Press"
-smith-machine-incline-bench-press = "Smith Machine Incline Bench Press"
-smith-machine-reverse-grip-bench-press = "Smith Machine Reverse Grip Bench Press"
-standing-cable-chest-fly = "Standing Cable Chest Fly"
-standing-resistance-band-chest-fly = "Standing Resistance Band Chest Fly"
+totalExercises = 277
 
-[shoulder]
-arnold-press = "Arnold Press"
-band-external-shoulder-rotation = "Band External Shoulder Rotation"
-band-internal-shoulder-rotation = "Band Internal Shoulder Rotation"
-band-pull-apart = "Band Pull Apart"
-barbell-front-raise = "Barbell Front Raise"
-barbell-rear-delt-row = "Barbell Rear Delt Row"
-barbell-upright-row = "Barbell Upright Row"
-behind-the-neck-press = "Behind The Neck Press"
-cable-lateral-raise = "Cable Lateral Raise"
-cable-rear-delt-row = "Cable Rear Delt Row"
-cuban-press = "Cuban Press"
-dumbbell-front-raise = "Dumbbell Front Raise"
-dumbbell-horizontal-internal-shoulder-rotation = "Dumbbell Horizontal Internal Shoulder Rotation"
-dumbbell-horizontal-external-shoulder-rotation = "Dumbbell Horizontal External Shoulder Rotation"
-dumbbell-lateral-raise = "Dumbbell Lateral Raise"
-dumbbell-rear-delt-row = "Dumbbell Rear Delt Row"
-dumbbell-shoulder-press = "Dumbbell Shoulder Press"
-face-pull = "Face Pull"
-front-hold = "Front Hold"
-landmine-press = "Landmine Press"
-lying-dumbbell-external-shoulder-rotation = "Lying Dumbbell External Shoulder Rotation"
-lying-dumbbell-internal-shoulder-rotation = "Lying Dumbbell Internal Shoulder Rotation"
-machine-lateral-raise = "Machine Lateral Raise"
-machine-shoulder-press = "Machine Shoulder Press"
-monkey-row = "Monkey Row"
-overhead-press = "Overhead Press"
-plate-front-raise = "Plate Front Raise"
-power-jerk = "Power Jerk"
-push-press = "Push Press"
-reverse-cable-flyes = "Reverse Cable Flyes"
-reverse-dumbbell-flyes = "Reverse Dumbbell Flyes"
-reverse-machine-fly = "Reverse Machine Fly"
-seated-dumbbell-shoulder-press = "Seated Dumbbell Shoulder Press"
-seated-barbell-overhead-press = "Seated Barbell Overhead Press"
-seated-smith-machine-shoulder-press = "Seated Smith Machine Shoulder Press"
-snatch-grip-behind-the-neck-press = "Snatch Grip Behind The Neck Press"
-squat-jerk = "Squat Jerk"
-split-jerk = "Split Jerk"
+categories = [
+  "chest",
+  "shoulder",
+  "biceps",
+  "triceps",
+  "legs",
+  "back",
+  "glute",
+  "abs",
+  "calves",
+  "forearm_flexors_and_grip",
+  "forearm_extensors",
+  "cardio",
+]
 
-[bicep]
-barbell-curl = "Barbell Curl"
-barbell-preacher-curl = "Barbell Preacher Curl"
-bayesian-curl = "Bayesian Curl"
-bodyweight-curl = "Bodyweight Curl"
-cable-crossover-bicep-curl = "Cable Crossover Bicep Curl"
-cable-curl-with-bar = "Cable Curl With Bar"
-cable-curl-with-rope = "Cable Curl With Rope"
-concentration-curl = "Concentration Curl"
-drag-curl = "Drag Curl"
-dumbbell-curl = "Dumbbell Curl"
-dumbbell-preacher-curl = "Dumbbell Preacher Curl"
-hammer-curl = "Hammer Curl"
-incline-dumbbell-curl = "Incline Dumbbell Curl"
-machine-bicep-curl = "Machine Bicep Curl"
-resistance-band-curl = "Resistance Band Curl"
-spider-curl = "Spider Curl"
+[chest] # 38
 
-[tricep]
-barbell-standing-triceps-extension = "Barbell Standing Triceps Extension"
-barbell-lying-triceps-extension = "Barbell Lying Triceps Extension"
-bench-dip = "Bench Dip"
-crossbody-cable-triceps-extension = "Crossbody Cable Triceps Extension"
-close-grip-push-up = "Close Grip Push Up"
-dumbbell-lying-triceps-extension = "Dumbbell Lying Triceps Extension"
-dumbbell-standing-triceps-extension = "Dumbbell Standing Triceps Extension"
-overhead-cable-triceps-extension = "Overhead Cable Triceps Extension"
-tricep-bodyweight-extension = "Tricep Bodyweight Extension"
-tricep-pushdown-with-bar = "Tricep Pushdown With Bar"
-tricep-pushdown-with-rope = "Tricep Pushdown With Rope"
+total = 38
 
-[legs]
-air-squat = "Air Squat"
-barbell-hack-squat = "Barbell Hack Squat"
-barbell-lunge = "Barbell Lunge"
-barbell-walking-lunge = "Barbell Walking Lunge"
-belt-squat = "Belt Squat"
-body-weight-lunge = "Body Weight Lunge"
-bodyweight-leg-curl = "Bodyweight Leg Curl"
-box-jump = "Box Jump"
-box-squat = "Box Squat"
-bulgarian-split-squat = "Bulgarian Split Squat"
-chair-squat = "Chair Squat"
-dumbbell-lunge = "Dumbbell Lunge"
-dumbbell-squat = "Dumbbell Squat"
-front-squat = "Front Squat"
-glute-ham-raise = "Glute Ham Raise"
-goblet-squat = "Goblet Squat"
-hack-squat-machine = "Hack Squat Machine"
-half-air-squat = "Half Air Squat"
-hip-adduction-machine = "Hip Adduction Machine"
-jumping-lunge = "Jumping Lunge"
-landmine-hack-squat = "Landmine Hack Squat"
-landmine-squat = "Landmine Squat"
-leg-curl-on-ball = "Leg Curl On Ball"
-leg-extension = "Leg Extension"
-leg-press = "Leg Press"
-lying-leg-curl = "Lying Leg Curl"
-nordic-hamstring-eccentric = "Nordic Hamstring Eccentric"
-pause-squat = "Pause Squat"
-pistol-squat = "Pistol Squat"
-reverse-barbell-lunge = "Reverse Barbell Lunge"
-romanian-deadlift = "Romanian Deadlift"
-safety-bar-squat = "Safety Bar Squat"
-seated-leg-curl = "Seated Leg Curl"
-shallow-body-weight-lunge = "Shallow Body Weight Lunge"
-side-lunges-bodyweight  = "Side Lunges Bodyweight "
-smith-machine-bulgarian-split-squat = "Smith Machine Bulgarian Split Squat"
-smith-machine-front-squat = "Smith Machine Front Squat"
-smith-machine-squat = "Smith Machine Squat"
-squat = "Squat"
-step-up = "Step Up"
-zercher-squat = "Zercher Squat"
-zombie-squat = "Zombie Squat"
+[chest.assisted_dip]
+name = "Assisted Dip"
+primary_muscles = ["Chest", "Front Deltoid", "Triceps"]
+commentary = "Assisted dips are a good alternative if the dips is too heavy or if you want to be able to do more reps without adding too much workload. If you don’t have access to an assisted dips machine, you can use resistance bands as well."
+instructions = [
+  "Grip the handles with a firm grip, a little wider than shoulder-width apart, and keep your elbows close to the body. Put your feet/knees on the pad and push it down. Fully extend your arms so your body is upright and your knees or feet are in line with your torso.",
+  "Keep your chest up, and look up at the bar.",
+  "Inhale, bend your elbows and slowly lower your body until your upper arms are parallel to the floor or slightly deeper if comfortable.",
+  "Exhale, and push back up through the handles and fully extend your arms.",
+]
+
+[chest.band_assisted_bench_press]
+name = "Band Assisted Bench Press"
+primary_muscles = ["Chest", "Front Deltoid"]
+secondary_muscles = ["Triceps"]
+commentary = "The bench press against bands is a variation of the bench press in which resistance bands increase the tension as you press up. This makes it more challenging to lock out the lift, enhancing strength and power. It’s typically used to improve explosive strength and stability. Make sure to use the safety racks or to have a spotter while performing this exercise."
+instructions = [
+  "Attach the resistance band under the bench, loop it around the barbell, and back under the bench.",
+  "Lie on the bench with feet flat, back slightly arched, and shoulder blades retracted.",
+  "Grip the barbell at your preferred width.",
+  "Unrack the barbell and position it above your chest.",
+  "Lower the barbell to your chest, keeping tension in your upper body.",
+  "Press the barbell back up to the starting position against the band.",
+  "Repeat for reps.",
+]
+
+[chest.bar_dip]
+name = "Bar Dip"
+primary_muscles = ["Chest", "Front Deltoid", "Triceps"]
+commentary = "The bar dip is a classic upper-body exercise, and for most people, heavy enough to give a good training effect with the body weight alone as resistance. In a competitive event, the requirement for a successful repetition is often that your shoulder passes below your elbow joint, but in your own training, it is more important that you let your own capabilities determine how deep you go."
+instructions = [
+  "Grip a dip station about shoulder-width apart, and climb or jump to get into the starting position.",
+  "Lower yourself with control until your shoulder is below your elbow, or as deep as you comfortably can.",
+  "Reverse the motion and return to the starting position.",
+]
+
+[chest.bench_press]
+name = "Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.bench_press_against_band]
+name = "Bench Press Against Band"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.board_press]
+name = "Board Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.cable_chest_press]
+name = "Cable Chest Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.close_grip_bench_press]
+name = "Close Grip Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.close_grip_feet_up_bench_press]
+name = "Close Grip Feet Up Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.decline_bench_press]
+name = "Decline Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.decline_push_up]
+name = "Decline Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.dumbbell_chest_fly]
+name = "Dumbbell Chest Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.dumbbell_chest_press]
+name = "Dumbbell Chest Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.dumbbell_decline_chest_press]
+name = "Dumbbell Decline Chest Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.dumbbell_floor_press]
+name = "Dumbbell Floor Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.dumbbell_pullover]
+name = "Dumbbell Pullover"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.feet_up_bench_press]
+name = "Feet Up Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.floor_press]
+name = "Floor Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.incline_bench_press]
+name = "Incline Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.incline_dumbbell_press]
+name = "Incline Dumbbell Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.incline_push_up]
+name = "Incline Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.kettlebell_floor_press]
+name = "Kettlebell Floor Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.kneeling_incline_push_up]
+name = "Kneeling Incline Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.kneeling_push_up]
+name = "Kneeling Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.machine_chest_fly]
+name = "Machine Chest Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.machine_chest_press]
+name = "Machine Chest Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.pec_deck]
+name = "Pec Deck"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.pin_bench_press]
+name = "Pin Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.push_up]
+name = "Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.push_up_against_wall]
+name = "Push Up Against Wall"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.push_ups_with_feet_in_rings]
+name = "Push Ups With Feet In Rings"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.resistance_band_chest_fly]
+name = "Resistance Band Chest Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.ring_dip]
+name = "Ring Dip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.smith_machine_bench_press]
+name = "Smith Machine Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.smith_machine_incline_bench_press]
+name = "Smith Machine Incline Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.smith_machine_reverse_grip_bench_press]
+name = "Smith Machine Reverse Grip Bench Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.standing_cable_chest_fly]
+name = "Standing Cable Chest Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[chest.standing_resistance_band_chest_fly]
+name = "Standing Resistance Band Chest Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
 
 
-[back]
-assisted-chin-up = "Assisted Chin Up"
-assisted-pull-up = "Assisted Pull Up"
-back-extension = "Back Extension"
-banded-muscle-up = "Banded Muscle Up"
-barbell-row = "Barbell Row"
-barbell-shrug = "Barbell Shrug"
-block-clean = "Block Clean"
-block-snatch = "Block Snatch"
-cable-close-grip-seated-row = "Cable Close Grip Seated Row"
-cable-wide-grip-seated-row = "Cable Wide Grip Seated Row"
-chest-to-bar = "Chest To Bar"
-chin-up = "Chin Up"
-clean = "Clean"
-clean-and-jerk = "Clean And Jerk"
-deadlift = "Deadlift"
-deficit-deadlift = "Deficit Deadlift"
-dumbbell-deadlift = "Dumbbell Deadlift"
-dumbbell-row = "Dumbbell Row"
-dumbbell-shrug = "Dumbbell Shrug"
-floor-back-extension = "Floor Back Extension"
-good-morning = "Good Morning"
-gorilla-row = "Gorilla Row"
-hang-clean = "Hang Clean"
-hang-power-clean = "Hang Power Clean"
-hang-power-snatch = "Hang Power Snatch"
-hang-snatch = "Hang Snatch"
-inverted-row = "Inverted Row"
-inverted-row-with-underhand-grip = "Inverted Row With Underhand Grip"
-jefferson-curl = "Jefferson Curl"
-jumping-muscle-up = "Jumping Muscle Up"
-kettlebell-swing = "Kettlebell Swing"
-lat-pulldown-with-pronated-grip = "Lat Pulldown With Pronated Grip"
-lat-pulldown-with-supinated-grip = "Lat Pulldown With Supinated Grip"
-muscle-up-bar = "Muscle Up Bar"
-muscle-up-rings = "Muscle Up Rings"
-one-handed-cable-row = "One Handed Cable Row"
-one-handed-lat-pulldown = "One Handed Lat Pulldown"
-pause-deadlift = "Pause Deadlift"
-pendlay-row = "Pendlay Row"
-power-clean = "Power Clean"
-power-snatch = "Power Snatch"
-pull-up = "Pull Up"
-pull-up-with-a-neutral-grip = "Pull Up With A Neutral Grip"
-rack-pull = "Rack Pull"
-ring-pull-up = "Ring Pull Up"
-ring-row = "Ring Row"
-scap-pull-up = "Scap Pull Up"
-seal-row = "Seal Row"
-seated-machine-row = "Seated Machine Row"
-single-leg-deadlift-with-kettlebell = "Single Leg Deadlift With Kettlebell"
-smith-machine-one-handed-row = "Smith Machine One Handed Row"
-snatch = "Snatch"
-snatch-grip-deadlift = "Snatch Grip Deadlift"
-stiff-legged-deadlift = "Stiff Legged Deadlift"
-straight-arm-lat-pulldown = "Straight Arm Lat Pulldown"
-sumo-deadlift = "Sumo Deadlift"
-t-bar-row = "T Bar Row"
-trap-bar-deadlift-with-high-handles = "Trap Bar Deadlift With High Handles"
-trap-bar-deadlift-with-low-handles = "Trap Bar Deadlift With Low Handles"
+###
 
-[glute]
-banded-side-kicks = "Banded Side Kicks"
-cable-pull-through = "Cable Pull Through"
-clamshells = "Clamshells"
-cossack-squat = "Cossack Squat"
-death-march-with-dumbbells = "Death March With Dumbbells"
-donkey-kicks = "Donkey Kicks"
-dumbbell-romanian-deadlift = "Dumbbell Romanian Deadlift"
-dumbbell-frog-pumps = "Dumbbell Frog Pumps"
-fire-hydrants = "Fire Hydrants"
-frog-pumps = "Frog Pumps"
-glute-bridge = "Glute Bridge"
-hip-abduction-against-band = "Hip Abduction Against Band"
-hip-abduction-machine = "Hip Abduction Machine"
-hip-thrust = "Hip Thrust"
-hip-thrust-machine = "Hip Thrust Machine"
-hip-thrust-with-band-around-knees = "Hip Thrust With Band Around Knees"
-lateral-walk-with-band = "Lateral Walk With Band"
-machine-glute-kickbacks = "Machine Glute Kickbacks"
-one-legged-glute-bridge = "One Legged Glute Bridge"
-one-legged-hip-thrust = "One Legged Hip Thrust"
-reverse-hyperextension = "Reverse Hyperextension"
-romanian-deadlift = "Romanian Deadlift"
-single-leg-romanian-deadlift = "Single Leg Romanian Deadlift"
-standing-glute-kickback-in-machine = "Standing Glute Kickback In Machine"
-step-up = "Step Up"
+[shoulder] # 38
 
-[abs]
-ball-slams = "Ball Slams"
-cable-crunch = "Cable Crunch"
-crunch = "Crunch"
-dead-bug = "Dead Bug"
-dragon-flag = "Dragon Flag"
-hanging-knee-raise = "Hanging Knee Raise"
-hanging-leg-raise = "Hanging Leg Raise"
-hanging-sit-up = "Hanging Sit Up"
-hanging-windshield-wiper = "Hanging Windshield Wiper"
-hollow-body-hold = "Hollow Body Hold"
-high-to-low-wood-chop-with-band = "High To Low Wood Chop With Band"
-horizontal-wood-chop-with-band = "Horizontal Wood Chop With Band"
-jackknife-sit-up = "Jackknife Sit Up"
-kneeling-ab-wheel-roll-out = "Kneeling Ab Wheel Roll Out"
-kneeling-plank = "Kneeling Plank"
-kneeling-side-plank = "Kneeling Side Plank"
-l-sit = "L Sit"
-lying-leg-raise = "Lying Leg Raise"
-lying-windshield-wiper = "Lying Windshield Wiper"
-lying-windshield-wiper-with-bent-knees = "Lying Windshield Wiper With Bent Knees"
-machine-crunch = "Machine Crunch"
-mountain-climbers = "Mountain Climbers"
-oblique-crunch = "Oblique Crunch"
-oblique-sit-up = "Oblique Sit Up"
+total = 38
 
-[calves]
-barbell-standing-calf-raise = "Barbell Standing Calf Raise"
-donkey-calf-raise = "Donkey Calf Raise"
-eccentric-heel-drop = "Eccentric Heel Drop"
-heel-raise = "Heel Raise"
-seated-calf-raise = "Seated Calf Raise"
-standing-calf-raise = "Standing Calf Raise"
+[shoulder.arnold_press]
+name = "Arnold Press"
+primary_muscles = []
+commentary = ""
+instructions = []
 
-[forearm-flexor-and-grip]
-barbell-wrist-curl = "Barbell Wrist Curl"
-barbell-wrist-curl-behind-the-back = "Barbell Wrist Curl Behind The Back"
-bar-hang = "Bar Hang"
-dumbbell-wrist-curl = "Dumbbell Wrist Curl"
-farmers-walk = "Farmers Walk"
-fat-bar-deadlift = "Fat Bar Deadlift"
-gripper = "Gripper"
-one-handed-bar-hang = "One Handed Bar Hang"
-plate-pinch = "Plate Pinch"
-plate-wrist-curl = "Plate Wrist Curl"
-towel-pull-up = "Towel Pull Up"
-wrist-roller = "Wrist Roller"
+[shoulder.band_external_shoulder_rotation]
+name = "Band External Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
 
-[forearm-extensor]
-barbell-wrist-extension = "Barbell Wrist Extension"
-dumbbell-wrist-extension = "Dumbbell Wrist Extension"
+[shoulder.band_internal_shoulder_rotation]
+name = "Band Internal Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
 
-[cardio]
-bike = "Bike"
-rowing-machine = "Rowing Machine"
-running = "Running"
-stationary-bike = "Stationary Bike"
+[shoulder.band_pull_apart]
+name = "Band Pull Apart"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.barbell_front_raise]
+name = "Barbell Front Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.barbell_rear_delt_row]
+name = "Barbell Rear Delt Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.barbell_upright_row]
+name = "Barbell Upright Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.behind_the_neck_press]
+name = "Behind The Neck Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.cable_lateral_raise]
+name = "Cable Lateral Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.cable_rear_delt_row]
+name = "Cable Rear Delt Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.cuban_press]
+name = "Cuban Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_front_raise]
+name = "Dumbbell Front Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_horizontal_internal_shoulder_rotation]
+name = "Dumbbell Horizontal Internal Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_horizontal_external_shoulder_rotation]
+name = "Dumbbell Horizontal External Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_lateral_raise]
+name = "Dumbbell Lateral Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_rear_delt_row]
+name = "Dumbbell Rear Delt Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.dumbbell_shoulder_press]
+name = "Dumbbell Shoulder Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.face_pull]
+name = "Face Pull"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.front_hold]
+name = "Front Hold"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.landmine_press]
+name = "Landmine Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.lying_dumbbell_external_shoulder_rotation]
+name = "Lying Dumbbell External Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.lying_dumbbell_internal_shoulder_rotation]
+name = "Lying Dumbbell Internal Shoulder Rotation"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.machine_lateral_raise]
+name = "Machine Lateral Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.machine_shoulder_press]
+name = "Machine Shoulder Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.monkey_row]
+name = "Monkey Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.overhead_press]
+name = "Overhead Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.plate_front_raise]
+name = "Plate Front Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.power_jerk]
+name = "Power Jerk"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.push_press]
+name = "Push Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.reverse_cable_flyes]
+name = "Reverse Cable Flyes"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.reverse_dumbbell_flyes]
+name = "Reverse Dumbbell Flyes"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.reverse_machine_fly]
+name = "Reverse Machine Fly"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.seated_dumbbell_shoulder_press]
+name = "Seated Dumbbell Shoulder Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.seated_barbell_overhead_press]
+name = "Seated Barbell Overhead Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.seated_smith_machine_shoulder_press]
+name = "Seated Smith Machine Shoulder Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.snatch_grip_behind_the_neck_press]
+name = "Snatch Grip Behind The Neck Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.squat_jerk]
+name = "Squat Jerk"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[shoulder.split_jerk]
+name = "Split Jerk"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[biceps] # 16
+
+total = 16
+
+[biceps.barbell_curl]
+name = "Barbell Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.barbell_preacher_curl]
+name = "Barbell Preacher Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.bayesian_curl]
+name = "Bayesian Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.bodyweight_curl]
+name = "Bodyweight Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.cable_crossover_bicep_curl]
+name = "Cable Crossover Bicep Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.cable_curl_with_bar]
+name = "Cable Curl With Bar"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.cable_curl_with_rope]
+name = "Cable Curl With Rope"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.concentration_curl]
+name = "Concentration Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.drag_curl]
+name = "Drag Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.dumbbell_curl]
+name = "Dumbbell Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.dumbbell_preacher_curl]
+name = "Dumbbell Preacher Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.hammer_curl]
+name = "Hammer Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.incline_dumbbell_curl]
+name = "Incline Dumbbell Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.machine_bicep_curl]
+name = "Machine Bicep Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.resistance_band_curl]
+name = "Resistance Band Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[biceps.spider_curl]
+name = "Spider Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[triceps] # 11
+
+total = 11
+
+[triceps.barbell_standing_triceps_extension]
+name = "Barbell Standing Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.barbell_lying_triceps_extension]
+name = "Barbell Lying Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.bench_dip]
+name = "Bench Dip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.crossbody_cable_triceps_extension]
+name = "Crossbody Cable Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.close_grip_push_up]
+name = "Close Grip Push Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.dumbbell_lying_triceps_extension]
+name = "Dumbbell Lying Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.dumbbell_standing_triceps_extension]
+name = "Dumbbell Standing Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.overhead_cable_triceps_extension]
+name = "Overhead Cable Triceps Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.tricep_bodyweight_extension]
+name = "Tricep Bodyweight Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.tricep_pushdown_with_bar]
+name = "Tricep Pushdown With Bar"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[triceps.tricep_pushdown_with_rope]
+name = "Tricep Pushdown With Rope"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[legs] # 42
+
+total = 42
+
+[legs.air_squat]
+name = "Air Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.barbell_hack_squat]
+name = "Barbell Hack Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.barbell_lunge]
+name = "Barbell Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.barbell_walking_lunge]
+name = "Barbell Walking Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.belt_squat]
+name = "Belt Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.body_weight_lunge]
+name = "Body Weight Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.bodyweight_leg_curl]
+name = "Bodyweight Leg Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.box_jump]
+name = "Box Jump"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.box_squat]
+name = "Box Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.bulgarian_split_squat]
+name = "Bulgarian Split Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.chair_squat]
+name = "Chair Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.dumbbell_lunge]
+name = "Dumbbell Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.dumbbell_squat]
+name = "Dumbbell Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.front_squat]
+name = "Front Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.glute_ham_raise]
+name = "Glute Ham Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.goblet_squat]
+name = "Goblet Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.hack_squat_machine]
+name = "Hack Squat Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.half_air_squat]
+name = "Half Air Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.hip_adduction_machine]
+name = "Hip Adduction Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.jumping_lunge]
+name = "Jumping Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.landmine_hack_squat]
+name = "Landmine Hack Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.landmine_squat]
+name = "Landmine Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.leg_curl_on_ball]
+name = "Leg Curl On Ball"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.leg_extension]
+name = "Leg Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.leg_press]
+name = "Leg Press"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.lying_leg_curl]
+name = "Lying Leg Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.nordic_hamstring_eccentric]
+name = "Nordic Hamstring Eccentric"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.pause_squat]
+name = "Pause Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.pistol_squat]
+name = "Pistol Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.reverse_barbell_lunge]
+name = "Reverse Barbell Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.romanian_deadlift]
+name = "Romanian Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.safety_bar_squat]
+name = "Safety Bar Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.seated_leg_curl]
+name = "Seated Leg Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.shallow_body_weight_lunge]
+name = "Shallow Body Weight Lunge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.side_lunges_bodyweight]
+name = "Side Lunges Bodyweight "
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.smith_machine_bulgarian_split_squat]
+name = "Smith Machine Bulgarian Split Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.smith_machine_front_squat]
+name = "Smith Machine Front Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.smith_machine_squat]
+name = "Smith Machine Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.squat]
+name = "Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.step_up]
+name = "Step Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.zercher_squat]
+name = "Zercher Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[legs.zombie_squat]
+name = "Zombie Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[back] # 59
+
+total = 59
+
+[back.assisted_chin_up]
+name = "Assisted Chin Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.assisted_pull_up]
+name = "Assisted Pull Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.back_extension]
+name = "Back Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.banded_muscle_up]
+name = "Banded Muscle Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.barbell_row]
+name = "Barbell Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.barbell_shrug]
+name = "Barbell Shrug"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.block_clean]
+name = "Block Clean"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.block_snatch]
+name = "Block Snatch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.cable_close_grip_seated_row]
+name = "Cable Close Grip Seated Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.cable_wide_grip_seated_row]
+name = "Cable Wide Grip Seated Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.chest_to_bar]
+name = "Chest To Bar"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.chin_up]
+name = "Chin Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.clean]
+name = "Clean"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.clean_and_jerk]
+name = "Clean And Jerk"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.deadlift]
+name = "Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.deficit_deadlift]
+name = "Deficit Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.dumbbell_deadlift]
+name = "Dumbbell Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.dumbbell_row]
+name = "Dumbbell Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.dumbbell_shrug]
+name = "Dumbbell Shrug"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.floor_back_extension]
+name = "Floor Back Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.good_morning]
+name = "Good Morning"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.gorilla_row]
+name = "Gorilla Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.hang_clean]
+name = "Hang Clean"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.hang_power_clean]
+name = "Hang Power Clean"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.hang_power_snatch]
+name = "Hang Power Snatch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.hang_snatch]
+name = "Hang Snatch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.inverted_row]
+name = "Inverted Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.inverted_row_with_underhand_grip]
+name = "Inverted Row With Underhand Grip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.jefferson_curl]
+name = "Jefferson Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.jumping_muscle_up]
+name = "Jumping Muscle Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.kettlebell_swing]
+name = "Kettlebell Swing"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.lat_pulldown_with_pronated_grip]
+name = "Lat Pulldown With Pronated Grip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.lat_pulldown_with_supinated_grip]
+name = "Lat Pulldown With Supinated Grip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.muscle_up_bar]
+name = "Muscle Up Bar"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.muscle_up_rings]
+name = "Muscle Up Rings"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.one_handed_cable_row]
+name = "One Handed Cable Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.one_handed_lat_pulldown]
+name = "One Handed Lat Pulldown"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.pause_deadlift]
+name = "Pause Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.pendlay_row]
+name = "Pendlay Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.power_clean]
+name = "Power Clean"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.power_snatch]
+name = "Power Snatch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.pull_up]
+name = "Pull Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.pull_up_with_a_neutral_grip]
+name = "Pull Up With A Neutral Grip"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.rack_pull]
+name = "Rack Pull"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.ring_pull_up]
+name = "Ring Pull Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.ring_row]
+name = "Ring Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.scap_pull_up]
+name = "Scap Pull Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.seal_row]
+name = "Seal Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.seated_machine_row]
+name = "Seated Machine Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.single_leg_deadlift_with_kettlebell]
+name = "Single Leg Deadlift With Kettlebell"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.smith_machine_one_handed_row]
+name = "Smith Machine One Handed Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.snatch]
+name = "Snatch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.snatch_grip_deadlift]
+name = "Snatch Grip Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.stiff_legged_deadlift]
+name = "Stiff Legged Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.straight_arm_lat_pulldown]
+name = "Straight Arm Lat Pulldown"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.sumo_deadlift]
+name = "Sumo Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.t_bar_row]
+name = "T Bar Row"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.trap_bar_deadlift_with_high_handles]
+name = "Trap Bar Deadlift With High Handles"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[back.trap_bar_deadlift_with_low_handles]
+name = "Trap Bar Deadlift With Low Handles"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[glute] # 25
+
+total = 25
+
+[glute.banded_side_kicks]
+name = "Banded Side Kicks"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.cable_pull_through]
+name = "Cable Pull Through"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.clamshells]
+name = "Clamshells"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.cossack_squat]
+name = "Cossack Squat"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.death_march_with_dumbbells]
+name = "Death March With Dumbbells"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.donkey_kicks]
+name = "Donkey Kicks"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.dumbbell_romanian_deadlift]
+name = "Dumbbell Romanian Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.dumbbell_frog_pumps]
+name = "Dumbbell Frog Pumps"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.fire_hydrants]
+name = "Fire Hydrants"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.frog_pumps]
+name = "Frog Pumps"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.glute_bridge]
+name = "Glute Bridge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.hip_abduction_against_band]
+name = "Hip Abduction Against Band"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.hip_abduction_machine]
+name = "Hip Abduction Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.hip_thrust]
+name = "Hip Thrust"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.hip_thrust_machine]
+name = "Hip Thrust Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.hip_thrust_with_band_around_knees]
+name = "Hip Thrust With Band Around Knees"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.lateral_walk_with_band]
+name = "Lateral Walk With Band"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.machine_glute_kickbacks]
+name = "Machine Glute Kickbacks"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.one_legged_glute_bridge]
+name = "One Legged Glute Bridge"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.one_legged_hip_thrust]
+name = "One Legged Hip Thrust"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.reverse_hyperextension]
+name = "Reverse Hyperextension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.romanian_deadlift]
+name = "Romanian Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.single_leg_romanian_deadlift]
+name = "Single Leg Romanian Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.standing_glute_kickback_in_machine]
+name = "Standing Glute Kickback In Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[glute.step_up]
+name = "Step Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[abs] # 24
+
+total = 24
+
+[abs.ball_slams]
+name = "Ball Slams"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.cable_crunch]
+name = "Cable Crunch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.crunch]
+name = "Crunch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.dead_bug]
+name = "Dead Bug"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.dragon_flag]
+name = "Dragon Flag"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.hanging_knee_raise]
+name = "Hanging Knee Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.hanging_leg_raise]
+name = "Hanging Leg Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.hanging_sit_up]
+name = "Hanging Sit Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.hanging_windshield_wiper]
+name = "Hanging Windshield Wiper"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.hollow_body_hold]
+name = "Hollow Body Hold"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.high_to_low_wood_chop_with_band]
+name = "High To Low Wood Chop With Band"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.horizontal_wood_chop_with_band]
+name = "Horizontal Wood Chop With Band"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.jackknife_sit_up]
+name = "Jackknife Sit Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.kneeling_ab_wheel_roll_out]
+name = "Kneeling Ab Wheel Roll Out"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.kneeling_plank]
+name = "Kneeling Plank"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.kneeling_side_plank]
+name = "Kneeling Side Plank"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.l_sit]
+name = "L Sit"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.lying_leg_raise]
+name = "Lying Leg Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.lying_windshield_wiper]
+name = "Lying Windshield Wiper"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.lying_windshield_wiper_with_bent_knees]
+name = "Lying Windshield Wiper With Bent Knees"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.machine_crunch]
+name = "Machine Crunch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.mountain_climbers]
+name = "Mountain Climbers"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.oblique_crunch]
+name = "Oblique Crunch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[abs.oblique_sit_up]
+name = "Oblique Sit Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[calves] # 6
+
+total = 6
+
+[calves.barbell_standing_calf_raise]
+name = "Barbell Standing Calf Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[calves.donkey_calf_raise]
+name = "Donkey Calf Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[calves.eccentric_heel_drop]
+name = "Eccentric Heel Drop"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[calves.heel_raise]
+name = "Heel Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[calves.seated_calf_raise]
+name = "Seated Calf Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[calves.standing_calf_raise]
+name = "Standing Calf Raise"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[forearm_flexor_and_grip] # 12
+
+total = 12
+
+[forearm_flexor_and_grip.barbell_wrist_curl]
+name = "Barbell Wrist Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.barbell_wrist_curl_behind_the_back]
+name = "Barbell Wrist Curl Behind The Back"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.bar_hang]
+name = "Bar Hang"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.dumbbell_wrist_curl]
+name = "Dumbbell Wrist Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.farmers_walk]
+name = "Farmers Walk"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.fat_bar_deadlift]
+name = "Fat Bar Deadlift"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.gripper]
+name = "Gripper"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.one_handed_bar_hang]
+name = "One Handed Bar Hang"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.plate_pinch]
+name = "Plate Pinch"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.plate_wrist_curl]
+name = "Plate Wrist Curl"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.towel_pull_up]
+name = "Towel Pull Up"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_flexor_and_grip.wrist_roller]
+name = "Wrist Roller"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[forearm_extensor] # 2
+
+total = 2
+
+[forearm_extensor.barbell_wrist_extension]
+name = "Barbell Wrist Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[forearm_extensor.dumbbell_wrist_extension]
+name = "Dumbbell Wrist Extension"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+
+###
+
+[cardio] # 4
+
+total = 4
+
+[cardio.bike]
+name = "Bike"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[cardio.rowing_machine]
+name = "Rowing Machine"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[cardio.running]
+name = "Running"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+[cardio.stationary_bike]
+name = "Stationary Bike"
+primary_muscles = []
+commentary = ""
+instructions = []
+
+### EOF

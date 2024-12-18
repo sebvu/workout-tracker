@@ -1,8 +1,10 @@
 # folders
 obj/
 env/
+__pycache__/
 
 # files
 exec-main
 compile_commands.json
 creds.py
+

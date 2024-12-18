@@ -93,20 +93,23 @@ def findSections(SOUP) -> list:
     if listOfAllExercisesHeader:
         listOfAllExercises = listOfAllExercisesHeader.find_next("ul")
         allExerciseAnchors = listOfAllExercises.find_all("a")
-        for list in allExerciseAnchors:
+        for listAnchor in allExerciseAnchors:
             # list name
-            listName = list.text.replace(" ", "_").lower()
+            listName = listAnchor.text.replace(" ", "_").lower()
             # calculating total exercises & pulling URLs
             totalExercises, exercisesArr = 0, []
-            listHref = list.get("href")
+            listHref = listAnchor.get("href")
             listID = listHref.lstrip("#")
             idBlockParent = SOUP.find(id=listID).parent
             orderedListBlock = idBlockParent.find_next("ol")
             listExerciseItems = orderedListBlock.find_all("li")
-            for list in listExerciseItems:
-                listAnchor = list.find("a")
+            for listAnchor in listExerciseItems:
+                listAnchor = listAnchor.find("a")
                 totalExercises += 1
-                tempExerciseURLPair = {"Name": list.text, "URL": listAnchor.get("href")}
+                tempExerciseURLPair = {
+                    "Name": listAnchor.text,
+                    "URL": listAnchor.get("href"),
+                }
                 exercisesArr.append(tempExerciseURLPair)
             # assembly
             tempDict = {
@@ -138,13 +141,13 @@ def writeToFile(file, sections) -> None:
         if primaryMuscleHeader:
             primaryMuscleList = primaryMuscleHeader.find_next_sibling("ul")
             listItems = primaryMuscleList.find_all("li")
-            for list in listItems:
-                primaryList.append(list.text)
+            for listItem in listItems:
+                primaryList.append(listItem.text)
         elif muscleGroup == "cardio_training":
             primaryMuscleList = SOUP.find("ul", attrs={"class": "wp-block-list"})
             listItems = primaryMuscleList.find_all("li")
-            for list in listItems:
-                primaryList.append(list.text)
+            for listItem in listItems:
+                primaryList.append(listItem.text)
         else:
             print(f"{RED}No primary muscle header found. Exiting.{CLEAR}")
             exit()
@@ -157,8 +160,8 @@ def writeToFile(file, sections) -> None:
             secondaryList = []
             secondaryMuscleList = secondaryMuscleHeader.find_next_sibling("ul")
             listItems = secondaryMuscleList.find_all("li")
-            for list in listItems:
-                secondaryList.append(list.text)
+            for listItem in listItems:
+                secondaryList.append(listItem.text)
             file.write(f"secondary_muscles = {json.dumps(secondaryList)}\n")
         else:
             if muscleGroup != "cardio_training":
@@ -196,8 +199,8 @@ def writeToFile(file, sections) -> None:
                 orderedInstructionList = instructionsDiv.find_next("ol")
                 listItems = orderedInstructionList.find_all("li")
                 file.write("instructions = [\n")
-                for list in listItems:
-                    file.write(f'\t"{list.text}",\n')
+                for listItem in listItems:
+                    file.write(f'\t"{listItem.text}",\n')
                 file.write("]\n")
             else:
                 print(f"{LIGHTPURPLE}Div container for instructions not found{CLEAR}\n")
@@ -215,8 +218,8 @@ def writeToFile(file, sections) -> None:
                     instructionStep += 1
             else:
                 listItems = cardioGPTResponse(name, 5)
-            for list in listItems:
-                file.write(f'\t"{list.text}",\n')
+            for listItem in listItems:
+                file.write(f'\t"{listItem}",\n')
             file.write("]\n")
 
     file.write(f"{header}\n\n# total exercises: {total}")
@@ -229,7 +232,7 @@ def writeToFile(file, sections) -> None:
         file.write(f"[{section["muscleGroup"]}]\n\ntotal = {section["total"]}\n\n")
         for exercise in section["exercises"]:
             PAGE_TO_SCRAPE = requests.get(exercise["URL"])
-            time.sleep(1)  # buffer time to allow server to catch up
+            time.sleep(0.5)  # buffer time to allow server to catch up
             STATUS_CODE = PAGE_TO_SCRAPE.status_code
             if STATUS_CODE == 200:
                 exerciseName = exercise["Name"]

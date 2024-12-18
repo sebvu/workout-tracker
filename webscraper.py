@@ -229,7 +229,7 @@ def writeToFile(file, sections) -> None:
         file.write(f"[{section["muscleGroup"]}]\n\ntotal = {section["total"]}\n\n")
         for exercise in section["exercises"]:
             PAGE_TO_SCRAPE = requests.get(exercise["URL"])
-            time.sleep(0.5)  # buffer time to allow server to catch up
+            time.sleep(1)  # buffer time to allow server to catch up
             STATUS_CODE = PAGE_TO_SCRAPE.status_code
             if STATUS_CODE == 200:
                 exerciseName = exercise["Name"]

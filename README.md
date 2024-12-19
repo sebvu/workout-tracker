@@ -1,9 +1,26 @@
-# Workout Tracker
+# Workout tool
 
-> My own personal tracker
+> Tracking workouts, making a plan, idfk.
 
 ## CONTEXT
 
-so.. I was bored, and I realized how unreliable a lot of powerlifting apps are unreliable. and I wanted to refresh my knowledge on cpp, hence this!
+just for tracking workouts and making my own workout plan the CS way
 
-not much yet.
+### How to contribute?
+
+(i've never done this before)
+
+- just clone the repo
+
+setup project
+
+- for accurate linting,
+  - install [bear](https://github.com/rizsotto/Bear)
+  - run `bear -- make` to generate compile_commands.json
+- run `make` to generate new binary `exec-main`
+- run `make clean` to remove `obj/` and the current binary
+
+notes
+
+- the python files in `src/` is left there for legacy reasons. they were initially made to scrape [strengthlog](https://www.strengthlog.com/exercise-directory/) for the curr `exercises.toml` file
+- configuration options are in `config.toml`. as of `12/19/2024` (happy holidays me) there are no configuration options

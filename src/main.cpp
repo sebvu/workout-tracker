@@ -2,13 +2,15 @@
 #include "toml.hpp"
 #include <iostream>
 
-int main() {
+int main(int argc, char *argv[]) {
+  toml::table exercises;
+  const std::string FILE_PATH = "./toml/exercises.toml";
 
-  toml::table tbl = toml::parse_file("toml/exercises.toml");
-
-  std::cout << tbl["chest"]["assisted-dip"] << std::endl << std::endl;
-
-  exercises exercise = exercises();
-
-  exercise.test();  // should work!!
+  try {
+    // logic
+  } catch (const toml::parse_error &err) {
+    std::cerr << "Parsing failed:" << std::endl << err << std::endl;
+    return 1;
+  }
+  return 0;
 }

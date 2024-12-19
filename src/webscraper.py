@@ -5,6 +5,7 @@
 import json
 import re
 import time
+import tomllib
 
 import openai
 import requests
@@ -257,6 +258,7 @@ def writeToFile(file, sections) -> None:
             counter += 1
 
 
+# MAIN
 with open(FILE_TO_OPEN, "w") as file:
     PAGE_TO_SCRAPE = requests.get(MAIN_URL)
     STATUS_CODE = PAGE_TO_SCRAPE.status_code

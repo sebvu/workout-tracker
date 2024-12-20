@@ -17,8 +17,9 @@ setup project
 - for accurate linting,
   - install [bear](https://github.com/rizsotto/Bear)
   - run `bear -- make` to generate compile_commands.json
-- run `make` to generate new binary `exec-main`
-- run `make clean` to remove `obj/` and the current binary
+- `make` to generate new binary `exec-main`
+- `make run` to run project
+- `make clean` to clean build artifacts
 
 notes
 

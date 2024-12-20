@@ -28,4 +28,4 @@ clean:
 	rm -rf obj $(TARGET)
 
 run:
-	./$(TARGET) ./$(CONFIG_FILE)
+	./$(TARGET) $(CONFIG_FILE) 

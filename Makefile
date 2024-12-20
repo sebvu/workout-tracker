@@ -3,6 +3,7 @@ CXXFLAGS = -Iinclude -Ilib -Wall -Wextra -O2
 SOURCES = $(wildcard src/*.cpp) # pulls all iterations of .cpp in src
 OBJECTS = $(SOURCES:src/%.cpp=obj/%.o) # gets all sources and replaces src/%.cpp to obj/%.o
 TARGET = exec-main
+CONFIG_FILE = config.toml
 
 # phony is important for making sure that commands get run even if there is a conflicting file name
 # like make all, make clean, etc..
@@ -25,3 +26,6 @@ obj:
 
 clean:
 	rm -rf obj $(TARGET)
+
+run:
+	./$(TARGET) ./$(CONFIG_FILE)

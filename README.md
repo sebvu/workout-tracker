@@ -23,5 +23,4 @@ setup project
 
 notes
 
-- the python files in `src/` is left there for legacy reasons. they were initially made to scrape [strengthlog](https://www.strengthlog.com/exercise-directory/) for the curr `exercises.toml` file
 - configuration options are in `config.toml`. as of `12/19/2024` (happy holidays me) there are no configuration options

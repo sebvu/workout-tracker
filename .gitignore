@@ -3,6 +3,7 @@ obj/
 env/
 __pycache__/
 .cache/
+test/
 
 # files
 exec-main

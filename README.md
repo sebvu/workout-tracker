@@ -23,4 +23,4 @@ setup project
 
 notes
 
-- configuration options are in `config.toml`. as of `12/19/2024` (happy holidays me) there are no configuration options
+- configuration options are in `config.toml`.

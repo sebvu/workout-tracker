@@ -1,5 +1,4 @@
 #include "exceptions.hpp"
-#include <iostream>
 
 // invalid argument count
 

@@ -1,1 +1,9 @@
+# configuration options for project
+# DO NOT MOVE THIS FROM ROOT PROJECT DIRECTORY
 
+[config]
+
+# important paths for project (DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING)
+[config.important]
+toml_path = "./toml/"            # explicit path to toml directory
+exercise_file = "exercises.toml" # name of file containing exercises

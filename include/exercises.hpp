@@ -21,10 +21,10 @@ class Exercise {
   Exercise(toml::table &exercise);
 
   std::string getName() const;
-  const std::vector<std::string> &getPrimaryMuscles() const;
+  const std::optional<std::vector<std::string>> &getPrimaryMuscles() const;
   const std::optional<std::vector<std::string>> &getSecondaryMuscles() const;
-  std::string getCommentary();
-  const std::vector<std::string> &getInstructions() const;
+  std::string getCommentary() const;
+  const std::optional<std::vector<std::string>> &getInstructions() const;
 };
 
 class ExerciseCategory {

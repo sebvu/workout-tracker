@@ -1,28 +1,30 @@
 # TOML file scraped from StrengthLog source https://www.strengthlog.com/exercise_directory/
 
 # total exercises: 279
-# - chest: 38
-# - shoulder: 38
-# - biceps: 16
-# - triceps: 11
-# - legs: 42
-# - back: 59
-# - glute: 26
-# - abs: 27
-# - calves: 6
-# - forearm_flexors: 12
-# - forearm_extensors: 2
-# - cardio_training: 2
+# - Chest: 38
+# - Shoulder: 38
+# - Biceps: 16
+# - Triceps: 11
+# - Legs: 42
+# - Back: 59
+# - Glute: 26
+# - Abs: 27
+# - Calves: 6
+# - Forearm Flexors: 12
+# - Forearm Extensors: 2
+# - Cardio Training: 2
 
 total = 279
 
 [categories]
 
-[categories.chest]
+[[categories.category]]
 
 total = 38
 
-[categories.chest.assisted_dip]
+name = "Chest"
+
+[[categories.category.exercise]]
 name = "Assisted Dip"
 primary_muscles = ["Chest", "Front Deltoid", "Triceps"]
 commentary = "Assisted dips are a good alternative if the dips is too heavy or if you want to be able to do more reps without adding too much workload."
@@ -33,7 +35,7 @@ instructions = [
 	"Exhale, and push back up through the handles and fully extend your arms.",
 ]
 
-[categories.chest.band_assisted_bench_press]
+[[categories.category.exercise]]
 name = "Band-Assisted Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -48,21 +50,21 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.bar_dip]
+[[categories.category.exercise]]
 name = "Bar Dip"
 primary_muscles = ["Chest", "Front Deltoid", "Triceps"]
-commentary = "Bar Dip is a compound bodyweight exercise primarily targeting the triceps, chest, and shoulders, performed using parallel bars. To execute the dip, an individual begins by gripping the bars with both hands, arms fully extended, and body suspended in the air. As the exercise progresses, the person lowers their body by bending the elbows, allowing the upper arms to descend while keeping the legs straight or slightly bent. The movement should be controlled, focusing on maintaining proper form to avoid strain or injury. After reaching a comfortable depth, typically until the elbows form a 90-degree angle, the individual pushes back up to the starting position, engaging the core and ensuring stability throughout the motion. Bar dips are an effective way to build upper body strength and can be modified in difficulty by adjusting the body angle or adding weights."
+commentary = "Bar dips are a compound upper body exercise that primarily targets the triceps, chest, and shoulders. To perform a bar dip, an individual uses parallel bars for support, lowering their body by bending the elbows until the shoulders are below the elbows, then pushing back up to the starting position. This movement not only builds strength in the targeted muscle groups but also engages the core, promoting stability and balance. Bar dips can be modified for different skill levels, such as keeping the legs extended for added challenge or bending the knees for beginners. Regular practice can lead to improved muscle definition and functional strength."
 instructions = [
 	"Grip a dip station about shoulder-width apart, and climb or jump to get into the starting position.",
 	"Lower yourself with control until your shoulder is below your elbow, or as deep as you comfortably can.",
 	"Reverse the motion and return to the starting position.",
 ]
 
-[categories.chest.bench_press]
+[[categories.category.exercise]]
 name = "Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
-commentary = "The Bench Press is a fundamental strength training exercise primarily targeting the pectoral muscles, along with the anterior deltoids and triceps. Performed by lying flat on a bench and pushing a weighted barbell or dumbbells upward from chest level until the arms are fully extended, this exercise is renowned for building upper body strength and size. Proper technique involves maintaining a stable posture, engaging the core, and ensuring the feet remain firmly planted on the ground to provide support. Variations of the bench press include incline and decline positions, which shift the emphasis on different muscle groups, making it a versatile addition to any strength training regimen."
+commentary = "The bench press is a fundamental strength training exercise primarily targeting the pectoral muscles, shoulders, and triceps. Performed lying on a flat bench, the lifter grips a barbell or dumbbells, lowering the weight to chest level before pressing it back to the starting position. This movement engages the upper body, promoting muscle hypertrophy, functional strength, and stability. Variations include incline and decline bench presses, which shift the focus to different muscle areas. Proper form is essential to prevent injury, and it's often recommended to use a spotter or safety equipment for heavier lifts."
 instructions = [
 	"Lie on the bench, pull your shoulder blades together and down, and slightly arch your back.",
 	"Grip the bar slightly wider than shoulder-width apart.",
@@ -72,7 +74,7 @@ instructions = [
 	"Take another breath while in the top position, and repeat for reps.",
 ]
 
-[categories.chest.bench_press_against_band]
+[[categories.category.exercise]]
 name = "Bench Press Against Band"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -87,7 +89,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.board_press]
+[[categories.category.exercise]]
 name = "Board Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -99,7 +101,7 @@ instructions = [
 	"Press the barbell back up to the starting position in a controlled, explosive movement.",
 ]
 
-[categories.chest.cable_chest_press]
+[[categories.category.exercise]]
 name = "Cable Chest Press"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid", "Triceps"]
@@ -110,7 +112,7 @@ instructions = [
 	"With control, let the handles go back to the starting position.",
 ]
 
-[categories.chest.close_grip_bench_press]
+[[categories.category.exercise]]
 name = "Close-Grip Bench Press"
 primary_muscles = ["Triceps"]
 secondary_muscles = ["Chest", "Front Deltoid"]
@@ -124,7 +126,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.close_grip_feet_up_bench_press]
+[[categories.category.exercise]]
 name = "Close-Grip Feet-Up Bench Press"
 primary_muscles = ["Triceps"]
 secondary_muscles = ["Chest", "Front Deltoid"]
@@ -138,7 +140,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.decline_bench_press]
+[[categories.category.exercise]]
 name = "Decline Bench Press"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Triceps", "Front Deltoid "]
@@ -153,7 +155,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.decline_push_up]
+[[categories.category.exercise]]
 name = "Decline Push-Up"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -166,11 +168,11 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.dumbbell_chest_fly]
+[[categories.category.exercise]]
 name = "Dumbbell Chest Fly"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
-commentary = "The Dumbbell Chest Fly is an isolation exercise that targets the pectoral muscles, as well as the shoulders and triceps. To perform the exercise, start by lying flat on a bench with a dumbbell in each hand, arms extended above your chest. With a slight bend in your elbows, slowly lower the dumbbells out to the sides in a wide arc until you feel a stretch in your chest. Pause briefly at the bottom of the movement, then return to the starting position by squeezing your chest muscles and bringing the dumbbells back together overhead. This exercise is excellent for developing chest strength and definition."
+commentary = "The Dumbbell Chest Fly is an effective strength-training exercise primarily targeting the pectoral muscles, while also engaging the shoulders and triceps. To perform this exercise, lie flat on a bench with a dumbbell in each hand, arms extended above your chest with palms facing each other. As you inhale, slowly lower the dumbbells out to the sides in a controlled manner, creating a wide arc with your arms while keeping a slight bend in your elbows. Once your arms are parallel to the floor or slightly below shoulder level, exhale as you bring the dumbbells back together, focusing on squeezing your chest to complete the movement. This exercise not only promotes muscle growth and strength in the chest but also improves flexibility and joint stability when executed with proper form."
 instructions = [
 	"Lie on a bench, and lift a pair of dumbbells up to the starting position.",
 	"With almost completely straight arms, lower the dumbbells out to your sides.",
@@ -178,7 +180,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.dumbbell_chest_press]
+[[categories.category.exercise]]
 name = "Dumbbell Chest Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -190,7 +192,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.dumbbell_decline_chest_press]
+[[categories.category.exercise]]
 name = "Dumbbell Decline Chest Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -203,7 +205,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.dumbbell_floor_press]
+[[categories.category.exercise]]
 name = "Dumbbell Floor Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -218,7 +220,7 @@ instructions = [
 	"Gently drop the dumbbells to the floor to finish the set.",
 ]
 
-[categories.chest.dumbbell_pullover]
+[[categories.category.exercise]]
 name = "Dumbbell Pullover"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Lats"]
@@ -229,7 +231,7 @@ instructions = [
 	"Reverse the motion and return the dumbbell to the starting position.",
 ]
 
-[categories.chest.feet_up_bench_press]
+[[categories.category.exercise]]
 name = "Feet-Up Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -244,7 +246,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.floor_press]
+[[categories.category.exercise]]
 name = "Floor Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -257,7 +259,7 @@ instructions = [
 	"Reverse the motion and push the bar up to straight arms again.",
 ]
 
-[categories.chest.incline_bench_press]
+[[categories.category.exercise]]
 name = "Incline Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -268,11 +270,11 @@ instructions = [
 	"Press the bar up to straight arms while exhaling.",
 ]
 
-[categories.chest.incline_dumbbell_press]
+[[categories.category.exercise]]
 name = "Incline Dumbbell Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
-commentary = "The Incline Dumbbell Press is an upper body strength training exercise that primarily targets the upper pectoral muscles, shoulders, and triceps. To perform the exercise, set an adjustable bench to an incline of about 30 to 45 degrees and lie back with a dumbbell in each hand, arms fully extended above the chest. As you lower the dumbbells in a controlled manner to the sides of your chest, keep your elbows at about a 45-degree angle to your torso. Once the dumbbells reach chest level, push them back up to the starting position, fully extending your arms while maintaining proper form. This exercise enhances muscle strength and stability and can be incorporated into various workout routines for balanced upper body development."
+commentary = "The Incline Dumbbell Press is an effective upper body exercise primarily targeting the pectoral muscles, deltoids, and triceps. It is performed by lying on an inclined bench set at a 30 to 45-degree angle while holding a dumbbell in each hand. The motion begins with the dumbbells positioned at shoulder height, palms facing forward. As you press the dumbbells upward, fully extend your arms while maintaining control, then lower them back to the starting position in a slow and controlled manner. This exercise not only enhances upper chest development but also improves muscle stability and overall pressing strength, making it a staple in many strength training routines."
 instructions = [
 	"Adjust the incline of a bench to be around 30-45 degrees.",
 	"Sit down and lift a pair of dumbbells to the starting position.",
@@ -280,7 +282,7 @@ instructions = [
 	"Inhale at the top or while lowering the dumbbells with control back to your shoulders.",
 ]
 
-[categories.chest.incline_push_up]
+[[categories.category.exercise]]
 name = "Incline Push-Up"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -293,7 +295,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.kettlebell_floor_press]
+[[categories.category.exercise]]
 name = "Kettlebell Floor Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -308,7 +310,7 @@ instructions = [
 	"Gently drop the kettlebells to the floor to finish the set.",
 ]
 
-[categories.chest.kneeling_incline_push_up]
+[[categories.category.exercise]]
 name = "Kneeling Incline Push-Up"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -321,7 +323,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.kneeling_push_up]
+[[categories.category.exercise]]
 name = "Kneeling Push-Up"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -334,18 +336,18 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.machine_chest_fly]
+[[categories.category.exercise]]
 name = "Machine Chest Fly"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
-commentary = "The Machine Chest Fly is a resistance training exercise designed to target the pectoral muscles, promoting strength and muscle development in the chest area. Performed on a specialized machine with adjustable arms, users begin by sitting comfortably with their back against the support pad and feet flat on the floor. With arms extended out to the sides and elbows slightly bent, the individual then brings the arms together in a wide arc in front of the chest before returning to the starting position. This controlled movement not only isolates the chest muscles effectively but also minimizes strain on the shoulders and wrists, making it an excellent option for both beginners and experienced lifters looking to enhance their upper body strength."
+commentary = "The Machine Chest Fly is a strength training exercise designed to isolate and target the pectoral muscles, enhancing chest development and improving shoulder stability. This exercise is typically performed on a dedicated machine featuring two arms that allow for controlled movements. To execute the Machine Chest Fly, the user sits on the machine with their back firmly against the padded support, adjusts the seat height to ensure their arms are at shoulder level, and grips the handles. As they exhale, they bring the handles together in a wide arc in front of their chest, squeezing the pectorals, then slowly return to the starting position while maintaining tension in the muscles. This controlled movement helps maximize muscle engagement, minimizing the risk of injury and allowing for effective strength gains."
 instructions = [
 	"Adjust the back support and handles so that you can grip the handles at shoulder height and get a long range of motion.",
 	"With just a slight bend in the arms, push the handles forward until they meet in front of your body.",
 	"With control, let the handles go back to the starting position.",
 ]
 
-[categories.chest.machine_chest_press]
+[[categories.category.exercise]]
 name = "Machine Chest Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -356,7 +358,7 @@ instructions = [
 	"Bring the handles back to the starting position with control.",
 ]
 
-[categories.chest.pec_deck]
+[[categories.category.exercise]]
 name = "Pec Deck"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
@@ -367,7 +369,7 @@ instructions = [
 	"With control, let the pads go back to the starting position.",
 ]
 
-[categories.chest.pin_bench_press]
+[[categories.category.exercise]]
 name = "Pin Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -382,7 +384,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.push_up]
+[[categories.category.exercise]]
 name = "Push-Up"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -395,7 +397,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.push_up_against_wall]
+[[categories.category.exercise]]
 name = "Push-Up Against Wall"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -408,7 +410,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.chest.push_ups_with_feet_in_rings]
+[[categories.category.exercise]]
 name = "Push-Ups With Feet in Rings"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps", "Abs"]
@@ -421,7 +423,7 @@ instructions = [
 	"Repeat for reps",
 ]
 
-[categories.chest.resistance_band_chest_fly]
+[[categories.category.exercise]]
 name = "Resistance Band Chest Fly"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
@@ -434,7 +436,7 @@ instructions = [
 	"Switch to the other side of your body and perform the above steps again.",
 ]
 
-[categories.chest.ring_dip]
+[[categories.category.exercise]]
 name = "Ring Dip"
 primary_muscles = ["Triceps", "Chest"]
 secondary_muscles = ["Front Deltoid"]
@@ -445,7 +447,7 @@ instructions = [
 	"Reverse the motion and return to the starting position.",
 ]
 
-[categories.chest.smith_machine_bench_press]
+[[categories.category.exercise]]
 name = "Smith Machine Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -459,7 +461,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.smith_machine_incline_bench_press]
+[[categories.category.exercise]]
 name = "Smith Machine Incline Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -473,7 +475,7 @@ instructions = [
 	"Take another breath in the top position, and repeat for reps.",
 ]
 
-[categories.chest.smith_machine_reverse_grip_bench_press]
+[[categories.category.exercise]]
 name = "Smith Machine Reverse Grip Bench Press"
 primary_muscles = ["Chest", "Front Deltoid"]
 secondary_muscles = ["Triceps"]
@@ -487,22 +489,22 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.chest.standing_cable_chest_fly]
+[[categories.category.exercise]]
 name = "Standing Cable Chest Fly"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
-commentary = "The Standing Cable Chest Fly is a resistance training exercise that targets the pectoral muscles, deltoids, and triceps. To perform this exercise, stand in the center of a cable machine with the pulleys set at shoulder height. Hold a handle in each hand with your arms extended out to the sides and your elbows slightly bent. Engage your core for stability, then pull the cables together in front of you in a wide arc, maintaining the slight bend in your elbows, until your hands nearly meet. Slowly return to the starting position, feeling the stretch in your chest. This movement not only promotes muscle growth but also enhances shoulder mobility and stability."
+commentary = "The Standing Cable Chest Fly is an effective isolation exercise that targets the pectoral muscles while also engaging the shoulders and triceps. To perform the exercise, stand in the center of a cable machine with a cable attached to each pulley, adjusting the pulleys to a high position. Grasp the handles with both hands and step forward slightly to create tension in the cables. With a slight bend in your elbows, pull the cables together in front of you in a wide arc, feeling the contraction in your chest. Then, slowly reverse the motion, allowing your arms to return to the starting position while maintaining control. This movement helps to develop chest strength and can enhance overall upper body aesthetics."
 instructions = [
 	"Fasten a pair of handles in the top position of a cable cross. Grip the handles, step forward, and lean slightly forward.",
 	"With just a slight bend in the arms, push the handles forward until they meet in front of your body.",
 	"With control, let the handles go back to the starting position.",
 ]
 
-[categories.chest.standing_resistance_band_chest_fly]
+[[categories.category.exercise]]
 name = "Standing Resistance Band Chest Fly"
 primary_muscles = ["Chest"]
 secondary_muscles = ["Front Deltoid"]
-commentary = "The Standing Resistance Band Chest Fly is an effective exercise designed to target the chest muscles, particularly the pectorals, while also engaging the shoulders and core for stability. To perform this exercise, stand with your feet shoulder-width apart and securely anchor a resistance band behind you, holding one end in each hand with your arms extended out to the sides at shoulder height. With a slight bend in your elbows, pull the bands forward in a wide, sweeping motion, bringing your hands together in front of your chest while maintaining tension in the band. Pause briefly at the center before slowly returning to the starting position, ensuring controlled movements throughout to maximize muscle engagement and prevent injury. This exercise can be easily modified for different fitness levels by adjusting the resistance of the band or the distance from the anchor point."
+commentary = "The Standing Resistance Band Chest Fly is an effective upper body exercise targeting the chest muscles, particularly the pectorals. To perform this exercise, stand with your feet shoulder-width apart while anchoring a resistance band behind you at chest height. Grasp the handles with both hands, palms facing forward, and step forward to create tension in the band. With a slight bend in your elbows, slowly open your arms out to the sides in a wide arc until you feel a stretch in your chest muscles. Then, bring your arms back together in front of you, squeezing your chest, and repeat for the desired number of repetitions. This exercise not only builds strength but also enhances the definition and stability of the upper body."
 instructions = [
 	"Attach the band to a door or something similarly stable around chest level.",
 	"In a standing position, grab the band with one hand and move away from the anchor point until you feel a stretch and resistance in your chest muscles.",
@@ -513,11 +515,13 @@ instructions = [
 
 ###
 
-[categories.shoulder]
+[[categories.category]]
 
 total = 38
 
-[categories.shoulder.arnold_press]
+name = "Shoulder"
+
+[[categories.category.exercise]]
 name = "Arnold Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid", "Triceps"]
@@ -529,7 +533,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.band_external_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Band External Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (posterior)"]
 commentary = "External rotations against an elastic band train your posterior rotator cuff muscles, mainly infraspinatus."
@@ -540,7 +544,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps. ",
 ]
 
-[categories.shoulder.band_internal_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Band Internal Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (anterior)"]
 commentary = "Internal rotations against an elastic band train your anterior rotator cuff muscles (subscapularis)."
@@ -551,7 +555,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps. ",
 ]
 
-[categories.shoulder.band_pull_apart]
+[[categories.category.exercise]]
 name = "Band Pull-Apart"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius"]
@@ -562,7 +566,7 @@ instructions = [
 	"Return with control to the starting position.",
 ]
 
-[categories.shoulder.barbell_front_raise]
+[[categories.category.exercise]]
 name = "Barbell Front Raise"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid"]
@@ -573,7 +577,7 @@ instructions = [
 	"Reverse the movement and lower the bar with control.",
 ]
 
-[categories.shoulder.barbell_rear_delt_row]
+[[categories.category.exercise]]
 name = "Barbell Rear Delt Row"
 primary_muscles = ["Rear Deltoid", "Trapezius"]
 secondary_muscles = ["Rotator Cuff", "Biceps", "Forearm Flexors"]
@@ -584,18 +588,18 @@ instructions = [
 	"With control, lower the bar back to the starting position.",
 ]
 
-[categories.shoulder.barbell_upright_row]
+[[categories.category.exercise]]
 name = "Barbell Upright Row"
 primary_muscles = ["Lateral Deltoid"]
 secondary_muscles = ["Front Deltoid", "Trapezius", "Biceps"]
-commentary = "The Barbell Upright Row is a strength training exercise primarily targeting the shoulders, upper back, and trapezius muscles. To perform this exercise, start by standing with your feet shoulder-width apart and gripping a barbell with both hands, palms facing your body, positioned slightly closer than shoulder-width. As you lift the barbell, pull it vertically along your body, keeping your elbows higher than your wrists, until the bar reaches around the chest or collarbone level. Pause briefly at the top of the movement, then lower the barbell back to the starting position in a controlled manner. Maintaining a straight back and avoiding excessive swinging or jerking is crucial for effective execution and to minimize the risk of injury."
+commentary = "The Barbell Upright Row is a strength training exercise primarily targeting the shoulders, specifically the deltoids, while also engaging the trapezius and the upper arms. To perform the exercise, stand with your feet shoulder-width apart while holding a barbell with an overhand grip, ensuring your hands are positioned closer than shoulder-width. Begin with the barbell resting against your thighs, then lift the barbell vertically along your body, leading with your elbows. As you raise the bar, keep it close to your body and aim to bring it up to about chest height, ensuring your elbows remain higher than your wrists at the top of the movement. Lower the barbell back to the starting position with control, and repeat for the desired number of repetitions. This exercise can enhance shoulder strength and stability, but proper form is crucial to avoid shoulder strain."
 instructions = [
 	"Grip the bar with an overhand grip, slightly narrower than shoulder-width apart.",
 	"Pull the bar straight up until it is at the level of your chin.",
 	"With control, lower the bar back to the starting position.",
 ]
 
-[categories.shoulder.behind_the_neck_press]
+[[categories.category.exercise]]
 name = "Behind the Neck Press"
 primary_muscles = ["Front Deltoid", "Lateral Deltoid"]
 secondary_muscles = ["Trapezius", "Triceps"]
@@ -608,7 +612,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.cable_lateral_raise]
+[[categories.category.exercise]]
 name = "Cable Lateral Raise"
 primary_muscles = ["Lateral Deltoid"]
 secondary_muscles = ["Front Deltoid"]
@@ -620,7 +624,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.cable_rear_delt_row]
+[[categories.category.exercise]]
 name = "Cable Rear Delt Row"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius", "Biceps"]
@@ -631,7 +635,7 @@ instructions = [
 	"Return with control to the starting position, by letting your arms move forward again.",
 ]
 
-[categories.shoulder.cuban_press]
+[[categories.category.exercise]]
 name = "Cuban Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid", "Read Deltoid", "Trapezius", "Triceps"]
@@ -645,7 +649,7 @@ instructions = [
 	"Repeat the movement for the desired number of repetitions.",
 ]
 
-[categories.shoulder.dumbbell_front_raise]
+[[categories.category.exercise]]
 name = "Dumbbell Front Raise"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid"]
@@ -656,7 +660,7 @@ instructions = [
 	"Reverse the movement and lower the dumbbells with control.",
 ]
 
-[categories.shoulder.dumbbell_horizontal_internal_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Dumbbell Horizontal Internal Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (anterior)"]
 commentary = "Internal rotations train your anterior rotator cuff muscles (subscapularis)."
@@ -666,7 +670,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps.",
 ]
 
-[categories.shoulder.dumbbell_horizontal_external_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Dumbbell Horizontal External Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (posterior)"]
 commentary = "External rotations train your posterior rotator cuff muscles, mainly infraspinatus and teres minor."
@@ -677,11 +681,11 @@ instructions = [
 	"Reverse the movement, and repeat for reps.",
 ]
 
-[categories.shoulder.dumbbell_lateral_raise]
+[[categories.category.exercise]]
 name = "Dumbbell Lateral Raise"
 primary_muscles = ["Lateral Deltoid"]
 secondary_muscles = ["Front Deltoid"]
-commentary = "The Dumbbell Lateral Raise is an effective strength training exercise designed to target the lateral deltoid muscles, helping to build shoulder width and definition. To perform this exercise, stand upright with a dumbbell in each hand, arms resting at your sides and feet shoulder-width apart. Engage your core for stability and, with a slight bend in your elbows, raise the dumbbells out to the sides until they reach shoulder height, maintaining control throughout the movement. At the peak of the raise, pause for a brief moment before slowly lowering the weights back to the starting position. This exercise can be performed for several sets and repetitions and is often included in upper body or shoulder workouts to enhance muscular endurance and strength."
+commentary = "The Dumbbell Lateral Raise is an effective strength training exercise primarily targeting the deltoid muscles in the shoulders. To perform this movement, start by standing upright with a dumbbell in each hand, arms at your sides and palms facing inward. Keeping a slight bend in your elbows, raise the dumbbells out to the sides until your arms are parallel to the ground. Focus on using your shoulder muscles rather than your traps to lift the weights, and maintain a controlled motion throughout the exercise. Once your arms are parallel, slowly lower the dumbbells back to the starting position while engaging your core for stability. This exercise helps enhance shoulder strength and can improve overall upper body aesthetics."
 instructions = [
 	"Hold a pair of dumbbells in almost straight arms hanging by your sides.",
 	"With control, lift the dumbbells out to your sides until your upper arms are horizontal.",
@@ -689,7 +693,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.dumbbell_rear_delt_row]
+[[categories.category.exercise]]
 name = "Dumbbell Rear Delt Row"
 primary_muscles = ["Rear Deltoid", "Trapezius"]
 secondary_muscles = ["Rotator Cuff", "Biceps", "Forearm Flexors"]
@@ -700,7 +704,7 @@ instructions = [
 	"With control, lower the dumbbells back to the starting position.",
 ]
 
-[categories.shoulder.dumbbell_shoulder_press]
+[[categories.category.exercise]]
 name = "Dumbbell Shoulder Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
@@ -713,18 +717,18 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.face_pull]
+[[categories.category.exercise]]
 name = "Face Pull"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius", "Lateral Deltoid"]
-commentary = "The Face Pull is a resistance training exercise primarily targeting the muscles of the upper back, shoulders, and rotator cuff. It is typically performed using a cable machine with a rope attachment set at upper chest height. To execute the Face Pull, stand facing the cable machine and grasp the rope with both hands, palms facing downward. As you pull the rope towards your face, engage your upper back and external shoulder muscles by keeping your elbows high and flaring them out. This movement not only strengthens the rear deltoids and upper back but also improves posture and shoulder stability, making it a key exercise for balanced upper body development."
+commentary = "The Face Pull is a widely recognized resistance training exercise that primarily targets the upper back, shoulders, and rear deltoids, promoting better posture and shoulder stability. To perform a Face Pull, attach a rope handle to a cable machine at upper chest height. Stand facing the machine while holding the rope with both hands, palms facing each other. Step back to create tension in the cable, then pull the rope towards your face, keeping your elbows high and squeezing your shoulder blades together at the end of the movement. This exercise not only strengthens key muscles but also helps to improve shoulder mobility and reduce the risk of injury by counteracting the effects of poor posture commonly seen in sedentary lifestyles."
 instructions = [
 	"Fasten a rope handle in a high position on a cable pulley. Grip the ropes with an overhand grip, and take a step or two back.",
 	"With elbows held high, pull the rope towards you by letting your upper arms move straight out towards your sides while simultaneously rotating your forearms up.",
 	"Return with control to the starting position by letting your arms move forward again.",
 ]
 
-[categories.shoulder.front_hold]
+[[categories.category.exercise]]
 name = "Front Hold"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid"]
@@ -735,7 +739,7 @@ instructions = [
 	"Hold still.",
 ]
 
-[categories.shoulder.landmine_press]
+[[categories.category.exercise]]
 name = "Landmine Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Chest"]
@@ -748,7 +752,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.lying_dumbbell_external_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Lying Dumbbell External Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (posterior)"]
 commentary = "External rotations train your posterior rotator cuff muscles, mainly infraspinatus."
@@ -758,7 +762,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps.",
 ]
 
-[categories.shoulder.lying_dumbbell_internal_shoulder_rotation]
+[[categories.category.exercise]]
 name = "Lying Dumbbell Internal Shoulder Rotation"
 primary_muscles = ["Rotator Cuff (anterior)"]
 commentary = "Internal rotations train your anterior rotator cuff muscles (subscapularis)."
@@ -768,7 +772,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps.",
 ]
 
-[categories.shoulder.machine_lateral_raise]
+[[categories.category.exercise]]
 name = "Machine Lateral Raise"
 primary_muscles = ["Lateral Deltoid"]
 secondary_muscles = ["Front Deltoid"]
@@ -779,7 +783,7 @@ instructions = [
 	"Lower the arms again.",
 ]
 
-[categories.shoulder.machine_shoulder_press]
+[[categories.category.exercise]]
 name = "Machine Shoulder Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
@@ -790,7 +794,7 @@ instructions = [
 	"Lower the handles with control.",
 ]
 
-[categories.shoulder.monkey_row]
+[[categories.category.exercise]]
 name = "Monkey Row"
 primary_muscles = ["Lateral Deltoid"]
 secondary_muscles = ["Rear Deltoid", "Trapezius", "Biceps"]
@@ -801,11 +805,11 @@ instructions = [
 	"With control, lower the dumbbells back to the starting position.",
 ]
 
-[categories.shoulder.overhead_press]
+[[categories.category.exercise]]
 name = "Overhead Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
-commentary = "The Overhead Press is a fundamental strength training exercise primarily targeting the shoulders, triceps, and upper chest, while also engaging the core for stabilization. This movement can be performed standing or seated, using either a barbell or dumbbells. To execute the Overhead Press, start by holding the weights at shoulder height with palms facing forward, engaging your core and maintaining a straight posture. Press the weights upward until your arms are fully extended overhead, ensuring that your elbows are slightly forward and not locked out at the top position. Gradually lower the weights back to the starting position, controlling the movement throughout to maximize muscle engagement and minimize injury risk. This exercise is excellent for building upper body strength and enhancing overall functional fitness."
+commentary = "The Overhead Press, also known as the Military Press, is a fundamental strength training exercise that targets the shoulders, upper chest, and triceps while also engaging the core and lower body for stability. To perform the Overhead Press, stand with your feet shoulder-width apart and grasp a barbell or pair of dumbbells at shoulder height with palms facing forward. Initiate the movement by pressing the weights upward in a controlled manner until your arms are fully extended overhead. Ensure to keep your core tight and your back straight throughout the exercise to prevent injury. Lower the weights back to the starting position with control, completing the repetition. The Overhead Press not only enhances shoulder strength and muscle hypertrophy but also improves overall upper body stability and functional strength."
 instructions = [
 	"First, place a barbell in a rack at about chest height.",
 	"Grip the bar slightly wider than shoulder-width apart, and step close to it.",
@@ -816,7 +820,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.plate_front_raise]
+[[categories.category.exercise]]
 name = "Plate Front Raise"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Lateral Deltoid"]
@@ -827,7 +831,7 @@ instructions = [
 	"Reverse the movement and lower the plate with control.",
 ]
 
-[categories.shoulder.power_jerk]
+[[categories.category.exercise]]
 name = "Power Jerk"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back", "Trapezius", "Triceps", "Lateral Deltoid"]
@@ -841,7 +845,7 @@ instructions = [
 	"Lower the bar in front of you, with control, or lower it back unto the front of your shoulders.",
 ]
 
-[categories.shoulder.push_press]
+[[categories.category.exercise]]
 name = "Push Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back", "Trapezius", "Triceps", "Lateral Deltoid"]
@@ -855,11 +859,11 @@ instructions = [
 	"With control, lower the bar back to your shoulders.",
 ]
 
-[categories.shoulder.reverse_cable_flyes]
+[[categories.category.exercise]]
 name = "Reverse Cable Flyes"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius"]
-commentary = "Reverse Cable Flyes are an effective exercise designed to target the posterior deltoids and upper back muscles, enhancing shoulder stability and promoting better posture. To perform this exercise, stand in the center of a cable machine with the pulleys set to high. Grasp the handles with an overhand grip and step forward slightly, ensuring tension in the cables. With a slight bend in your elbows, lean forward from your hips, keeping your back straight. As you exhale, pull the cables outward in a wide arc, squeezing your shoulder blades together at the peak of the movement. Slowly return to the starting position while maintaining control to fully engage the muscles. This exercise not only helps in building muscle strength but also aids in balancing the often overdeveloped anterior shoulder muscles common in many lifters."
+commentary = "Reverse Cable Flyes are an effective exercise targeting the posterior deltoids and upper back muscles, essential for improving shoulder stability and posture. To perform this exercise, begin by standing between two cable pulleys set at shoulder height, with the weight adjusted to your preference. Grasp the cable handles with an overhand grip, slightly bending your elbows. Lean forward slightly at the hips, maintaining a straight back, and pull the cables outward in a wide arc while keeping your elbows slightly bent. Focus on squeezing your shoulder blades together as you bring the cables back to the starting position, ensuring a full range of motion. This movement not only enhances muscle engagement but also promotes joint health and can be incorporated into various strength training routines."
 instructions = [
 	"Attach two handles in the upper pulleys of a cable crossover.",
 	"Reach across your body and grab the handle from the right side of the machine with your left hand and the left handle with your right. ",
@@ -869,18 +873,18 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.reverse_dumbbell_flyes]
+[[categories.category.exercise]]
 name = "Reverse Dumbbell Flyes"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius"]
-commentary = "Reverse Dumbbell Flyes are an effective exercise targeting the posterior deltoids, upper back, and rhomboids, making them ideal for improving shoulder stability and posture. To perform this exercise, start by standing with your feet shoulder-width apart, holding a dumbbell in each hand. Bend slightly at the hips and knees, keeping your back straight, and let your arms hang straight down with a slight bend in the elbows. As you exhale, lift the dumbbells out to the sides in a controlled manner, squeezing your shoulder blades together, until your arms are parallel to the ground. Hold for a moment at the top of the movement, then slowly lower the weights back to the starting position. Focus on maintaining proper form throughout the exercise to maximize effectiveness and minimize the risk of injury."
+commentary = "Reverse Dumbbell Flyes are an effective upper body exercise that primarily targets the rear deltoids, trapezius, and rhomboid muscles. To perform the exercise, start by standing or bending forward at the hips with a slight bend in the knees, holding a dumbbell in each hand with your palms facing each other. Keeping your back straight, raise the dumbbells out to the sides in a wide arc until your arms are parallel to the ground while maintaining a slight bend in the elbows. Squeeze your shoulder blades together at the top of the movement, then slowly lower the dumbbells back to the starting position. This exercise not only enhances shoulder stability and posture but also contributes to the overall definition of the upper back and shoulders."
 instructions = [
 	"Hold a pair of dumbbells, lean forward, and let your arms hang towards the floor.",
 	"With almost straight arms (just a slight bend at the elbow), slowly lift the dumbbells by raising your arms out to the sides.",
 	"Reverse the movement and lower the dumbbells back to the starting position.",
 ]
 
-[categories.shoulder.reverse_machine_fly]
+[[categories.category.exercise]]
 name = "Reverse Machine Fly"
 primary_muscles = ["Rear Deltoid", "Rotator Cuff"]
 secondary_muscles = ["Trapezius"]
@@ -891,11 +895,11 @@ instructions = [
 	"Reverse the movement and let the handles go back to the starting position.",
 ]
 
-[categories.shoulder.seated_dumbbell_shoulder_press]
+[[categories.category.exercise]]
 name = "Seated Dumbbell Shoulder Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
-commentary = "The Seated Dumbbell Shoulder Press is a strength training exercise that targets the deltoid muscles of the shoulders while also engaging the triceps and upper back. To perform this exercise, sit on a bench with back support and hold a dumbbell in each hand at shoulder height, palms facing forward. Press the dumbbells upward until your arms are fully extended overhead, ensuring you maintain a neutral spine and stable core throughout the movement. Slowly lower the dumbbells back to the starting position, controlling the descent to maximize muscle engagement and reduce the risk of injury. This exercise is effective for building shoulder strength and stability, and can be easily modified in terms of weight and repetitions to suit different fitness levels."
+commentary = "The Seated Dumbbell Shoulder Press is a strength training exercise designed to build muscle in the shoulders, specifically targeting the deltoid muscles. To perform this exercise, sit on a sturdy bench with back support, holding a dumbbell in each hand at shoulder height with your palms facing forward. Ensure your feet are flat on the ground for stability. Push the dumbbells upward until your arms are fully extended overhead, then slowly lower them back to the starting position. This movement should be controlled, focusing on maintaining good posture and engaging the core throughout the exercise to avoid unnecessary strain on the lower back."
 instructions = [
 	"Sit down on a bench with a raised backrest.",
 	"Grab a pair of dumbbells and lift them up to the starting position at your shoulders.",
@@ -905,7 +909,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.seated_barbell_overhead_press]
+[[categories.category.exercise]]
 name = "Seated Barbell Overhead Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
@@ -919,7 +923,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.seated_smith_machine_shoulder_press]
+[[categories.category.exercise]]
 name = "Seated Smith Machine Shoulder Press"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Triceps", "Lateral Deltoid"]
@@ -931,7 +935,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.snatch_grip_behind_the_neck_press]
+[[categories.category.exercise]]
 name = "Snatch Grip Behind the Neck Press"
 primary_muscles = ["Front Deltoid", "Lateral Deltoid"]
 secondary_muscles = ["Trapezius", "Triceps"]
@@ -944,7 +948,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.shoulder.squat_jerk]
+[[categories.category.exercise]]
 name = "Squat Jerk"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads", "Front Deltoid"]
 secondary_muscles = ["Trapezius", "Triceps", "Lateral Deltoid", "Calves"]
@@ -958,7 +962,7 @@ instructions = [
 	"Lower the bar in front of you, with control, or lower it back unto the front of your shoulders.",
 ]
 
-[categories.shoulder.split_jerk]
+[[categories.category.exercise]]
 name = "Split Jerk"
 primary_muscles = ["Front Deltoid"]
 secondary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back", "Trapezius", "Triceps", "Lateral Deltoid"]
@@ -974,15 +978,17 @@ instructions = [
 
 ###
 
-[categories.biceps]
+[[categories.category]]
 
 total = 16
 
-[categories.biceps.barbell_curl]
+name = "Biceps"
+
+[[categories.category.exercise]]
 name = "Barbell Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Barbell Curl is a fundamental strength training exercise primarily targeting the biceps brachii, while also engaging the forearms and shoulders. To perform the Barbell Curl, stand with your feet shoulder-width apart, grasping a barbell with an underhand grip (palms facing up) at shoulder width. Keep your elbows close to your torso and curl the barbell upwards towards your chest by flexing your elbows, ensuring that your upper arms remain stationary throughout the movement. Once the barbell reaches the peak of the curl, pause briefly, then slowly lower the weight back to the starting position in a controlled manner. This exercise is effective for building bicep size and strength, and it can be performed with various grip widths to target different muscle fibers."
+commentary = "The Barbell Curl is a strength training exercise primarily targeting the biceps brachii, along with engaging the forearms and shoulders. To perform this exercise, stand upright while holding a barbell with an underhand grip, hands shoulder-width apart. Begin with the barbell resting against your thighs and your elbows close to your torso. Curl the barbell upwards by flexing your elbows, lifting it towards your shoulders while keeping your upper arms stationary. Squeeze your biceps at the top of the movement and then slowly lower the barbell back to the starting position. This controlled motion enhances muscle engagement and promotes strength development in the arms. Proper form is crucial to avoid injury and maximize effectiveness, so be sure to maintain a straight back and avoid swinging the weights."
 instructions = [
 	"Grip a bar with an underhand (supinated) grip, hands about shoulder-width apart.",
 	"Lift the bar with control, by flexing your elbows.",
@@ -990,18 +996,18 @@ instructions = [
 	"Reverse the movement and lower the bar back to the starting position.",
 ]
 
-[categories.biceps.barbell_preacher_curl]
+[[categories.category.exercise]]
 name = "Barbell Preacher Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Barbell Preacher Curl is a targeted strength training exercise designed to isolate the biceps for optimal muscle growth and definition. Performed using a preacher curl bench, the exercise involves gripping a barbell with an underhand (supinated) grip and resting the upper arms on the bench's angled surface. As you curl the barbell upward, focus on contracting the biceps while keeping your elbows stationary, allowing for a full range of motion. This movement not only enhances bicep peak but also minimizes the risk of using momentum, leading to more effective and controlled workouts. Proper posture and technique are essential to prevent injury and maximize results."
+commentary = "The Barbell Preacher Curl is a bicep-strengthening exercise that isolates the muscles of the upper arms for maximum effectiveness. Performed on a preacher curl bench, the exercise involves resting the upper arms on a padded surface while gripping a barbell with both hands, palms facing upward. As you curl the barbell towards your shoulders, the movement engages the biceps, focusing on the muscle contraction and minimizing the involvement of other muscle groups. This exercise helps to develop the peak and overall size of the biceps, contributing to a well-defined arm appearance. To perform the Barbell Preacher Curl safely, maintain controlled movements and avoid using momentum, ensuring that your elbows remain stationary throughout the lift."
 instructions = [
 	"Grab a barbell and sit down at a preacher curl bench, resting your upper arms against the pad.",
 	"Lower the barbell as far as you can, with control.",
 	"Reverse the motion and return to the starting position.",
 ]
 
-[categories.biceps.bayesian_curl]
+[[categories.category.exercise]]
 name = "Bayesian Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1014,7 +1020,7 @@ instructions = [
 	"Slowly lower back to the starting position and repeat.",
 ]
 
-[categories.biceps.bodyweight_curl]
+[[categories.category.exercise]]
 name = "Bodyweight Curl"
 primary_muscles = ["Biceps", "Lats"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1027,7 +1033,7 @@ instructions = [
 	"Reverse the movement and repeat for reps.",
 ]
 
-[categories.biceps.cable_crossover_bicep_curl]
+[[categories.category.exercise]]
 name = "Cable Crossover Bicep Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1041,7 +1047,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.biceps.cable_curl_with_bar]
+[[categories.category.exercise]]
 name = "Cable Curl With Bar"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1053,7 +1059,7 @@ instructions = [
 	"Reverse the movement and lower the bar back to the starting position.",
 ]
 
-[categories.biceps.cable_curl_with_rope]
+[[categories.category.exercise]]
 name = "Cable Curl With Rope"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1065,7 +1071,7 @@ instructions = [
 	"Reverse the movement and lower the rope back to the starting position.",
 ]
 
-[categories.biceps.concentration_curl]
+[[categories.category.exercise]]
 name = "Concentration Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1076,7 +1082,7 @@ instructions = [
 	"Reverse the movement and lower the dumbbell back to the starting position.",
 ]
 
-[categories.biceps.drag_curl]
+[[categories.category.exercise]]
 name = "Drag Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1089,11 +1095,11 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.biceps.dumbbell_curl]
+[[categories.category.exercise]]
 name = "Dumbbell Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Dumbbell Curl is a fundamental strength training exercise that primarily targets the biceps brachii muscles in the upper arms. To perform the exercise, stand upright with a dumbbell in each hand, arms fully extended, palms facing forward. Keeping your elbows close to your torso, curl the weights upward by flexing your elbows and squeezing your biceps at the top of the movement. Lower the dumbbells back to the starting position in a controlled manner, ensuring not to swing the weights or use momentum, which maximizes muscle engagement and promotes strength development. This exercise can be performed with variations such as altering grip positions or using different bench angles to target the muscles in various ways."
+commentary = "The Dumbbell Curl is a fundamental strength training exercise that primarily targets the biceps muscles in the upper arms. To perform this exercise, stand upright with a dumbbell in each hand, arms fully extended at your sides, and palms facing forward. Keeping your elbows close to your torso, exhale and curl the weights up towards your shoulders by flexing your elbows while maintaining a controlled motion. Once you reach the top of the movement, squeeze your biceps for a brief moment, then slowly lower the dumbbells back to the starting position while inhaling. This exercise not only builds muscular strength and endurance in the biceps but also enhances overall arm definition and symmetry."
 instructions = [
 	"Hold a pair of dumbbells in an underhand (supinated) grip, arms hanging by your sides.",
 	"Lift the dumbbells with control, by flexing your elbows.",
@@ -1101,7 +1107,7 @@ instructions = [
 	"Reverse the movement and lower the dumbbells back to the starting position.",
 ]
 
-[categories.biceps.dumbbell_preacher_curl]
+[[categories.category.exercise]]
 name = "Dumbbell Preacher Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1112,11 +1118,11 @@ instructions = [
 	"Lower the dumbbell as far as you can, and then reverse the motion, returning to the starting position.",
 ]
 
-[categories.biceps.hammer_curl]
+[[categories.category.exercise]]
 name = "Hammer Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Hammer Curl is a popular strength training exercise that primarily targets the biceps, brachialis, and brachioradialis muscles in the arms, helping to develop both size and strength. To perform the exercise, stand with your feet shoulder-width apart while holding a dumbbell in each hand with a neutral grip, palms facing each other. Begin with your arms fully extended at your sides and, keeping your elbow close to your body, curl the weights upward towards your shoulders while maintaining that neutral grip throughout the movement. Focus on squeezing the biceps at the top of the curl before slowly lowering the weights back to the starting position, ensuring control and proper form to maximize effectiveness and minimize the risk of injury."
+commentary = "The Hammer Curl is an effective strength-training exercise primarily targeting the biceps, brachialis, and brachioradialis muscles. To perform this exercise, stand upright with a dumbbell in each hand, allowing your arms to hang at your sides with your palms facing your body (neutral grip). Keeping your elbows close to your torso, curl the weights up towards your shoulders while maintaining the neutral grip throughout the movement. Focus on controlling both the lifting and lowering phases, engaging your biceps without swinging your body. This exercise helps improve both muscle strength and endurance, contributing to overall upper arm development."
 instructions = [
 	"Hold a pair of dumbbells in a neutral grip (palms facing each other), arms hanging by your sides.",
 	"Lift the dumbbells with control by flexing your elbows.",
@@ -1124,7 +1130,7 @@ instructions = [
 	"Reverse the movement and lower the dumbbells back to the starting position.",
 ]
 
-[categories.biceps.incline_dumbbell_curl]
+[[categories.category.exercise]]
 name = "Incline Dumbbell Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1135,7 +1141,7 @@ instructions = [
 	"Reverse the movement and lower the dumbbells back to the starting position.",
 ]
 
-[categories.biceps.machine_bicep_curl]
+[[categories.category.exercise]]
 name = "Machine Bicep Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1148,11 +1154,11 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.biceps.resistance_band_curl]
+[[categories.category.exercise]]
 name = "Resistance Band Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Resistance Band Curl is an effective exercise targeting the biceps, designed to build strength and endurance in the upper arms. To perform this exercise, stand on the center of a resistance band with your feet shoulder-width apart, holding one end of the band in each hand with your palms facing upward and arms fully extended at your sides. Keeping your elbows close to your torso, curl the band upward by flexing your elbows, bringing your hands towards your shoulders while engaging your biceps. Slowly lower the band back to the starting position to complete one rep. This exercise can be adjusted by varying the resistance of the band or changing your stance for added intensity, making it suitable for all fitness levels."
+commentary = "The Resistance Band Curl is an effective upper body exercise that targets the biceps while also engaging the forearms for improved strength and tone. To perform the exercise, stand on the center of a resistance band with your feet shoulder-width apart, holding the handles or ends of the band with an underhand grip. Keep your elbows close to your sides and slowly curl the band upwards towards your shoulders, contracting your biceps as you lift. Pause briefly at the top of the movement before lowering back to the starting position in a controlled manner. This exercise can easily be modified by adjusting the band's tension or changing the band's position for varied resistance, making it suitable for all fitness levels."
 instructions = [
 	"Stand on the middle of a resistance band with your feet hip-width apart, holding one end of the band in each hand with palms facing up.",
 	"Stand upright with your arms at your sides and engage your core for stability.",
@@ -1161,7 +1167,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.biceps.spider_curl]
+[[categories.category.exercise]]
 name = "Spider Curl"
 primary_muscles = ["Biceps"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1175,31 +1181,33 @@ instructions = [
 
 ###
 
-[categories.triceps]
+[[categories.category]]
 
 total = 11
 
-[categories.triceps.barbell_standing_triceps_extension]
+name = "Triceps"
+
+[[categories.category.exercise]]
 name = "Barbell Standing Triceps Extension"
 primary_muscles = ["Triceps"]
-commentary = "The Barbell Standing Triceps Extension is a compound exercise targeting the triceps muscles, primarily focusing on the long head. To perform this exercise, stand upright while holding a barbell with both hands, ensuring your grip is shoulder-width apart. Raise the barbell overhead, fully extending your arms and keeping your elbows close to your head. Slowly lower the barbell behind your head by bending your elbows, maintaining control throughout the movement. Once you feel a stretch in your triceps, reverse the motion by extending your arms back to the starting position. This exercise can help build strength and definition in the triceps while also engaging the shoulders and core for stabilization."
+commentary = "The Barbell Standing Triceps Extension is an effective strength training exercise that targets the triceps muscles in the upper arms. To perform this exercise, stand upright with your feet shoulder-width apart, holding a barbell with both hands, palms facing upward and positioned behind your head. Keeping your elbows close to your ears, carefully extend your arms upward until they are fully extended without locking the elbows, then slowly lower the barbell back behind your head to the starting position. It’s important to maintain a stable core and good posture throughout the movement to avoid strain and ensure effective muscle engagement. This exercise not only enhances triceps strength but also contributes to overall upper body stability and power."
 instructions = [
 	"Grip a barbell with a close grip, and lift it up to straight arms over your head.",
 	"Lower the barbell behind your head while keeping your upper arms still and vertical.",
 	"Reverse the motion and extend your arms again.",
 ]
 
-[categories.triceps.barbell_lying_triceps_extension]
+[[categories.category.exercise]]
 name = "Barbell Lying Triceps Extension"
 primary_muscles = ["Triceps"]
-commentary = "The Barbell Lying Triceps Extension is an effective exercise targeting the triceps muscles, particularly the long head, to enhance upper arm strength and size. To perform this exercise, lie on a flat bench while holding a barbell with both hands, palms facing upward, and your arms extended above your chest. Slowly lower the barbell towards your forehead by bending at the elbows, keeping your upper arms stationary throughout the movement. Once the barbell is close to your forehead, press it back to the starting position by extending your arms. Maintain a controlled motion to ensure proper form and avoid injury, and be mindful of your grip width, which can influence the muscle activation. This exercise can be performed with various grip variations to target different areas of the triceps."
+commentary = "The Barbell Lying Triceps Extension, also known as the skull crusher, is an effective exercise targeting the triceps muscles, enhancing upper arm strength and definition. To perform this exercise, lie flat on a bench with a barbell held above your chest using a shoulder-width grip. Carefully lower the barbell towards your forehead by bending at the elbows while keeping your upper arms stationary; ensure to control the motion to prevent injury. Once the barbell is near your forehead, extend your arms back to the starting position, engaging your triceps throughout the movement. This exercise can be adjusted in difficulty by varying the weight of the barbell or incorporating different grips to stimulate muscle growth and strength."
 instructions = [
 	"Lie down on a bench with your head close to the edge. Hold a barbell with a shoulder-wide grip, and lift it up to straight arms over yourself.",
 	"Lower the barbell down behind your head. Try to keep the same distance between your elbows throughout the movement.",
 	"Reverse the motion and extend your arms again.",
 ]
 
-[categories.triceps.bench_dip]
+[[categories.category.exercise]]
 name = "Bench Dip"
 primary_muscles = ["Triceps"]
 secondary_muscles = ["Chest", "Front Deltoid"]
@@ -1210,7 +1218,7 @@ instructions = [
 	"Reverse the motion and return to the starting position.",
 ]
 
-[categories.triceps.crossbody_cable_triceps_extension]
+[[categories.category.exercise]]
 name = "Crossbody Cable Triceps Extension"
 primary_muscles = ["Triceps"]
 commentary = "This exercise engage the triceps throughout the range of motion, thanks to the constant tension from the cable machine."
@@ -1223,7 +1231,7 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.triceps.close_grip_push_up]
+[[categories.category.exercise]]
 name = "Close-Grip Push-Up"
 primary_muscles = ["Triceps"]
 secondary_muscles = ["Abs", "Chest", "Front Deltoid"]
@@ -1236,7 +1244,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.triceps.dumbbell_lying_triceps_extension]
+[[categories.category.exercise]]
 name = "Dumbbell Lying Triceps Extension"
 primary_muscles = ["Triceps"]
 commentary = "The lying triceps extension is a very effective tricep exercise that besides extending your elbow joint also trains the triceps function to bring your upper arm down towards your midline."
@@ -1246,7 +1254,7 @@ instructions = [
 	"Reverse the motion and extend your arms again.",
 ]
 
-[categories.triceps.dumbbell_standing_triceps_extension]
+[[categories.category.exercise]]
 name = "Dumbbell Standing Triceps Extension"
 primary_muscles = ["Triceps"]
 commentary = "The standing triceps extension is an effective exercise for isolating the tricep muscle. Common variations of this exercise is to use a small barbell or a heavier dumbbell which you hold with both hands."
@@ -1256,17 +1264,17 @@ instructions = [
 	"Reverse the motion and extend your arm again.",
 ]
 
-[categories.triceps.overhead_cable_triceps_extension]
+[[categories.category.exercise]]
 name = "Overhead Cable Triceps Extension"
 primary_muscles = ["Triceps"]
-commentary = "The Overhead Cable Triceps Extension is an effective exercise designed to target the triceps muscles, enhancing strength and definition in the upper arms. To perform this exercise, begin by standing with your back to a cable machine, adjusting the pulley to its highest position. Grasp the cable attachment with both hands, palms facing up, and step forward to create tension in the cable. With your feet shoulder-width apart, extend your arms overhead while keeping your elbows close to your ears. Slowly lower the attachment behind your head by bending at the elbows, feeling the stretch in your triceps, then return to the starting position by extending your arms back overhead. Ensure to maintain proper posture throughout the movement to maximize effectiveness and minimize the risk of injury."
+commentary = "The Overhead Cable Triceps Extension is an effective strength training exercise that targets the triceps muscles, helping to build arm strength and definition. To perform this exercise, set a cable pulley to the lowest position and attach a rope or straight bar handle. Stand facing away from the pulley with your feet shoulder-width apart, and grasp the handle with both hands, keeping your elbows close to your head. Extend your arms upward, fully locking out the elbows while keeping the core engaged. Slowly lower the handle behind your head by bending at the elbows, ensuring that your upper arms remain stationary, before returning to the starting position. This exercise not only enhances triceps strength but also promotes shoulder stability and flexibility."
 instructions = [
 	"Fasten a rope handle in the lower position of a cable pulley. Stand with your back against the pulley, with a slight forward lean, and hold the rope behind your head and your upper arms next to your ears.",
 	"Straighten your elbows until your arms are fully extended.",
 	"Reverse the motion by bending your arms again.",
 ]
 
-[categories.triceps.tricep_bodyweight_extension]
+[[categories.category.exercise]]
 name = "Tricep Bodyweight Extension"
 primary_muscles = ["Triceps"]
 commentary = "This is a good alternative for triceps training if you don’t have access to free weights. If you want to make the movement easier, set the bar higher. If you want to make it harder, set it lower."
@@ -1278,10 +1286,10 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.triceps.tricep_pushdown_with_bar]
+[[categories.category.exercise]]
 name = "Tricep Pushdown With Bar"
 primary_muscles = ["Triceps"]
-commentary = "The Tricep Pushdown with Bar is a popular strength training exercise that targets the triceps muscles located at the back of the upper arm. This movement is typically performed using a cable machine equipped with a straight or EZ curl bar attachment. To execute the exercise, stand upright facing the machine while grasping the bar with an overhand grip, hands shoulder-width apart. Keeping your elbows close to your body, push the bar down towards your thighs until your arms are fully extended while avoiding any movement in your upper arms. Slowly return to the starting position, ensuring control throughout the motion. This exercise not only enhances tricep strength but also improves overall upper body stability and muscle definition."
+commentary = "The Tricep Pushdown with Bar is an effective resistance training exercise that targets the triceps, the large muscles at the back of your upper arm. To perform this exercise, stand in front of a cable machine with a straight or EZ curl bar attached to the pulley at a high setting. Grasp the bar with an overhand grip, keeping your elbows close to your body. As you exhale, push the bar down towards your thighs by extending your elbows without moving your upper arms. Focus on contracting your triceps at the bottom of the movement before slowly returning to the starting position as you inhale. This controlled motion not only helps in building strength and muscle definition in the triceps but also promotes overall arm stability."
 instructions = [
 	"Stand one step away from the cable pulley, and grip a bar about shoulder-width apart.",
 	"Pull the handle down until your upper arms are perpendicular to the floor. This is the starting position.",
@@ -1289,10 +1297,10 @@ instructions = [
 	"With control, let the handle up again.",
 ]
 
-[categories.triceps.tricep_pushdown_with_rope]
+[[categories.category.exercise]]
 name = "Tricep Pushdown With Rope"
 primary_muscles = ["Triceps"]
-commentary = "The Tricep Pushdown with Rope is an effective strength training exercise that targets the triceps muscles, promoting muscle growth and definition in the upper arms. To perform this exercise, attach a rope handle to the high pulley of a cable machine. Stand facing the machine with your feet shoulder-width apart and grasp the rope with an overhand grip, ensuring your elbows remain close to your body. As you push down, extend your arms fully while keeping your elbows stationary, then gradually return to the starting position, maintaining control of the movement. This exercise is excellent for enhancing tricep strength and can be easily adjusted in intensity by varying the weight on the cable machine."
+commentary = "The Tricep Pushdown with Rope is an effective strength training exercise designed to target the triceps muscles, specifically the lateral and long heads. To perform this exercise, attach a rope handle to a cable machine at the top position. Stand facing the machine with your feet shoulder-width apart and grasp the rope with both hands, palms facing each other. Begin with your elbows close to your body and bent at about a 90-degree angle. As you engage your core, push down the rope by extending your elbows until your arms are fully straightened while keeping your elbows locked in place. Focus on squeezing your triceps at the bottom of the movement. Slowly return to the starting position, resisting the weight during the upward phase to maintain tension in the triceps. Repeat for the desired number of repetitions, ensuring proper form to maximize effectiveness and minimize injury risk."
 instructions = [
 	"Fasten a rope handle in the upper position of a cable pulley. Grip the rope with an overhand grip, and take one step back from the pulley.",
 	"Pull the rope down until your upper arms are perpendicular to the floor. This is the starting position.",
@@ -1302,11 +1310,13 @@ instructions = [
 
 ###
 
-[categories.legs]
+[[categories.category]]
 
 total = 42
 
-[categories.legs.air_squat]
+name = "Legs"
+
+[[categories.category.exercise]]
 name = "Air Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Calves"]
@@ -1317,7 +1327,7 @@ instructions = [
 	"Reverse the movement, and return to a standing position.",
 ]
 
-[categories.legs.barbell_hack_squat]
+[[categories.category.exercise]]
 name = "Barbell Hack Squat"
 primary_muscles = ["Quads"]
 secondary_muscles = ["Glutes", "Adductors", "Lower Back", "Trapezius", "Forearm Flexors", "Calves"]
@@ -1330,7 +1340,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.legs.barbell_lunge]
+[[categories.category.exercise]]
 name = "Barbell Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "The lunge is an exercise that not only strengthens your leg muscles, but it can also be used to train your balance, coordination and control. An alternative to using a barbell for external load, is to hold weights (i.e. dumbbells or kettlebells) in your hands."
@@ -1339,7 +1349,7 @@ instructions = [
 	"Return to the starting position by pushing yourself back with the front leg.",
 ]
 
-[categories.legs.barbell_walking_lunge]
+[[categories.category.exercise]]
 name = "Barbell Walking Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "The lunge is an exercise that not only strengthens your leg muscles, it can also be used to train your balance, coordination, and knee control. An alternative to the walking lunges is to stay in one place, performing all reps for one leg first before switching to the other."
@@ -1351,7 +1361,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.legs.belt_squat]
+[[categories.category.exercise]]
 name = "Belt Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Calves"]
@@ -1365,7 +1375,7 @@ instructions = [
 	"Inhale and repeat for reps.",
 ]
 
-[categories.legs.body_weight_lunge]
+[[categories.category.exercise]]
 name = "Body Weight Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "The lunge is a body weight exercise that not only strengthens your leg muscles, but it can also be used to train your balance, coordination and control. You can make the exercise heavier by holding weights in your hands."
@@ -1374,7 +1384,7 @@ instructions = [
 	"Return to the starting position by pushing yourself back with the front leg.",
 ]
 
-[categories.legs.bodyweight_leg_curl]
+[[categories.category.exercise]]
 name = "Bodyweight Leg Curl"
 primary_muscles = ["Hamstrings"]
 secondary_muscles = ["Glutes"]
@@ -1386,11 +1396,11 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.legs.box_jump]
+[[categories.category.exercise]]
 name = "Box Jump"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Calves"]
-commentary = "Box Jump is a plyometric exercise that enhances explosive power, strength, and agility by requiring the participant to jump onto and off a sturdy platform, typically referred to as a box. To perform a Box Jump, start by standing a few feet away from the box with feet shoulder-width apart. Engage your core and perform a slight squat, swinging your arms backward to build momentum. In a swift motion, jump onto the box while extending your legs and swinging your arms forward to propel you upward. Land softly with your knees slightly bent to absorb the impact, and step back down to repeat. This dynamic exercise targets the lower body, particularly the quadriceps, hamstrings, and calves, while also improving coordination and overall athletic performance."
+commentary = "Box Jump is a dynamic plyometric exercise that involves jumping onto a sturdy, elevated platform, commonly referred to as a box. This movement primarily targets the lower body muscles, including the quads, hamstrings, glutes, and calves, while also engaging the core for stability and balance. To perform a Box Jump, stand with your feet shoulder-width apart, squat down slightly to gain momentum, and explosively leap onto the box, landing softly with your knees slightly bent to absorb the impact. It is essential to select a box height that suits your fitness level and to ensure proper form throughout the jump to minimize the risk of injury. Box Jumps can enhance explosive strength, power, and agility, making them a popular choice in strength training and athletic conditioning programs."
 instructions = [
 	"Stand in front of a sturdy box with your feet shoulder-width apart.",
 	"Slightly bend your knees and lower into a half-squat while swinging your arms back.",
@@ -1400,7 +1410,7 @@ instructions = [
 	"Step, or carefully jump, down and repeat for the desired number of repetitions.",
 ]
 
-[categories.legs.box_squat]
+[[categories.category.exercise]]
 name = "Box Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1413,10 +1423,10 @@ instructions = [
 	"Inhale and repeat for reps.",
 ]
 
-[categories.legs.bulgarian_split_squat]
+[[categories.category.exercise]]
 name = "Bulgarian Split Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
-commentary = "The Bulgarian Split Squat is a lower-body strength exercise that targets the quadriceps, hamstrings, glutes, and calves while also promoting balance and stability. To perform this exercise, stand a few feet in front of a bench or elevated surface and extend one leg back to place your foot on the bench. With your front foot firmly planted, lower your body into a squat until your front thigh is parallel to the ground, ensuring your knee does not extend past your toes. Push through your front heel to return to the starting position. This unilateral movement not only enhances leg strength but also improves core stability and flexibility. It's commonly used in strength training routines for athletes and fitness enthusiasts alike."
+commentary = "The Bulgarian Split Squat is a lower-body strength exercise that primarily targets the quadriceps, hamstrings, and glutes while also engaging the core for stability. To perform this exercise, begin by standing a few feet in front of a bench or elevated surface. Extend one leg behind you and place the top of your foot on the bench, ensuring your front foot is firmly planted on the ground. Lower your hips by bending your front knee while keeping your torso upright until your thigh is parallel to the ground, then press through your front heel to return to the starting position. This exercise can be performed with body weight or added resistance, such as dumbbells, to increase intensity and enhance muscle engagement."
 instructions = [
 	"Stand with your back turned against a bench, which should be at about knee height. Stand about one long step in front of the bench.",
 	"Place one foot on the bench behind you.",
@@ -1425,7 +1435,7 @@ instructions = [
 	"Inhale at the top and repeat for reps.",
 ]
 
-[categories.legs.chair_squat]
+[[categories.category.exercise]]
 name = "Chair Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Calves"]
@@ -1436,7 +1446,7 @@ instructions = [
 	"Reverse the movement, and return to a standing position.",
 ]
 
-[categories.legs.dumbbell_lunge]
+[[categories.category.exercise]]
 name = "Dumbbell Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1447,7 +1457,7 @@ instructions = [
 	"Return to the starting position by pushing yourself back with the front leg.",
 ]
 
-[categories.legs.dumbbell_squat]
+[[categories.category.exercise]]
 name = "Dumbbell Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1458,7 +1468,7 @@ instructions = [
 	"Reverse the movement, and return to a standing position. Exhale on the way up.",
 ]
 
-[categories.legs.front_squat]
+[[categories.category.exercise]]
 name = "Front Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1473,11 +1483,11 @@ instructions = [
 	"Breathe in and repeat for reps.",
 ]
 
-[categories.legs.glute_ham_raise]
+[[categories.category.exercise]]
 name = "Glute Ham Raise"
 primary_muscles = ["Hamstrings"]
 secondary_muscles = ["Glutes", "Lower Back", "", ""]
-commentary = "The Glute Ham Raise is an effective exercise that targets the hamstrings, glutes, and lower back, promoting strength and stability in these muscle groups. Typically performed on a specialized machine known as the Glute Ham Developer (GHD), the movement involves securing the feet and lowering the upper body towards the ground while maintaining a straight line from the knees to the shoulders. This eccentric contraction emphasizes the hamstrings' ability to extend the hips and flex the knees, making it an essential movement for athletes seeking to improve their power and athletic performance. Proper form is crucial to avoid injury, and individuals should focus on controlled movements and gradual progression to maximize benefits."
+commentary = "The Glute Ham Raise (GHR) is an effective exercise primarily targeting the glutes, hamstrings, and lower back, designed to strengthen the posterior chain. It is performed on a specialized piece of equipment called a glute-ham bench, where the individual secures their feet and positions the thighs against the padded surface. Starting from a kneeling position, the movement involves lowering the upper body towards the ground while keeping a straight line from the knees to the head, then pulling the body back up using the hamstrings and glutes. This exercise not only enhances muscular strength and endurance but also improves overall athletic performance, stability, and posture. Proper form is crucial to maximize benefits and prevent injury, making it an essential component of a well-rounded training program."
 instructions = [
 	"Position yourself in a Glute Ham Raise machine with your knees on the support pad and feet secured under the footplate.",
 	"Keep your body straight from knees to head, engaging your core, and place your hands by your sides or across your chest.",
@@ -1486,11 +1496,11 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.legs.goblet_squat]
+[[categories.category.exercise]]
 name = "Goblet Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Lower Back", "Calves"]
-commentary = "The Goblet Squat is a fundamental lower body exercise that targets the thighs, glutes, and core, making it an excellent choice for building strength and improving mobility. To perform the Goblet Squat, stand with your feet shoulder-width apart while holding a dumbbell or kettlebell close to your chest with both hands, elbows pointed down. Initiate the squat by pushing your hips back and bending your knees, lowering your body until your thighs are parallel to the ground or as low as your flexibility allows. Keep your chest up and back straight throughout the movement, ensuring that your knees track over your toes. Press through your heels to return to the starting position, squeezing your glutes at the top. This exercise not only enhances lower body strength but also promotes proper squat mechanics and posture."
+commentary = "The Goblet Squat is a fundamental strength training exercise that primarily targets the lower body, particularly the quadriceps, hamstrings, and glutes, while also engaging the core for stability. To perform this exercise, begin by standing with your feet shoulder-width apart, holding a dumbbell or kettlebell close to your chest with both hands, elbows pointed down. As you lower your body into a squat, push your hips back and bend at the knees, ensuring that your chest remains lifted and your back stays straight. Aim to squat down until your thighs are parallel to the ground or as low as comfortably possible, then drive through your heels to return to the starting position. This exercise enhances mobility, balance, and overall leg strength, making it suitable for both beginners and advanced lifters."
 instructions = [
 	"Grab a kettlebell in the sides of the handle, and hold the kettlebell against your chest.",
 	"Stand with your feet about shoulder-width apart, and your toes pointing slightly outward.",
@@ -1498,10 +1508,10 @@ instructions = [
 	"Reverse the movement and return to the starting position. Exhale on the way up.",
 ]
 
-[categories.legs.hack_squat_machine]
+[[categories.category.exercise]]
 name = "Hack Squat Machine"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
-commentary = "The Hack Squat Machine is a specialized piece of strength training equipment designed to target the quadriceps, hamstrings, and glutes while providing a secure and stable environment for performing squats. Users position themselves in a semi-reclined posture, with their back against a padded support and shoulders secured under shoulder pads. The machine's angled platform allows for a natural squat movement while minimizing stress on the lower back and encouraging proper form. By adjusting the weight and foot placement, users can customize their workout intensity and effectively build lower body strength, making it an ideal choice for both beginners and experienced lifters looking to enhance their leg training routine."
+commentary = "The Hack Squat Machine is a specialized piece of fitness equipment designed to target the lower body muscles, primarily the quadriceps, hamstrings, and glutes. It features a sled or platform that allows the user to perform a squatting motion while being supported by a backrest and shoulder pads, which helps maintain proper posture and reduces the risk of injury. The machine typically includes adjustable weights, enabling users to customize their resistance levels according to their strength and fitness goals. Ideal for both beginners and advanced athletes, the Hack Squat Machine provides a controlled environment for maximizing leg strength and hypertrophy while minimizing stress on the spine."
 instructions = [
 	"Adjust the machine to the correct height and place your shoulders against the shoulder pads.",
 	"Put your feet on the plate, slightly in front of the base of the sled and about shoulder width apart.",
@@ -1510,7 +1520,7 @@ instructions = [
 	"Reverse the movement with control, and extend your legs again until you’re back in the starting position. Exhale on the way up.",
 ]
 
-[categories.legs.half_air_squat]
+[[categories.category.exercise]]
 name = "Half Air Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Calves"]
@@ -1521,7 +1531,7 @@ instructions = [
 	"Reverse the movement, and return to a standing position.",
 ]
 
-[categories.legs.hip_adduction_machine]
+[[categories.category.exercise]]
 name = "Hip Adduction Machine"
 primary_muscles = ["Adductors"]
 commentary = "The hip adduction machine trains the muscles that adduct (brings together) your thighs."
@@ -1531,7 +1541,7 @@ instructions = [
 	"Return with control to the starting position.",
 ]
 
-[categories.legs.jumping_lunge]
+[[categories.category.exercise]]
 name = "Jumping Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "Jumping lunges are an alternative to regular lunges. The explosive jumping motion enhances muscle power and agility, targeting more muscle groups than a regular lunge. It’s an excellent way to improve balance and coordination while making it a highly efficient exercise for those looking to elevate their workout intensity."
@@ -1541,7 +1551,7 @@ instructions = [
 	"Continue alternating legs with each jump. Maintain a steady pace and keep your torso upright throughout the exercise.",
 ]
 
-[categories.legs.landmine_hack_squat]
+[[categories.category.exercise]]
 name = "Landmine Hack Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "The landmine hack squat is a blend of the hack squat and the landmine squat. In similarity to these exercises, the landmine hack squat primarily targets your leg muscles and does not place a lot of load on your lower back."
@@ -1551,7 +1561,7 @@ instructions = [
 	"With control, stop and reverse the movement, extending your hips and legs again until you are standing up.",
 ]
 
-[categories.legs.landmine_squat]
+[[categories.category.exercise]]
 name = "Landmine Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Lower Back", "Calves"]
@@ -1562,7 +1572,7 @@ instructions = [
 	"With control, stop and reverse the movement, extending your hips and legs again until you are standing up.",
 ]
 
-[categories.legs.leg_curl_on_ball]
+[[categories.category.exercise]]
 name = "Leg Curl On Ball"
 primary_muscles = ["Hamstrings"]
 secondary_muscles = ["Glutes"]
@@ -1575,21 +1585,21 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.legs.leg_extension]
+[[categories.category.exercise]]
 name = "Leg Extension"
 primary_muscles = ["Quads"]
-commentary = "The Leg Extension is a targeted strength training exercise primarily designed to isolate and strengthen the quadriceps muscles located at the front of the thigh. Performed on a leg extension machine, the movement involves sitting on the padded seat with the back support and placing the lower leg behind a padded bar, which rests just above the ankles. As you extend your legs upward, you engage the quadriceps, fully straightening your knees before slowly lowering the weight back to the starting position. This exercise is beneficial for building muscle strength, enhancing knee stability, and improving overall leg aesthetics, making it a popular choice for both athletes and fitness enthusiasts. Proper form and controlled movement are essential to avoid undue stress on the knees and maximize the effectiveness of the workout."
+commentary = "Leg Extension is a strength training exercise primarily targeting the quadriceps muscles located at the front of the thigh. This exercise is typically performed using a leg extension machine, where the individual sits with their back against the padded seat and places their legs under a padded bar. By extending the legs straight out in front, the quadriceps are contracted against resistance, improving muscle strength, hypertrophy, and endurance. Leg extensions also enhance joint stability and can aid in rehabilitation programs by isolating the quadriceps while minimizing strain on the knees. It's important to maintain controlled movements to prevent injury and maximize effectiveness."
 instructions = [
 	"Adjust the machine so that you are correctly positioned. Your knees should be in line with the machine’s joint.",
 	"Extend your knees with control, until they are completely straight.",
 	"Slowly lower the weight again.",
 ]
 
-[categories.legs.leg_press]
+[[categories.category.exercise]]
 name = "Leg Press"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Hamstrings"]
-commentary = "The Leg Press is a compound exercise primarily targeting the quadriceps, hamstrings, and gluteal muscles, making it an excellent choice for building lower body strength. Performed on a leg press machine, the exercise involves sitting in a reclined position with feet placed shoulder-width apart on a platform. As the movement begins, the feet are pushed away from the body to extend the legs, followed by a controlled return to the starting position, ensuring that the knees do not exceed the toes to maintain proper form and reduce the risk of injury. This exercise can be adjusted for difficulty by varying the weight loaded on the machine, making it suitable for both beginners and advanced lifters."
+commentary = "The Leg Press is a strength training exercise that primarily targets the muscles of the lower body, including the quadriceps, hamstrings, and gluteus maximus. Performed using a leg press machine, the exercise involves sitting in a reclined position with your back against a padded support while placing your feet on a wide platform. By bending your knees and lowering the platform towards your body, then pushing it back up to the starting position, you create resistance that effectively engages the leg muscles. The Leg Press is well-suited for individuals looking to enhance leg strength, improve overall athletic performance, and build muscle mass, making it a versatile addition to any fitness routine."
 instructions = [
 	"Adjust the machine so that you only need to extend your legs slightly to be able to release the weights. Adjust the safety pins so that they catch the weight if you are unable to lift it.",
 	"Place your feet on the platform, about shoulder-width apart.",
@@ -1598,7 +1608,7 @@ instructions = [
 	"Press the weight back up again as you exhale.",
 ]
 
-[categories.legs.lying_leg_curl]
+[[categories.category.exercise]]
 name = "Lying Leg Curl"
 primary_muscles = ["Hamstrings"]
 commentary = "The lying leg curl is an isolation exercise where it is easy to focus on the hamstrings."
@@ -1608,10 +1618,10 @@ instructions = [
 	"Slowly lower the weight again.",
 ]
 
-[categories.legs.nordic_hamstring_eccentric]
+[[categories.category.exercise]]
 name = "Nordic Hamstring Eccentric"
 primary_muscles = ["Hamstrings"]
-commentary = "The Nordic Hamstring Eccentric exercise is a strength training movement focused on the hamstring muscles, designed to enhance muscle strength and reduce the risk of injuries. To perform the exercise, start by kneeling on a soft surface with your ankles secured, either by a partner holding them or utilizing a stable apparatus. Keeping your body straight from the knees to the shoulders, slowly lower your upper body towards the ground in a controlled manner, engaging your hamstrings to resist the descent. Once you reach a point of discomfort or failure, you can use your hands to push off the ground and return to the starting position. This exercise emphasizes the eccentric contraction of the hamstrings, making it a vital addition to any athlete's training regimen for improving flexibility and strength."
+commentary = "The Nordic Hamstring Eccentric exercise is a strength training movement designed to target and strengthen the hamstring muscles through controlled eccentric contraction. To perform this exercise, start by kneeling on a soft surface with your feet secured under a stable object or held by a partner. Keeping your body straight from your head to your knees, slowly lower your upper body towards the floor, allowing your hamstrings to lengthen under tension. Aim to descend as slowly as possible, engaging your core and avoiding any sudden movements. Once you reach the limit of your control, catch yourself with your hands and push back up to the starting position. This exercise helps improve muscle strength and may reduce the risk of hamstring injuries in athletes."
 instructions = [
 	"Start off standing on your knees with a straight hip. Feet wedged under something immovable, like a heavily loaded barbell, or a strong training partner.",
 	" Lean your torso forward by extending your knees with no hip movement. In other words, do not push your butt backward.",
@@ -1619,11 +1629,11 @@ instructions = [
 	"When your chest reaches the floor, push yourself up using your arms and start over. ",
 ]
 
-[categories.legs.pause_squat]
+[[categories.category.exercise]]
 name = "Pause Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
-commentary = "The Pause Squat is a variation of the traditional squat that emphasizes strength and stability by incorporating a deliberate pause at the bottom of the movement. To perform this exercise, start by standing with your feet shoulder-width apart, then descend into a squat by bending your knees and pushing your hips back. Once you reach the lowest point of your squat, pause for 2-3 seconds while maintaining tension in your muscles and keeping your chest upright. This extended hold helps improve control and form, engaging the quadriceps, hamstrings, and glutes effectively. After the pause, push through your heels to return to the starting position, making sure to maintain proper alignment throughout the movement. The Pause Squat is excellent for building strength in the squat and enhancing overall athletic performance."
+commentary = "The Pause Squat is a strength-training exercise that enhances stability, strength, and power in the lower body. To perform the Pause Squat, start by standing with your feet shoulder-width apart and your toes slightly pointed out. Initiate the squat by bending at the hips and knees, lowering your body while keeping your chest up and back straight. As you descend, pause at the bottom position for a few seconds, ensuring that your hips are below your knees and your weight is distributed on your heels. This pause eliminates momentum, forcing your muscles to engage more intensively. After the pause, push through your heels to return to the standing position, completing the rep. This exercise is excellent for building leg strength and improving squat form."
 instructions = [
 	"Place the bar on your upper back, inhale and brace your core slightly, and unrack the bar.",
 	"Take two steps back, and adjust your foot position.",
@@ -1633,7 +1643,7 @@ instructions = [
 	"Inhale and repeat for reps.",
 ]
 
-[categories.legs.pistol_squat]
+[[categories.category.exercise]]
 name = "Pistol Squat"
 primary_muscles = ["Quads", "Glutes"]
 secondary_muscles = ["Hamstrings"]
@@ -1647,7 +1657,7 @@ instructions = [
 	"Repeat for reps and switch legs.",
 ]
 
-[categories.legs.reverse_barbell_lunge]
+[[categories.category.exercise]]
 name = "Reverse Barbell Lunge"
 primary_muscles = ["Adductors", "Quads", "Glutes"]
 commentary = "The lunge is an exercise that not only strengthens your leg muscles, it can also be used to train your balance, coordination, and knee control. An alternative to using a barbell for external load is to hold weights (i.e., dumbbells or kettlebells) in your hands. "
@@ -1656,11 +1666,11 @@ instructions = [
 	"Return to the starting position by pushing yourself back with the front leg.",
 ]
 
-[categories.legs.romanian_deadlift]
+[[categories.category.exercise]]
 name = "Romanian Deadlift"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
-commentary = "The Romanian Deadlift (RDL) is a popular strength training exercise primarily targeting the hamstrings, glutes, and lower back, while also engaging the core. To perform the RDL, begin by standing with your feet hip-width apart, holding a barbell or dumbbells in front of your thighs with an overhand grip. Maintaining a slight bend in your knees, hinge at the hips by pushing your hips back and lowering the weights down along the front of your legs, keeping your back straight and chest up. Lower the weights until you feel a stretch in your hamstrings, usually around mid-shin level, then reverse the movement by driving your hips forward to return to the starting position. It's important to maintain control throughout the movement and avoid rounding your back to ensure safety and effectiveness."
+commentary = "The Romanian Deadlift (RDL) is a popular strength training exercise primarily targeting the hamstrings, glutes, and lower back, making it an excellent addition to any lower body workout routine. To perform the RDL, start by standing with your feet hip-width apart, holding a barbell or dumbbells in front of your thighs with an overhand grip. Keeping a slight bend in your knees, hinge at your hips to lower the weights down along the front of your legs while maintaining a straight back and neutral spine. The movement should feel like you are pushing your hips back rather than bending at the waist. Lower the weights until you feel a stretch in your hamstrings, typically just below your knees, then engage your glutes and hamstrings to rise back to the starting position. Ensure to keep the weights close to your body throughout the exercise to promote proper form and prevent injury."
 instructions = [
 	"Get into the starting position by deadlifting a barbell off the floor, or by unracking it from a barbell rack.",
 	"Inhale, brace your core slightly, and lean forward by hinging in your hips. Keep your knees almost completely extended.",
@@ -1669,7 +1679,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.legs.safety_bar_squat]
+[[categories.category.exercise]]
 name = "Safety Bar Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1684,17 +1694,17 @@ instructions = [
 	"Inhale and repeat for reps.",
 ]
 
-[categories.legs.seated_leg_curl]
+[[categories.category.exercise]]
 name = "Seated Leg Curl"
 primary_muscles = ["Hamstrings"]
-commentary = "The Seated Leg Curl is a strength training exercise that primarily targets the hamstrings located at the back of the thigh. To perform this exercise, sit on a leg curl machine with your back firmly against the support and your legs extended in front of you. Adjust the machine’s pad to rest just above your ankles. Begin the movement by curling your legs downwards towards the back of your thighs, contracting your hamstrings while keeping your upper body stationary. Control the movement as you return to the starting position, ensuring you maintain proper posture throughout the exercise. The Seated Leg Curl is effective for building muscle strength and improving overall leg stability."
+commentary = "The Seated Leg Curl is a strength training exercise primarily targeting the hamstrings, located at the back of the thigh. Performed on a specialized leg curl machine, the exercise involves sitting with the back against the padded support and placing the lower legs under a padded lever. As the user curls their legs downward, bending the knees to lift the weight, the hamstrings contract to control the movement. This exercise not only helps in building strength and definition in the hamstrings but also contributes to overall knee stability and athletic performance, making it an essential component of lower body workouts. Proper form is crucial to avoid injury and maximize effectiveness; thus, adjusting the machine settings to suit individual leg length is recommended."
 instructions = [
 	"Adjust the machine so that you are correctly positioned. Your knees should be in line with the machine’s joint.",
 	"Push the weight down by bending your knees as far as possible.",
 	"Slowly let the weight back again.",
 ]
 
-[categories.legs.shallow_body_weight_lunge]
+[[categories.category.exercise]]
 name = "Shallow Body Weight Lunge"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Hamstrings"]
@@ -1706,7 +1716,7 @@ instructions = [
 	"Repeat for reps. ",
 ]
 
-[categories.legs.side_lunges_bodyweight]
+[[categories.category.exercise]]
 name = "Side Lunges (Bodyweight)"
 primary_muscles = ["Quads", "Glutes"]
 secondary_muscles = ["Adductors"]
@@ -1719,7 +1729,7 @@ instructions = [
 	"Repeat for reps. ",
 ]
 
-[categories.legs.smith_machine_bulgarian_split_squat]
+[[categories.category.exercise]]
 name = "Smith Machine Bulgarian Split Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 commentary = "The bulgarian split squat is an exercise that offers plenty of benefits. The exercise trains your thighs and glutes hard while also training your control and stability in your knees and hips. Because the load is placed on one leg at a time, the activation increases in your core muscles, particularly the ones at your sides."
@@ -1731,7 +1741,7 @@ instructions = [
 	"Inhale at the top and repeat for reps.",
 ]
 
-[categories.legs.smith_machine_front_squat]
+[[categories.category.exercise]]
 name = "Smith Machine Front Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1745,7 +1755,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.legs.smith_machine_squat]
+[[categories.category.exercise]]
 name = "Smith Machine Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1758,11 +1768,11 @@ instructions = [
 	"Exhale on the way up, or exchange air in the top position.",
 ]
 
-[categories.legs.squat]
+[[categories.category.exercise]]
 name = "Squat"
 primary_muscles = ["Quads", "Adductors", "Glutes", "Lower Back"]
 secondary_muscles = ["Calves"]
-commentary = "The squat is a fundamental strength training exercise that primarily targets the muscles of the lower body, including the quadriceps, hamstrings, and glutes, while also engaging the core for stability. To perform a squat, one begins by standing with feet shoulder-width apart, then lowers the body by bending at the knees and hips, as if sitting back into a chair. It's important to keep the back straight and chest lifted throughout the movement to ensure proper form and prevent injury. Squats can be performed with body weight alone or with added resistance, such as dumbbells or a barbell, making them versatile for various fitness levels. Regularly incorporating squats into a workout routine can improve overall strength, balance, and flexibility."
+commentary = "The squat is a fundamental strength training exercise that targets multiple muscle groups, primarily focusing on the quadriceps, hamstrings, glutes, and lower back. It involves a controlled bending at the knees and hips, lowering the body as if sitting back into a chair, followed by returning to a standing position. Squats can be performed with body weight or added resistance, such as barbells or dumbbells, and can be modified to suit various fitness levels. This versatile exercise not only builds strength and stability in the lower body but also enhances core strength and overall functional fitness, making it an essential movement pattern for improving athletic performance and daily activities."
 instructions = [
 	"Place the bar on your upper back. Inhale and brace your core slightly, and unrack the bar.",
 	"Take two steps back, and adjust your foot position.",
@@ -1772,7 +1782,7 @@ instructions = [
 	"Inhale and repeat for reps.",
 ]
 
-[categories.legs.step_up]
+[[categories.category.exercise]]
 name = "Step Up"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Hamstrings"]
@@ -1785,11 +1795,11 @@ instructions = [
 	"You can keep your foot at the chair, and repeat for reps. ",
 ]
 
-[categories.legs.zercher_squat]
+[[categories.category.exercise]]
 name = "Zercher Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
-commentary = "The Zercher Squat is a unique lower body exercise that emphasizes the quadriceps, glutes, and core while also providing a challenging upper body component. In this squat variation, the lifter holds a barbell in the crooks of their elbows, positioning it close to the body. This requires participants to maintain an upright posture throughout the movement, which promotes better spinal alignment and stability. As the lifter descends into the squat, they engage their core to support the load and maintain balance, while the upright position enhances leg activation. This exercise is particularly beneficial for developing strength and functional movement patterns, making it a great addition to any strength training routine."
+commentary = "The Zercher Squat is a compound strength training exercise that targets the lower body, particularly the quadriceps, glutes, and hamstrings, while also engaging the core and upper back. To perform the Zercher Squat, the lifter begins by placing a barbell in the crooks of the elbows, cradled at the front of the body. Standing with feet shoulder-width apart, they then descend into a squat by bending at the hips and knees, ensuring to keep the chest up and the back straight. This position requires significant core stability and can enhance flexibility in the hips. The Zercher Squat is particularly beneficial for developing leg strength and improving squat mechanics, while also offering a unique variation to traditional squats by shifting the center of gravity."
 instructions = [
 	"Set a rack so that the barbell is just under the height of your elbow. Place the barbell in the crooks of your elbows. ",
 	"Back out from the rack, and brace your core. ",
@@ -1798,7 +1808,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps. ",
 ]
 
-[categories.legs.zombie_squat]
+[[categories.category.exercise]]
 name = "Zombie Squat"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Lower Back"]
 secondary_muscles = ["Calves"]
@@ -1814,11 +1824,13 @@ instructions = [
 
 ###
 
-[categories.back]
+[[categories.category]]
 
 total = 59
 
-[categories.back.assisted_chin_up]
+name = "Back"
+
+[[categories.category.exercise]]
 name = "Assisted Chin-Up"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -1830,7 +1842,7 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended.",
 ]
 
-[categories.back.assisted_pull_up]
+[[categories.category.exercise]]
 name = "Assisted Pull-Up"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -1842,11 +1854,11 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended again.",
 ]
 
-[categories.back.back_extension]
+[[categories.category.exercise]]
 name = "Back Extension"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Hamstrings"]
-commentary = "Back Extension is a strength training exercise primarily targeting the muscles of the lower back, specifically the erector spinae, along with involvement from the glutes and hamstrings. Performed typically on a back extension bench or similar apparatus, this exercise begins with the individual positioning themselves face down, securing their feet under the ankle pads. With a straight body alignment, they lower their torso towards the ground in a controlled movement, then engage their back muscles to raise the torso back to a horizontal or slightly hyperextended position. This movement not only enhances muscular endurance and strength in the posterior chain but also contributes to improved spinal stability and posture, making it a valuable addition to a comprehensive fitness routine."
+commentary = "Back Extension is a strength training exercise that targets the muscles of the lower back, glutes, and hamstrings, promoting improved posture and spinal stability. Typically performed on a hyperextension bench or similar apparatus, the exercise begins with the individual lying face down, securing their feet under the footpads. With a neutral spine, they bend at the hips to lower their upper body towards the ground, then engage their core and extend their back to return to the starting position, ensuring to avoid hyperextension of the spine. This movement effectively strengthens the erector spinae muscles and can also enhance athletic performance and reduce the risk of lower back injuries when executed with proper form."
 instructions = [
 	"First, adjust the machine: The top pad should be positioned against the top of your thighs.",
 	"Step onto the machine and position yourself with your feet shoulder-width apart and your upper thighs against the top pad.",
@@ -1856,11 +1868,11 @@ instructions = [
 	"Hold this position for a second, then inhale as you slowly lower your upper body back down to the starting position. Make sure to keep your movements slow and controlled, and don’t use momentum to swing your body up or down.",
 ]
 
-[categories.back.banded_muscle_up]
+[[categories.category.exercise]]
 name = "Banded Muscle-Up"
 primary_muscles = ["Chest", "Lats", "Triceps"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Front Deltoid", "Rear Deltoids", "Rotator Cuffs"]
-commentary = "The Banded Muscle-Up is a strength and conditioning exercise that combines the dynamic movements of a pull-up and a dip, using resistance bands to assist the athlete in achieving proper form and technique. This exercise is designed to build the necessary strength and coordination required for a traditional muscle-up, making it suitable for beginners or those looking to refine their skills. By securing a resistance band to a stable overhead structure and placing their knees or feet within the band, individuals can reduce the weight they need to pull, allowing them to focus on the motion of transitioning from the pull-up phase to the dip phase. As they become more proficient, they can gradually decrease the assistance from the bands, enhancing their upper body strength and momentum needed for the full muscle-up."
+commentary = "The Banded Muscle-Up is a modified version of the traditional muscle-up that incorporates resistance bands to assist the athlete in achieving the necessary strength and technique. This exercise targets multiple muscle groups, primarily focusing on the chest, shoulders, back, and arms, while also engaging the core for stabilization. To perform the Banded Muscle-Up, start by setting up a resistance band securely on a pull-up bar, ensuring it is at a height that allows for comfortable shoulder engagement. Grasp the band with both hands and initiate the movement by pulling yourself up explosively while transitioning into the dip position over the bar. The band provides support and reduces the overall load, making it an effective progression for those looking to build strength, improve their technique, and eventually achieve a full muscle-up without assistance. This exercise is ideal for athletes of varying skill levels, serving as a valuable tool for enhancing upper body strength and power."
 instructions = [
 	"Use a rubber band of self-selected resistance. The thicker the band, the easier it’ll be to get over the bar. ",
 	"Start with the band wrapped around one or both feet.",
@@ -1870,11 +1882,11 @@ instructions = [
 	"Finish with a press to locked elbows.",
 ]
 
-[categories.back.barbell_row]
+[[categories.category.exercise]]
 name = "Barbell Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Lower Back", "Forearm Flexors", "Rotator Cuff"]
-commentary = "The Barbell Row is a compound strength training exercise that targets the muscles of the upper back, including the latissimus dorsi, rhomboids, and trapezius, as well as engaging the biceps and core for stabilization. To perform the Barbell Row, stand with your feet shoulder-width apart, bend your knees slightly, and hinge forward at the hips while maintaining a straight back. Grasp the barbell with an overhand grip, slightly wider than shoulder-width, and pull the barbell towards your lower rib cage, squeezing your shoulder blades together at the top of the movement. Lower the barbell back to the starting position under control, ensuring to keep your elbows close to your body throughout the movement. This exercise can be performed with various grips and stances to target different muscle groups and enhance overall back development."
+commentary = "The Barbell Row is a compound strength training exercise primarily targeting the muscles of the back, including the latissimus dorsi, rhomboids, and trapezius, while also engaging the biceps and core. To perform the Barbell Row, start by standing with your feet shoulder-width apart and a barbell resting on the ground before you. Bend your knees slightly and hinge at the hips to lower your torso, keeping your back straight and nearly parallel to the floor. Grip the barbell with both hands at shoulder-width or slightly wider, then pull the barbell towards your lower rib cage while maintaining a strong core and a neutral spine. Squeeze your shoulder blades together at the top of the movement before lowering the barbell back to the starting position. This exercise not only builds upper body strength but also improves overall stability and posture when done with proper form."
 instructions = [
 	"Grip the bar with an overhand grip.",
 	"Lean forward with the bar hanging from straight arms.",
@@ -1883,7 +1895,7 @@ instructions = [
 	"With control, lower the bar back to the starting position.",
 ]
 
-[categories.back.barbell_shrug]
+[[categories.category.exercise]]
 name = "Barbell Shrug"
 primary_muscles = ["Trapezius"]
 secondary_muscles = ["Forearm Flexors"]
@@ -1894,7 +1906,7 @@ instructions = [
 	"Lower your shoulders again.",
 ]
 
-[categories.back.block_clean]
+[[categories.category.exercise]]
 name = "Block Clean"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Calves"]
@@ -1908,7 +1920,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.block_snatch]
+[[categories.category.exercise]]
 name = "Block Snatch"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Calves", "Forearm Flexors"]
@@ -1923,11 +1935,11 @@ instructions = [
 	"Lower the bar down to the blocks again, with control.",
 ]
 
-[categories.back.cable_close_grip_seated_row]
+[[categories.category.exercise]]
 name = "Cable Close Grip Seated Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuffs"]
-commentary = "The Cable Close Grip Seated Row is an effective strength training exercise that primarily targets the muscles of the back, particularly the latissimus dorsi, rhomboids, and trapezius, while also engaging the biceps and forearms. To perform this exercise, sit on a rowing machine with your feet securely placed on the footrests and grasp the close grip handle with both hands, palms facing each other. Keeping your back straight and core engaged, pull the handle towards your abdomen in a smooth motion, squeezing your shoulder blades together at the peak of the movement. Slowly return to the starting position, maintaining control throughout the movement to maximize muscle engagement. This exercise is beneficial for improving overall upper body strength and posture."
+commentary = "The Cable Close Grip Seated Row is an effective exercise designed to target the muscles of the back, particularly the latissimus dorsi, rhomboids, and trapezius, as well as the biceps. To perform the exercise, sit on a rowing machine with your feet planted firmly on the footrests and adjust the seat height as necessary. Grasp the close grip handle with both hands, keeping your palms facing each other. With your back straight and chest up, pull the handle toward your torso, squeezing your shoulder blades together at the peak of the movement. Control the return motion by fully extending your arms back to the starting position while maintaining proper posture. This exercise emphasizes a full range of motion and can be adjusted in weight to accommodate various fitness levels, making it an excellent addition to strength training routines."
 instructions = [
 	"Attach a narrow handle to the cable row, and assume the starting position.",
 	"Maintain an upright posture with your chest out, shoulders back, and core engaged. Lean forward slightly and let your scapulae move freely by letting them slide forward to the starting position.",
@@ -1935,7 +1947,7 @@ instructions = [
 	"Exhale and slowly return to the starting position by extending your arms and leaning forward.",
 ]
 
-[categories.back.cable_wide_grip_seated_row]
+[[categories.category.exercise]]
 name = "Cable Wide Grip Seated Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuffs"]
@@ -1946,7 +1958,7 @@ instructions = [
 	"Exhale and slowly return to the starting position by extending your arms and leaning forward.",
 ]
 
-[categories.back.chest_to_bar]
+[[categories.category.exercise]]
 name = "Chest to Bar"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Rear Deltoids", "Biceps", "Rotator Cuff", "Forearm Flexors"]
@@ -1959,7 +1971,7 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.back.chin_up]
+[[categories.category.exercise]]
 name = "Chin-Up"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -1971,7 +1983,7 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended.",
 ]
 
-[categories.back.clean]
+[[categories.category.exercise]]
 name = "Clean"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Calves"]
@@ -1985,7 +1997,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.clean_and_jerk]
+[[categories.category.exercise]]
 name = "Clean and Jerk"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads", "Front Deltoid"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Triceps", "Lateral Deltoid", "Calves"]
@@ -2001,11 +2013,11 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.deadlift]
+[[categories.category.exercise]]
 name = "Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
-commentary = "The deadlift is a fundamental strength training exercise that involves lifting a loaded barbell or dumbbells from the ground to hip level, engaging multiple muscle groups including the legs, back, and core. It primarily targets the gluteus maximus, hamstrings, and muscles of the lower back, promoting overall strength and stability. Proper form is crucial; the lifter should stand with feet hip-width apart, grip the bar just outside the knees, and maintain a neutral spine while driving through the heels to lift the weight. The deadlift not only enhances muscle development but also improves functional movement patterns, making it a staple in strength training routines for athletes and fitness enthusiasts alike."
+commentary = "The deadlift is a fundamental strength training exercise that targets multiple muscle groups, primarily focusing on the posterior chain, which includes the hamstrings, glutes, lower back, and traps. To perform a deadlift, an individual begins by standing with their feet shoulder-width apart, with a loaded barbell positioned over the midfoot. The lifter bends at the hips and knees to grasp the bar with both hands, ensuring that the back remains straight and the chest is up. With a firm grip, the lifter then engages their core and drives through their heels to lift the barbell off the ground, extending the hips and knees simultaneously until fully upright. This compound movement not only builds strength and muscle mass but also improves overall stability and posture when performed with proper technique."
 instructions = [
 	"Step up close to the bar so that it is about over the middle of your foot.",
 	"Inhale, lean forward, and grip the bar.",
@@ -2015,7 +2027,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.deficit_deadlift]
+[[categories.category.exercise]]
 name = "Deficit Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
@@ -2029,7 +2041,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.dumbbell_deadlift]
+[[categories.category.exercise]]
 name = "Dumbbell Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
@@ -2041,11 +2053,11 @@ instructions = [
 	"Reverse the movement, and return to a standing position. Exhale on the way up.",
 ]
 
-[categories.back.dumbbell_row]
+[[categories.category.exercise]]
 name = "Dumbbell Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
-commentary = "The Dumbbell Row is a strength training exercise that primarily targets the muscles of the upper back, particularly the lats, rhomboids, and traps, while also engaging the biceps and core for stabilization. To perform the Dumbbell Row, begin by standing with your feet shoulder-width apart, holding a dumbbell in one hand. Bend at the hips and knees, keeping your back straight and core engaged, and rest your opposite hand on a sturdy bench for support. With your arm extended towards the floor and your palm facing inward, pull the dumbbell towards your hip while keeping your elbow close to your body. Squeeze the shoulder blade at the top of the movement, then slowly lower the dumbbell back to the starting position. Ensure that your movements are controlled and maintain proper form throughout the exercise to maximize effectiveness and reduce the risk of injury."
+commentary = "The Dumbbell Row is a powerful resistance training exercise primarily targeting the muscles of the upper back, including the latissimus dorsi, rhomboids, and trapezius, while also engaging the biceps and shoulders. To perform this exercise, start by standing with your feet shoulder-width apart, holding a dumbbell in each hand. Bend forward at the hips, keeping your back flat and core engaged, allowing the weights to hang at arm's length. Pull the dumbbells toward your torso, keeping your elbows close to your body and squeezing your shoulder blades together at the top of the movement. Lower the weights back to the starting position with control. This exercise can be performed with one arm at a time (supported on a bench) or both arms simultaneously, making it versatile for various fitness levels and goals."
 instructions = [
 	"Start by placing a dumbbell on the floor beside a bench or chair. Stand facing the bench or chair and place your left hand and left knee on top of it.",
 	"Keep your back flat and parallel to the ground, with a slight bend in the standing leg. Grip the dumbbell with your right hand.",
@@ -2054,18 +2066,18 @@ instructions = [
 	"Complete desired reps on one side, then switch to the opposite arm and leg.",
 ]
 
-[categories.back.dumbbell_shrug]
+[[categories.category.exercise]]
 name = "Dumbbell Shrug"
 primary_muscles = ["Trapezius"]
 secondary_muscles = ["Forearm Flexors"]
-commentary = "The Dumbbell Shrug is an effective strength-training exercise primarily targeting the upper trapezius muscles, which are located in the upper back and neck area. To perform this exercise, stand with your feet shoulder-width apart while holding a dumbbell in each hand at your sides, with your arms fully extended and palms facing your body. As you lift the dumbbells, shrug your shoulders upwards towards your ears while keeping your arms straight and avoiding any movement in the elbows. Hold the position briefly at the top, feeling the contraction in your traps, before slowly lowering your shoulders back to the starting position. This exercise helps enhance shoulder stability, improve posture, and build upper body strength, making it a valuable addition to any workout routine."
+commentary = "The Dumbbell Shrug is a strength-training exercise primarily targeting the trapezius muscles in the upper back and neck. To perform the exercise, stand upright with a dumbbell in each hand, arms fully extended at your sides and feet shoulder-width apart. Engage your core and maintain a straight posture throughout the movement. Raise your shoulders as high as possible towards your ears, squeezing the traps at the top of the movement, then slowly lower your shoulders back to the starting position. This exercise can help improve shoulder stability, enhance upper body strength, and contribute to overall muscular development in the back."
 instructions = [
 	"Hold a pair of dumbbells at your sides.",
 	"Lift your shoulders straight up as high as possible.",
 	"Lower your shoulders again.",
 ]
 
-[categories.back.floor_back_extension]
+[[categories.category.exercise]]
 name = "Floor Back Extension"
 primary_muscles = ["Lower Back"]
 commentary = "Floor back extensions are a great exercise to do at home since it does not require any equipment. It could also serve as a warmup exercise if you want to activate your lower back. "
@@ -2077,7 +2089,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.back.good_morning]
+[[categories.category.exercise]]
 name = "Good Morning"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors"]
@@ -2092,7 +2104,7 @@ instructions = [
 	"At the top, inhale and repeat for reps.",
 ]
 
-[categories.back.gorilla_row]
+[[categories.category.exercise]]
 name = "Gorilla Row"
 primary_muscles = ["Lats", "Trapezius", "Rotator Cuff"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rear Deltoids"]
@@ -2104,7 +2116,7 @@ instructions = [
 	"Continue alternating arms for the desired number of repetitions.",
 ]
 
-[categories.back.hang_clean]
+[[categories.category.exercise]]
 name = "Hang Clean"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Calves"]
@@ -2118,7 +2130,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.hang_power_clean]
+[[categories.category.exercise]]
 name = "Hang Power Clean"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Adductors", "Hamstrings", "Trapezius", "Forearm Flexors"]
@@ -2133,7 +2145,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.hang_power_snatch]
+[[categories.category.exercise]]
 name = "Hang Power Snatch"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Adductors", "Hamstrings", "Trapezius", "Forearm Flexors"]
@@ -2148,7 +2160,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.hang_snatch]
+[[categories.category.exercise]]
 name = "Hang Snatch"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Calves"]
@@ -2163,7 +2175,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.inverted_row]
+[[categories.category.exercise]]
 name = "Inverted Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2175,7 +2187,7 @@ instructions = [
 	"Exhale, while lowering yourself back to the starting position with control.",
 ]
 
-[categories.back.inverted_row_with_underhand_grip]
+[[categories.category.exercise]]
 name = "Inverted Row with Underhand Grip"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2187,7 +2199,7 @@ instructions = [
 	"Exhale, while lowering yourself back to the starting position with control.",
 ]
 
-[categories.back.jefferson_curl]
+[[categories.category.exercise]]
 name = "Jefferson Curl"
 primary_muscles = ["Lower Back"]
 secondary_muscles = ["Adductors", "Glutes", "Hamstrings", "Trapezius"]
@@ -2200,11 +2212,11 @@ instructions = [
 	"Start uncurling your spine, beginning from the lower back and working your way up to your neck until you have returned to the starting position.",
 ]
 
-[categories.back.jumping_muscle_up]
+[[categories.category.exercise]]
 name = "Jumping Muscle-Up"
 primary_muscles = ["Chest", "Lats", "Triceps"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Front Deltoid", "Rear Deltoids", "Rotator Cuffs"]
-commentary = "The Jumping Muscle-Up is a compound upper body exercise that combines a pull-up and a dip, designed to build strength, power, and coordination. To perform this exercise, start by positioning yourself beneath a pull-up bar. With a grip slightly wider than shoulder-width, jump off the ground while simultaneously pulling your body upward, using both your legs and arms to generate momentum. As you reach the peak of your jump, transition into a dip by rotating your wrists and pulling your chest over the bar, then push down to extend your arms and complete the movement above the bar. This dynamic exercise not only enhances muscle engagement in the shoulders, chest, and triceps but also improves overall athleticism and explosiveness."
+commentary = "The Jumping Muscle-Up is a dynamic upper body exercise that combines a pull-up with a dip, designed to develop strength and explosive power. To perform the exercise, begin by standing under a set of gymnastic rings or a sturdy bar, then initiate a jumping motion to propel yourself upward while simultaneously pulling yourself towards the bar or rings. As your chest approaches the bar, transition your grip to push down, allowing your torso to move above the bar. Finally, transition into a dip by extending your arms and pushing your body upward until you are fully extended above the bar. This exercise not only enhances muscular strength and coordination but also improves the overall explosive power necessary for advanced calisthenics."
 instructions = [
 	"Use a box of self-selected height.",
 	"Start on top of the box with bent knees and straight arms/elbows. Keep a firm grip on the rings.",
@@ -2212,7 +2224,7 @@ instructions = [
 	"Find a balanced and secure position to land at the bottom of the dip. Try to squeeze the rings against your body (torso or stomach) before continuing the movement with the finishing dip press.",
 ]
 
-[categories.back.kettlebell_swing]
+[[categories.category.exercise]]
 name = "Kettlebell Swing"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
@@ -2226,11 +2238,11 @@ instructions = [
 	"Repeat for reps and put the kettlebell back on the ground when you’re finished.",
 ]
 
-[categories.back.lat_pulldown_with_pronated_grip]
+[[categories.category.exercise]]
 name = "Lat Pulldown With Pronated Grip"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
-commentary = "The Lat Pulldown with Pronated Grip is an effective strength training exercise that primarily targets the latissimus dorsi, the large muscle in your back, while also engaging the biceps and forearms. To perform this exercise, sit at a lat pulldown machine and grasp the bar with an overhand grip, hands slightly wider than shoulder-width apart. Keep your feet flat on the ground and your knees secured under the padded support. As you pull the bar down towards your upper chest, focus on squeezing your shoulder blades together and engaging your back muscles, avoiding any excessive leaning back. Ensure a controlled motion both during the pull and the return, allowing the bar to rise back to the starting position while maintaining tension in your muscles. This exercise is excellent for building upper body strength and enhancing overall back development."
+commentary = "The Lat Pulldown with Pronated Grip is a strength training exercise primarily targeting the latissimus dorsi muscles in the back, while also engaging the biceps and forearms. To perform this exercise, sit at a lat pulldown machine and adjust the knee pad for a snug fit to secure your legs. Grasp the bar with a wide grip, palms facing away from you (pronated grip), while keeping your arms fully extended. Inhale and pull the bar down towards your upper chest, retracting your shoulder blades and keeping your elbows pointed down and back. Focus on squeezing your back muscles at the bottom of the movement before gradually returning to the starting position with control. This exercise helps build upper body strength and promotes a strong, well-defined back."
 instructions = [
 	"Begin by adjusting the thigh pad to fit snugly against your thighs to prevent your body from lifting off the seat.",
 	"Grasp the bar with an overhand (pronated) grip, with your hands slightly wider than shoulder-width apart.",
@@ -2240,7 +2252,7 @@ instructions = [
 	"Exhale and slowly release the bar back up to the starting position.",
 ]
 
-[categories.back.lat_pulldown_with_supinated_grip]
+[[categories.category.exercise]]
 name = "Lat Pulldown With Supinated Grip"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -2253,11 +2265,11 @@ instructions = [
 	"Exhale and slowly return the bar until your arms are fully extended.",
 ]
 
-[categories.back.muscle_up_bar]
+[[categories.category.exercise]]
 name = "Muscle-Up (Bar)"
 primary_muscles = ["Chest", "Lats", "Triceps"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Front Deltoid", "Rear Deltoids", "Rotator Cuffs"]
-commentary = "The Muscle-Up (Bar) is an advanced compound exercise that combines a pull-up with a dip, requiring a high level of strength, coordination, and technique. It starts with the athlete hanging from a straight bar with an overhand grip, engaging the core and upper body muscles. The movement begins with a powerful pull upwards, transitioning into a phase where the chest rises above the bar, followed by a rotation of the wrists to push down into a dip position. The exercise effectively targets the upper body, specifically the back, shoulders, and arms, while also engaging the core for stability. Mastery of the Muscle-Up requires practice and progression from simpler movements, as it demands not only strength but also timing and body control."
+commentary = "The Muscle-Up (Bar) is an advanced bodyweight exercise that combines a pull-up with a dip, allowing the athlete to transition from hanging below a bar to a position above it. This movement requires significant upper body strength, coordination, and technique, engaging multiple muscle groups, notably the back, biceps, chest, and shoulders. To perform a Muscle-Up, one begins by gripping a horizontal bar with palms facing away, executing a powerful pull-up to bring the chin above the bar, and then swiftly transitioning into a dip by leaning forward and pushing down until the arms are fully extended. Mastering the Muscle-Up not only enhances functional strength but also improves athletic performance and showcases impressive body control."
 instructions = [
 	"Grip the bar with a false grip (your wrists flexed and your knuckles above the bar).",
 	"Initiate the movement by powerfully pulling the bar toward your stomach.",
@@ -2265,11 +2277,11 @@ instructions = [
 	"Finish the movement by extending your elbows to lock out at the top.",
 ]
 
-[categories.back.muscle_up_rings]
+[[categories.category.exercise]]
 name = "Muscle-Up (Rings)"
 primary_muscles = ["Chest", "Lats", "Triceps"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Front Deltoid", "Rear Deltoids", "Rotator Cuffs"]
-commentary = "The Muscle-Up (Rings) is an advanced calisthenics exercise that combines a pull-up and a dip into a fluid, explosive motion, performed on gymnastic rings. This powerful movement begins with the athlete gripping the rings and explosively pulling their body upward, transitioning to a dip position as they get above the rings. Maintaining control throughout, the athlete finishes by pressing down on the rings to raise their torso over them, ultimately locking out their arms at the top. The Muscle-Up (Rings) demands significant upper body strength, core stability, and technique, making it a challenging yet rewarding element of any strength training or gymnastics routine."
+commentary = "The Muscle-Up on rings is an advanced calisthenics exercise that combines a pull-up and a dip into one fluid movement, performed on gymnastic rings. To execute a Muscle-Up, the individual starts by gripping the rings with an overhand grip, then performs a powerful pull-up while leaning slightly forward to ensure the chest clears the rings. As the body reaches the peak of the pull-up, the athlete transitions by rotating the wrists and shifting their torso over the rings, ultimately pressing down to complete the dip above the rings. This exercise requires significant upper body strength, coordination, and technique, engaging the shoulders, chest, triceps, and core simultaneously, making it a demanding yet rewarding movement in strength training and gymnastics."
 instructions = [
 	"Grip the rings with a false grip (Your wrists flexed, and your knuckles through the rings).",
 	"Initiate the movement by powerfully pulling the rings to your chest or armpits.",
@@ -2278,7 +2290,7 @@ instructions = [
 	"From here, press yourself to the top of the dip with extended elbows.",
 ]
 
-[categories.back.one_handed_cable_row]
+[[categories.category.exercise]]
 name = "One-Handed Cable Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuffs"]
@@ -2289,7 +2301,7 @@ instructions = [
 	"Exhale and slowly return to the starting position by extending your arm and leaning forward.",
 ]
 
-[categories.back.one_handed_lat_pulldown]
+[[categories.category.exercise]]
 name = "One-Handed Lat Pulldown"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -2300,11 +2312,11 @@ instructions = [
 	"Exhale and slowly return the handle until your arm is extended again.",
 ]
 
-[categories.back.pause_deadlift]
+[[categories.category.exercise]]
 name = "Pause Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
-commentary = "The Pause Deadlift is a variation of the traditional deadlift that emphasizes strength and control at specific points of the lift. It involves lifting a loaded barbell from the floor, but with a deliberate pause at one or more points in the movement, typically just below the knee or at the knee level. This pause helps to eliminate momentum, forcing the lifter to engage their muscles more effectively and develop greater stability and power. The Pause Deadlift can benefit athletes by enhancing their ability to maintain proper form under load, increasing overall strength, and improving their deadlift performance by addressing sticking points in the lift."
+commentary = "The Pause Deadlift is a variation of the traditional deadlift that focuses on building strength and improving technique by introducing a deliberate pause during the lift. In this exercise, the lifter begins by setting up in the standard deadlift position with feet hip-width apart and the barbell over the midfoot. As they lift the barbell, they pause just below the knee for a few seconds, maintaining tension in the muscles and ensuring proper form. This pause challenges the lifter's stability and power in the transition phase of the lift, making it an effective way to address any weaknesses and enhance overall deadlifting performance. After the pause, the lifter completes the lift by driving through the heels and extending the hips until standing upright."
 instructions = [
 	"Step up close to the bar, so that it is about over the middle of your foot.",
 	"Inhale, lean forward, and grip the bar.",
@@ -2315,7 +2327,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.pendlay_row]
+[[categories.category.exercise]]
 name = "Pendlay Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Lower Back", "Forearm Flexors", "Rotator Cuff"]
@@ -2326,7 +2338,7 @@ instructions = [
 	"With control, lower the bar back to the floor.",
 ]
 
-[categories.back.power_clean]
+[[categories.category.exercise]]
 name = "Power Clean"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Adductors", "Hamstrings", "Trapezius", "Forearm Flexors"]
@@ -2340,7 +2352,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.power_snatch]
+[[categories.category.exercise]]
 name = "Power Snatch"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Adductors", "Hamstrings", "Trapezius", "Forearm Flexors"]
@@ -2355,7 +2367,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.pull_up]
+[[categories.category.exercise]]
 name = "Pull-Up"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -2367,7 +2379,7 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended.",
 ]
 
-[categories.back.pull_up_with_a_neutral_grip]
+[[categories.category.exercise]]
 name = "Pull-Up With a Neutral Grip"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -2379,11 +2391,11 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended.",
 ]
 
-[categories.back.rack_pull]
+[[categories.category.exercise]]
 name = "Rack Pull"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
-commentary = "The Rack Pull is a strength training exercise that targets the posterior chain, particularly the muscles of the back, glutes, and hamstrings. Performed using a barbell elevated on a rack or blocks, the exercise begins with the lifter standing in front of the bar, bending at the hips and knees to grip the bar. As the lift begins, the lifter pulls the barbell upward while maintaining a neutral spine and engaged core, focusing on driving through the heels. Rack Pulls are often used to build strength for conventional deadlifts or to enhance overall pulling power, providing a modified range of motion that reduces strain on the lower back."
+commentary = "The Rack Pull is a partial deadlift exercise typically performed from an elevated position, such as a squat rack or blocks, to target the posterior chain muscles, particularly the back, glutes, and hamstrings. In this exercise, the lifter sets a loaded barbell on the rack at knee height or slightly below, grips the bar with both hands, and then lifts the bar to a standing position while maintaining a stable spine. This movement allows for a greater focus on the top portion of the deadlift, reducing the range of motion and enabling heavier loads to be lifted. Rack Pulls help to improve strength and power in the deadlift, enhance muscle hypertrophy, and can be a useful variation for addressing weak points in the lift."
 instructions = [
 	"Set the bar at desired height, using a rack or blocks.",
 	"Step up close to the bar, so that it is over the middle of your foot.",
@@ -2393,7 +2405,7 @@ instructions = [
 	"Lower the bar back to the rack or blocks with control.",
 ]
 
-[categories.back.ring_pull_up]
+[[categories.category.exercise]]
 name = "Ring Pull-Up"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Forearm Flexors", "Rotator Cuffs"]
@@ -2406,7 +2418,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.back.ring_row]
+[[categories.category.exercise]]
 name = "Ring Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2419,7 +2431,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.back.scap_pull_up]
+[[categories.category.exercise]]
 name = "Scap Pull-Up"
 primary_muscles = ["Rotator Cuff", "Forearm Flexors"]
 commentary = "Scap pull-ups mimics the first part of a pull-up, and can be a useful exercise for learning what muscles you need to use in a pull-up."
@@ -2429,7 +2441,7 @@ instructions = [
 	"Exhale, relax the shoulder blades and let them come up again.",
 ]
 
-[categories.back.seal_row]
+[[categories.category.exercise]]
 name = "Seal Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2442,7 +2454,7 @@ instructions = [
 	"With control, lower the bar back to the starting position.",
 ]
 
-[categories.back.seated_machine_row]
+[[categories.category.exercise]]
 name = "Seated Machine Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2453,7 +2465,7 @@ instructions = [
 	"Exhale and slowly return the handles to the starting position again.",
 ]
 
-[categories.back.single_leg_deadlift_with_kettlebell]
+[[categories.category.exercise]]
 name = "Single Leg Deadlift with Kettlebell"
 primary_muscles = ["Glutes", "Hamstrings", "Lower Back"]
 secondary_muscles = ["Abductors", "Adductors", "Forearm Flexors", "Trapezius"]
@@ -2466,7 +2478,7 @@ instructions = [
 	"Repeat for the desired number of repetitions, and then switch legs. ",
 ]
 
-[categories.back.smith_machine_one_handed_row]
+[[categories.category.exercise]]
 name = "Smith Machine One-Handed Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Forearm Flexors", "Rotator Cuff"]
@@ -2480,7 +2492,7 @@ instructions = [
 	"Repeat for the desired number of reps, then switch sides.",
 ]
 
-[categories.back.snatch]
+[[categories.category.exercise]]
 name = "Snatch"
 primary_muscles = ["Glutes", "Lower Back", "Adductors", "Quads"]
 secondary_muscles = ["Hamstrings", "Trapezius", "Forearm Flexors", "Calves"]
@@ -2495,7 +2507,7 @@ instructions = [
 	"Lower the bar in front of you, with control.",
 ]
 
-[categories.back.snatch_grip_deadlift]
+[[categories.category.exercise]]
 name = "Snatch Grip Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
@@ -2509,7 +2521,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.stiff_legged_deadlift]
+[[categories.category.exercise]]
 name = "Stiff-Legged Deadlift"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
@@ -2523,7 +2535,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.straight_arm_lat_pulldown]
+[[categories.category.exercise]]
 name = "Straight Arm Lat Pulldown"
 primary_muscles = ["Lats"]
 secondary_muscles = ["Rear Deltoids", "Rotator Cuffs"]
@@ -2534,7 +2546,7 @@ instructions = [
 	"Slowly return the bar to the starting position.",
 ]
 
-[categories.back.sumo_deadlift]
+[[categories.category.exercise]]
 name = "Sumo Deadlift"
 primary_muscles = ["Glutes", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius", "Forearm Flexors"]
@@ -2548,7 +2560,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.t_bar_row]
+[[categories.category.exercise]]
 name = "T-Bar Row"
 primary_muscles = ["Lats", "Trapezius", "Rear Deltoids"]
 secondary_muscles = ["Biceps", "Lower Back", "Forearm Flexors", "Rotator Cuff"]
@@ -2559,7 +2571,7 @@ instructions = [
 	"With control, lower the bar back to the starting position.",
 ]
 
-[categories.back.trap_bar_deadlift_with_high_handles]
+[[categories.category.exercise]]
 name = "Trap Bar Deadlift With High Handles"
 primary_muscles = ["Glutes", "Lower Back", "Quads"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
@@ -2573,7 +2585,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.back.trap_bar_deadlift_with_low_handles]
+[[categories.category.exercise]]
 name = "Trap Bar Deadlift With Low Handles"
 primary_muscles = ["Glutes", "Lower Back", "Quads"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
@@ -2589,11 +2601,13 @@ instructions = [
 
 ###
 
-[categories.glute]
+[[categories.category]]
 
 total = 26
 
-[categories.glute.banded_side_kicks]
+name = "Glute"
+
+[[categories.category.exercise]]
 name = "Banded Side Kicks"
 primary_muscles = ["Abductors"]
 secondary_muscles = ["Glutes"]
@@ -2604,7 +2618,7 @@ instructions = [
 	"Bring the leg back in while resisting the band.",
 ]
 
-[categories.glute.cable_pull_through]
+[[categories.category.exercise]]
 name = "Cable Pull Through"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Lower Back", "Hamstrings", "Adductors"]
@@ -2615,7 +2629,7 @@ instructions = [
 	"Extend your hip again, and return to standing.",
 ]
 
-[categories.glute.clamshells]
+[[categories.category.exercise]]
 name = "Clamshells"
 primary_muscles = ["Abductors"]
 secondary_muscles = ["Glutes"]
@@ -2627,7 +2641,7 @@ instructions = [
 	"Lower the leg in a slow and controlled motion, and repeat for reps. ",
 ]
 
-[categories.glute.cossack_squat]
+[[categories.category.exercise]]
 name = "Cossack Squat"
 primary_muscles = ["Glutes ", "Quads"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2640,7 +2654,7 @@ instructions = [
 	"Repeat on the opposite side, alternating legs for the desired number of repetitions.",
 ]
 
-[categories.glute.death_march_with_dumbbells]
+[[categories.category.exercise]]
 name = "Death March with Dumbbells"
 primary_muscles = ["Glutes", "Hamstrings", "Lower Back"]
 secondary_muscles = ["Adductors", "Forearm Flexors", "Trapezius"]
@@ -2653,7 +2667,7 @@ instructions = [
 	"Repeat the movement, alternating legs with each step.",
 ]
 
-[categories.glute.donkey_kicks]
+[[categories.category.exercise]]
 name = "Donkey Kicks"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2666,7 +2680,7 @@ instructions = [
 	"Repeat for the desired number of reps, then switch legs.",
 ]
 
-[categories.glute.dumbbell_romanian_deadlift]
+[[categories.category.exercise]]
 name = "Dumbbell Romanian Deadlift"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
@@ -2679,7 +2693,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.glute.dumbbell_frog_pumps]
+[[categories.category.exercise]]
 name = "Dumbbell Frog Pumps"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2691,7 +2705,7 @@ instructions = [
 	"Pause at the top and then reverse the movement. Make sure to do the entire movement slow and controlled.",
 ]
 
-[categories.glute.fire_hydrants]
+[[categories.category.exercise]]
 name = "Fire Hydrants"
 primary_muscles = ["Glutes"]
 commentary = "Fire hydrants is a suitable exercise to do at home, since it does not require any equipment. It can also be used to activate the glutes before a workout. If you want to make it more challenging, you can add a band around your knees or an ankle weight to your leg. "
@@ -2701,7 +2715,7 @@ instructions = [
 	"Slowly lower your leg and repeat for reps. ",
 ]
 
-[categories.glute.frog_pumps]
+[[categories.category.exercise]]
 name = "Frog Pumps"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2713,7 +2727,7 @@ instructions = [
 	"Pause at the top and then reverse the movement. Make sure to do the entire movement slow and controlled.",
 ]
 
-[categories.glute.glute_bridge]
+[[categories.category.exercise]]
 name = "Glute Bridge"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Quads"]
@@ -2726,7 +2740,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps. ",
 ]
 
-[categories.glute.hip_abduction_against_band]
+[[categories.category.exercise]]
 name = "Hip Abduction Against Band"
 primary_muscles = ["Abductors"]
 secondary_muscles = ["Glutes"]
@@ -2737,7 +2751,7 @@ instructions = [
 	"Return with control to the starting position.",
 ]
 
-[categories.glute.hip_abduction_machine]
+[[categories.category.exercise]]
 name = "Hip Abduction Machine"
 primary_muscles = ["Abductors"]
 secondary_muscles = ["Glutes"]
@@ -2748,7 +2762,7 @@ instructions = [
 	"Return with control to the starting position.",
 ]
 
-[categories.glute.hip_thrust]
+[[categories.category.exercise]]
 name = "Hip Thrust"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Quads"]
@@ -2762,7 +2776,7 @@ instructions = [
 	"Lower the weight and repeat for reps.",
 ]
 
-[categories.glute.hip_thrust_machine]
+[[categories.category.exercise]]
 name = "Hip Thrust Machine"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Quads"]
@@ -2773,7 +2787,7 @@ instructions = [
 	"Lower the weight and repeat for reps.",
 ]
 
-[categories.glute.hip_thrust_with_band_around_knees]
+[[categories.category.exercise]]
 name = "Hip Thrust With Band Around Knees"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Abductors", "Quads"]
@@ -2788,7 +2802,7 @@ instructions = [
 	"Lower the weight and repeat for reps.",
 ]
 
-[categories.glute.lateral_walk_with_band]
+[[categories.category.exercise]]
 name = "Lateral Walk With Band"
 primary_muscles = ["Abductors"]
 secondary_muscles = ["Glutes"]
@@ -2799,7 +2813,7 @@ instructions = [
 	"Choose for yourself if you want to change direction after every step, or if you for example want to walk ten steps in one direction followed by ten steps in the other direction.",
 ]
 
-[categories.glute.machine_glute_kickbacks]
+[[categories.category.exercise]]
 name = "Machine Glute Kickbacks"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2811,7 +2825,7 @@ instructions = [
 	"Do all reps on one side first, and then switch to the other leg.",
 ]
 
-[categories.glute.one_legged_glute_bridge]
+[[categories.category.exercise]]
 name = "One-Legged Glute Bridge"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Abductors", "Quads"]
@@ -2824,7 +2838,7 @@ instructions = [
 	"Reverse the movement, and repeat for reps.",
 ]
 
-[categories.glute.one_legged_hip_thrust_]
+[[categories.category.exercise]]
 name = "One-Legged Hip Thrust "
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Abductors", "Quads"]
@@ -2836,7 +2850,7 @@ instructions = [
 	"Lower the hips and repeat for reps.",
 ]
 
-[categories.glute.reverse_hyperextension]
+[[categories.category.exercise]]
 name = "Reverse Hyperextension"
 primary_muscles = ["Glutes", "Hamstrings", "Lower back"]
 commentary = "Reverse hyperextensions can be a good alternative for those looking to strengthen the lower back and glutes with reduced spinal loading, rehabilitate lower back injuries, or add variety to posterior chain training without the need for heavy lifting."
@@ -2850,11 +2864,11 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.glute.romanian_deadlift]
+[[categories.category.exercise]]
 name = "Romanian Deadlift"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
-commentary = "The Romanian Deadlift is a strength training exercise primarily targeting the hamstrings, glutes, and lower back. To perform this movement, begin by standing with your feet hip-width apart while holding a barbell or dumbbells in front of your thighs with an overhand grip. Keeping your knees slightly bent, hinge at the hips to lower the weights along the front of your legs, ensuring to maintain a straight back and a neutral spine. Lower until you feel a stretch in your hamstrings, typically around mid-shin level, then reverse the motion by driving through your heels, engaging your glutes and hamstrings, and returning to the starting position. The Romanian Deadlift emphasizes proper form and control, making it an effective exercise for building posterior chain strength and improving overall athletic performance."
+commentary = "The Romanian Deadlift is a powerful strength training exercise primarily targeting the hamstrings, glutes, and lower back. To perform the exercise, start by standing with your feet hip-width apart, holding a barbell or dumbbells in front of your thighs with an overhand grip. Keeping a slight bend in your knees, hinge at the hips and lower the weights down along your legs while maintaining a neutral spine. Lower the weights until you feel a stretch in your hamstrings, usually just below knee level, then press through your heels and engage your glutes to return to the starting position. This movement emphasizes proper form and control, making it an effective way to build strength and stability in the posterior chain."
 instructions = [
 	"Get into the starting position by deadlifting a barbell off the floor, or by unracking it from a barbell rack.",
 	"Inhale, brace your core slightly, and lean forward by hinging in your hips. Keep your knees almost completely extended.",
@@ -2863,7 +2877,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.glute.smith_machine_hip_thrust]
+[[categories.category.exercise]]
 name = "Smith Machine Hip Thrust"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Adductors", "Quads"]
@@ -2878,7 +2892,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.glute.single_leg_romanian_deadlift]
+[[categories.category.exercise]]
 name = "Single Leg Romanian Deadlift"
 primary_muscles = ["Glutes", "Lower Back", "Hamstrings"]
 secondary_muscles = ["Adductors", "Trapezius", "Forearm Flexors"]
@@ -2890,7 +2904,7 @@ instructions = [
 	"Return to the starting position. Finish all your reps on one side first, and then repeat on the other leg.",
 ]
 
-[categories.glute.standing_glute_kickback_in_machine]
+[[categories.category.exercise]]
 name = "Standing Glute Kickback in Machine"
 primary_muscles = ["Glutes"]
 secondary_muscles = ["Hamstrings", "Adductors"]
@@ -2902,7 +2916,7 @@ instructions = [
 	"Do all reps on one side first, and then switch to the other leg.",
 ]
 
-[categories.glute.step_up]
+[[categories.category.exercise]]
 name = "Step Up"
 primary_muscles = ["Quads", "Glutes", "Adductors"]
 secondary_muscles = ["Hamstrings"]
@@ -2917,11 +2931,13 @@ instructions = [
 
 ###
 
-[categories.abs]
+[[categories.category]]
 
 total = 27
 
-[categories.abs.ball_slams]
+name = "Abs"
+
+[[categories.category.exercise]]
 name = "Ball Slams"
 primary_muscles = ["Lats", "Abs", "Obliques"]
 secondary_muscles = ["Glutes", "Front Deltoids"]
@@ -2933,7 +2949,7 @@ instructions = [
 	"Squat down to pick up the ball from the floor, then immediately move into the next slam by repeating the movement. Repeat for reps or time.",
 ]
 
-[categories.abs.cable_crunch]
+[[categories.category.exercise]]
 name = "Cable Crunch"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -2944,7 +2960,7 @@ instructions = [
 	"Reverse the motion and return to the starting position with control.",
 ]
 
-[categories.abs.crunch]
+[[categories.category.exercise]]
 name = "Crunch"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -2955,7 +2971,7 @@ instructions = [
 	"Bend as far forward as possible while still keeping your low back in contact with the floor, and then return to the starting position.",
 ]
 
-[categories.abs.dead_bug]
+[[categories.category.exercise]]
 name = "Dead Bug"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -2967,7 +2983,7 @@ instructions = [
 	"Reverse the movement, and repeat for the other side.",
 ]
 
-[categories.abs.dragon_flag]
+[[categories.category.exercise]]
 name = "Dragon Flag"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques", "Lats"]
@@ -2980,7 +2996,7 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.abs.hanging_knee_raise]
+[[categories.category.exercise]]
 name = "Hanging Knee Raise"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -2991,7 +3007,7 @@ instructions = [
 	"Lower your legs again, with control.",
 ]
 
-[categories.abs.hanging_leg_raise]
+[[categories.category.exercise]]
 name = "Hanging Leg Raise"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3002,7 +3018,7 @@ instructions = [
 	"Lower your legs again, with control.",
 ]
 
-[categories.abs.hanging_sit_up]
+[[categories.category.exercise]]
 name = "Hanging Sit-Up"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3013,7 +3029,7 @@ instructions = [
 	"Reverse the motion and lower yourself down to the starting position again.",
 ]
 
-[categories.abs.hanging_windshield_wiper]
+[[categories.category.exercise]]
 name = "Hanging Windshield Wiper"
 primary_muscles = ["Obliques", "Abs"]
 secondary_muscles = ["Forearm Flexors"]
@@ -3026,7 +3042,7 @@ instructions = [
 	"Repeat the movement from side to side for the desired number of repetitions, keeping your core engaged throughout the exercise.",
 ]
 
-[categories.abs.high_to_low_wood_chop_with_band]
+[[categories.category.exercise]]
 name = "High to Low Wood Chop with Band"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3037,7 +3053,7 @@ instructions = [
 	"Return to the starting position in a controlled manner.",
 ]
 
-[categories.abs.horizontal_wood_chop_with_band]
+[[categories.category.exercise]]
 name = "Horizontal Wood Chop with Band"
 primary_muscles = ["Obliques"]
 commentary = "Horizontal wood chop trains the rotating function of your oblique abdominal muscles. To also train their flexing function, you can attach the band to a higher point, and perform the movement diagonally downwards."
@@ -3047,7 +3063,7 @@ instructions = [
 	"Return to the starting position in a controlled manner.",
 ]
 
-[categories.abs.jackknife_sit_up]
+[[categories.category.exercise]]
 name = "Jackknife Sit-Up"
 primary_muscles = ["Abs", "Hip Flexors"]
 secondary_muscles = ["Obliques"]
@@ -3060,7 +3076,7 @@ instructions = [
 	"Repeat for reps.",
 ]
 
-[categories.abs.kneeling_ab_wheel_roll_out]
+[[categories.category.exercise]]
 name = "Kneeling Ab Wheel Roll-Out"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3071,7 +3087,7 @@ instructions = [
 	"Reverse the movement with control, and return to the starting position. ",
 ]
 
-[categories.abs.kneeling_plank]
+[[categories.category.exercise]]
 name = "Kneeling Plank"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3081,7 +3097,7 @@ instructions = [
 	"Brace your abs, and try to form and hold a straight line from your head to hips.",
 ]
 
-[categories.abs.kneeling_side_plank]
+[[categories.category.exercise]]
 name = "Kneeling Side Plank"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3091,7 +3107,7 @@ instructions = [
 	"Brace your core and try to form and hold a straight line from your head to knees.",
 ]
 
-[categories.abs.lying_leg_raise]
+[[categories.category.exercise]]
 name = "Lying Leg Raise"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3102,7 +3118,7 @@ instructions = [
 	"Lower your legs again, with control.",
 ]
 
-[categories.abs.lying_windshield_wiper]
+[[categories.category.exercise]]
 name = "Lying Windshield Wiper"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3113,7 +3129,7 @@ instructions = [
 	"Reverse the motion, and lower your legs down to your other side.",
 ]
 
-[categories.abs.lying_windshield_wiper_with_bent_knees]
+[[categories.category.exercise]]
 name = "Lying Windshield Wiper with Bent Knees"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3125,7 +3141,7 @@ instructions = [
 	"Reverse the motion, and lower your legs down to your other side.",
 ]
 
-[categories.abs.machine_crunch]
+[[categories.category.exercise]]
 name = "Machine Crunch"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3136,7 +3152,7 @@ instructions = [
 	"Reverse the motion and return to the starting position with control.",
 ]
 
-[categories.abs.mountain_climbers]
+[[categories.category.exercise]]
 name = "Mountain Climbers"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3149,7 +3165,7 @@ instructions = [
 	"Repeat for desired reps.",
 ]
 
-[categories.abs.oblique_crunch]
+[[categories.category.exercise]]
 name = "Oblique Crunch"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3160,7 +3176,7 @@ instructions = [
 	"Bend as far as possible and then return to the starting position.",
 ]
 
-[categories.abs.oblique_sit_up]
+[[categories.category.exercise]]
 name = "Oblique Sit-Up"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3171,7 +3187,7 @@ instructions = [
 	"Return to the starting position.",
 ]
 
-[categories.abs.plank]
+[[categories.category.exercise]]
 name = "Plank"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3181,7 +3197,7 @@ instructions = [
 	"Brace your abs and try to form and hold a straight line from your head to feet.",
 ]
 
-[categories.abs.plank_with_leg_lifts]
+[[categories.category.exercise]]
 name = "Plank with Leg Lifts"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3195,7 +3211,7 @@ instructions = [
 	"Continue to alternate legs for the chosen amount of time.",
 ]
 
-[categories.abs.russian_twist]
+[[categories.category.exercise]]
 name = "Russian Twist"
 primary_muscles = ["Obliques", "Abs"]
 commentary = "The Russian Twist is an effective exercise for strengthening the core and oblique muscles. It can be performed with or without added weight to adjust the difficulty level. See gif below for an example."
@@ -3208,7 +3224,7 @@ instructions = [
 	"Repeat for the desired number of repetitions.",
 ]
 
-[categories.abs.side_plank]
+[[categories.category.exercise]]
 name = "Side Plank"
 primary_muscles = ["Obliques"]
 secondary_muscles = ["Abs"]
@@ -3219,7 +3235,7 @@ instructions = [
 	"Brace your core, and try to form and hold a straight line from your head to your feet.",
 ]
 
-[categories.abs.sit_up]
+[[categories.category.exercise]]
 name = "Sit-Up"
 primary_muscles = ["Abs"]
 secondary_muscles = ["Obliques"]
@@ -3232,11 +3248,13 @@ instructions = [
 
 ###
 
-[categories.calves]
+[[categories.category]]
 
 total = 6
 
-[categories.calves.barbell_standing_calf_raise]
+name = "Calves"
+
+[[categories.category.exercise]]
 name = "Barbell Standing Calf Raise"
 primary_muscles = ["Calves"]
 commentary = "Standing calf raises train both the inner (solues) and outer (gastrocnemius) calf muscles simultaneously."
@@ -3246,7 +3264,7 @@ instructions = [
 	"Push yourself up by extending your ankles.",
 ]
 
-[categories.calves.donkey_calf_raise]
+[[categories.category.exercise]]
 name = "Donkey Calf Raise"
 primary_muscles = ["Calves"]
 commentary = "Donkeys are a calf exercise that doesn’t require extensive equipment or machines. To increase resistance, place a weight plate or have a training partner sit on your lower back for added challenge."
@@ -3257,7 +3275,7 @@ instructions = [
 	"Repeat for the desired number of repetitions",
 ]
 
-[categories.calves.eccentric_heel_drop]
+[[categories.category.exercise]]
 name = "Eccentric Heel Drop"
 primary_muscles = ["Calves"]
 commentary = "The eccentric heel drop is an exercise in which you can overload your calf muscles in the eccentric phase. This is done by using two legs in the concentric phase, but only one in the eccentric phase."
@@ -3267,7 +3285,7 @@ instructions = [
 	"Lift one leg, and lower yourself with control standing on only one foot.",
 ]
 
-[categories.calves.heel_raise]
+[[categories.category.exercise]]
 name = "Heel Raise"
 primary_muscles = ["Calves"]
 commentary = "The heel raise is a classic calf exercise, which in its base form doesn’t require any equipment. If you want to make the exercise heavier, you can hold something heavy in your free hand, such as a dumbbell. An alternative is to use both your legs on the way up, but lower yourself down using only one leg."
@@ -3277,7 +3295,7 @@ instructions = [
 	"Lower yourself with control, and repeat for reps. ",
 ]
 
-[categories.calves.seated_calf_raise]
+[[categories.category.exercise]]
 name = "Seated Calf Raise"
 primary_muscles = ["Calves"]
 commentary = "Seated calf raises mostly train the inner calf muscle (solues), because the outer calf muscle (gastrocnemius) is in a shortened position."
@@ -3287,7 +3305,7 @@ instructions = [
 	"Push the weight up by extending your ankles.",
 ]
 
-[categories.calves.standing_calf_raise]
+[[categories.category.exercise]]
 name = "Standing Calf Raise"
 primary_muscles = ["Calves"]
 commentary = "Standing calf raises train both the inner (solues) and outer (gastrocnemius) calf muscles simultaneously."
@@ -3299,11 +3317,13 @@ instructions = [
 
 ###
 
-[categories.forearm_flexors]
+[[categories.category]]
 
 total = 12
 
-[categories.forearm_flexors.barbell_wrist_curl]
+name = "Forearm Flexors"
+
+[[categories.category.exercise]]
 name = "Barbell Wrist Curl"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Barbell wrist curls train the muscles in the forearm that flexes (bends) the wrist and closes your hand. As an alternative, you can perform the exercise with a dumbbell, or rest your forearms against a bench instead of your legs."
@@ -3313,7 +3333,7 @@ instructions = [
 	"Reverse the motion by closing your grip and bending your wrists upwards.",
 ]
 
-[categories.forearm_flexors.barbell_wrist_curl_behind_the_back]
+[[categories.category.exercise]]
 name = "Barbell Wrist Curl Behind the Back"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Barbell wrist curls behind your back train the muscles in the forearm that flexes (bends) the wrist and closes your hand."
@@ -3323,7 +3343,7 @@ instructions = [
 	"Reverse the motion by closing your grip and bending your wrists upwards.",
 ]
 
-[categories.forearm_flexors.bar_hang]
+[[categories.category.exercise]]
 name = "Bar Hang"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Hanging from a bar train your grip strength and your shoulders. It is an exercise that can improve your shoulder mobility for holding your arms above your head."
@@ -3332,7 +3352,7 @@ instructions = [
 	"Experiment with hanging with relaxed or active shoulders.",
 ]
 
-[categories.forearm_flexors.dumbbell_wrist_curl]
+[[categories.category.exercise]]
 name = "Dumbbell Wrist Curl"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Dumbbell wrist curls train the muscles in the forearm that flexes (bends) the wrist and closes your hand. As an alternative, you can perform the exercise with a barbell, or rest your forearm against a bench instead of your legs."
@@ -3342,7 +3362,7 @@ instructions = [
 	"Reverse the motion by closing your grip and bending your wrist upwards.",
 ]
 
-[categories.forearm_flexors.farmers_walk]
+[[categories.category.exercise]]
 name = "Farmers Walk"
 primary_muscles = ["Forearm Flexors", "Obliques", "Glutes", "Trapezius"]
 secondary_muscles = ["Quads", "Abs", "Lower Back", "Calves", "Lateral Deltoids"]
@@ -3356,7 +3376,7 @@ instructions = [
 	"When you are done, lower the implements back to the ground in a controlled manner.",
 ]
 
-[categories.forearm_flexors.fat_bar_deadlift]
+[[categories.category.exercise]]
 name = "Fat Bar Deadlift"
 primary_muscles = ["Glutes", "Forearm Flexors", "Lower Back"]
 secondary_muscles = ["Quads", "Hamstrings", "Adductors", "Trapezius"]
@@ -3370,7 +3390,7 @@ instructions = [
 	"Take another breath, and repeat for reps.",
 ]
 
-[categories.forearm_flexors.gripper]
+[[categories.category.exercise]]
 name = "Gripper"
 primary_muscles = ["Forearm Flexors"]
 commentary = "A gripper trains the muscles in your hand and forearm that close your grip. This kind of grip strength is often called a crushing grip, in contrast to static or pinching grip strength."
@@ -3380,7 +3400,7 @@ instructions = [
 	"Return to the starting position and repeat.",
 ]
 
-[categories.forearm_flexors.one_handed_bar_hang]
+[[categories.category.exercise]]
 name = "One-Handed Bar Hang"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Hanging from a bar train your grip strength and your shoulders, and hanging in one hand is a good measure of strength. It is an exercise that can improve your shoulder mobility for holding your arms above your head."
@@ -3389,7 +3409,7 @@ instructions = [
 	"Start off by hanging with a tensed and active shoulder, and then gradually experiment with hanging with a more relaxed shoulder.",
 ]
 
-[categories.forearm_flexors.plate_pinch]
+[[categories.category.exercise]]
 name = "Plate Pinch"
 primary_muscles = ["Forearm Flexors"]
 commentary = "The plate pinch trains the muscles in your forearm and hand that perform a pinching grip. The design of the weight plates and whether you use magnesium or not will have a big impact on how much weight you can lift in this exercise."
@@ -3399,7 +3419,7 @@ instructions = [
 	"Hold them for as long as you can, and then put them down in a controlled manner.",
 ]
 
-[categories.forearm_flexors.plate_wrist_curl]
+[[categories.category.exercise]]
 name = "Plate Wrist Curl"
 primary_muscles = ["Forearm Flexors"]
 commentary = "Plate wrist curls train the muscles in the forearm that flexes (bends) your wrist and the muscles in your hand that makes a pinching grip. As an alternative, you can rest your forearm against a bench instead of your legs."
@@ -3409,7 +3429,7 @@ instructions = [
 	"Reverse the motion by bending your wrist upwards.",
 ]
 
-[categories.forearm_flexors.towel_pull_up]
+[[categories.category.exercise]]
 name = "Towel Pull-Up"
 primary_muscles = ["Forearm Flexors", "Lats"]
 secondary_muscles = ["Biceps", "Rear Deltoids", "Rotator Cuffs"]
@@ -3420,7 +3440,7 @@ instructions = [
 	"Exhale and lower yourself with control until your arms are fully extended.",
 ]
 
-[categories.forearm_flexors.wrist_roller]
+[[categories.category.exercise]]
 name = "Wrist Roller"
 primary_muscles = ["Forearm Flexors"]
 commentary = "The Wrist Roller is a good exercise for building grip strength, forearm endurance, and wrist stability. It’s often used to improve performance in activities requiring strong grip and forearm strength."
@@ -3434,11 +3454,13 @@ instructions = [
 
 ###
 
-[categories.forearm_extensors]
+[[categories.category]]
 
 total = 2
 
-[categories.forearm_extensors.barbell_wrist_extension]
+name = "Forearm Extensors"
+
+[[categories.category.exercise]]
 name = "Barbell Wrist Extension"
 primary_muscles = ["Forearm Extensors"]
 commentary = "Barbell wrist extension trains the muscles in the forearm that extends your wrist. As an alternative, you can perform the exercise with a dumbbell, or rest your forearms against a bench instead of your legs."
@@ -3448,7 +3470,7 @@ instructions = [
 	"Reverse the motion by bending your wrists upwards.",
 ]
 
-[categories.forearm_extensors.dumbbell_wrist_extension]
+[[categories.category.exercise]]
 name = "Dumbbell Wrist Extension"
 primary_muscles = ["Forearm Extensors"]
 commentary = "Dumbbell wrist extension trains the muscles in the forearm that extends your wrist. As an alternative, you can perform the exercise with a barbell, or rest your forearm against a bench instead of your leg."
@@ -3460,31 +3482,33 @@ instructions = [
 
 ###
 
-[categories.cardio_training]
+[[categories.category]]
 
 total = 2
 
-[categories.cardio_training.rowing_machine]
+name = "Cardio Training"
+
+[[categories.category.exercise]]
 name = "Rowing Machine"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Hamstrings", "Calves", "Lats", "Trapezius", "Abs", "Lower Back", "Shoulders", "Biceps"]
-commentary = "The rowing machine, often referred to as an indoor rower, is a popular piece of exercise equipment that simulates the action of rowing a boat, providing a full-body workout. It engages multiple muscle groups, including the legs, back, core, and arms, making it an effective cardiovascular and strength-training tool. Users sit on a sliding seat, gripping a handle attached to a chain or strap, and perform a repetitive motion that consists of a drive phase, where they push off with their legs while leaning back, followed by a recovery phase, where they slide forward to prepare for the next stroke. Rowing machines come with adjustable resistance levels, enabling users to customize their workouts for intensity. They often feature monitors that track metrics such as distance, time, and calories burned, making them suitable for beginners and advanced athletes alike."
+commentary = "The rowing machine, also known as an ergometer, is a versatile piece of fitness equipment that simulates the action of rowing on water, providing a full-body workout that engages multiple muscle groups. It consists of a sliding seat, footrests, and a handle that the user pulls to mimic the rowing motion. Rowing machines offer various resistance levels, allowing users to adjust the intensity of their workout and cater to different fitness levels. This cardio exercise not only enhances cardiovascular endurance but also strengthens the legs, core, and upper body, making it an efficient choice for those seeking to improve their overall fitness, burn calories, and increase muscle tone."
 instructions = [
-	"Sit on the rowing machine with your feet securely strapped in the footrests, ensuring your knees are bent and your shins are vertical. Grip the handle with both hands, keeping your back straight and your core engaged. Your arms should be extended forward, and your shoulders relaxed.",
-	"Lean slightly forward from your hips while maintaining a straight back, and draw your knees toward your chest. This is known as the catch position and prepares you for the initial push. Keep your arms straight and ready to pull.",
-	"Push through your heels to extend your legs, driving them back while simultaneously pulling the handle toward your torso. Your back should remain straight as you initiate the movement, and your elbows should stay close to your body as you pull the handle in towards your lower chest.",
-	"Once your legs are fully extended and the handle is close to your chest, lean back slightly at the hips and engage your core to maintain stability. This is the finish position, with your body angled slightly back and your elbows bent. Hold this position briefly, ensuring you are balanced and controlled.",
-	"Reverse the movement by extending your arms first, followed by leaning your torso forward and bending your knees to return to the catch position. Maintain a smooth, fluid motion throughout, ensuring you don’t rush the transition and stay controlled as you prepare for the next stroke.",
+	"Adjust the rowing machine to fit your body. Set the footrests so that your feet are securely placed, with your heels resting against the heel support. The straps should be tightened over the top of your feet to prevent slipping during your workout.",
+	"Sit down on the seat and grasp the handle with both hands, keeping your arms straight and your back tall. Ensure that your knees are bent and your shins are vertical, preparing for the initial push-off.",
+	"Engage your core and begin the rowing motion by pushing off with your legs, extending them straight while leaning back slightly at your hips. Pull the handle toward your chest as you maintain a strong and straight back, ensuring your elbows are tucked in.",
+	"As you complete the pull phase, reverse the movement by extending your arms first, followed by bending your knees and sliding the seat forward. Maintain a smooth, controlled motion as you return to the starting position, ensuring not to let your back round.",
+	"Repeat the rowing cycle at a steady pace, focusing on your form and breathing. Aim for rhythmic strokes, engaging your legs, core, and arms with each repetition. Monitor your technique to ensure you are executing the movement efficiently and safely.",
 ]
 
-[categories.cardio_training.stationary_bike]
+[[categories.category.exercise]]
 name = "Stationary Bike"
 primary_muscles = ["Quads", "Glutes", "Adductors", "Hamstrings", "Calves"]
-commentary = "The Stationary Bike is a popular fitness equipment designed for indoor cycling, providing an effective cardiovascular workout while allowing users to pedal at their own pace and resistance levels. Ideal for users of all fitness levels, it simulates the experience of outdoor biking while ensuring safety and stability in a fixed position. Equipped with adjustable seat and handlebars, the bike offers personalized comfort during workouts. Many models come with built-in features such as digital displays to monitor distance, speed, time, and calories burned, along with various pre-set workout programs to keep users motivated and engaged. Ideal for home or gym use, the stationary bike is a versatile tool for improving endurance, burning calories, and enhancing overall fitness."
+commentary = "The stationary bike is a popular piece of exercise equipment designed to simulate cycling while remaining in a fixed position. It features a comfortable seat, handlebars for stability, and adjustable resistance settings to cater to various fitness levels. Users can engage in low-impact cardiovascular workouts, making it suitable for people of all ages and fitness backgrounds. The bike often includes a digital display that tracks essential metrics such as elapsed time, distance covered, speed, and calories burned, allowing individuals to monitor their progress and stay motivated. With its compact design, the stationary bike is ideal for home gyms or as part of a broader fitness regimen."
 instructions = [
-	"Begin by adjusting the seat height of the stationary bike so that when you sit on it, your knees are slightly bent at the bottom of the pedal stroke. This ensures proper leg extension and comfort during your workout.",
-	"Next, adjust the handlebars to a comfortable height that allows you to maintain an upright position or a slight lean forward, depending on your preference and comfort. This will help prevent strain on your back and shoulders during the ride.",
-	"Once you’re comfortably positioned, secure your feet in the pedals, using either the straps or clips provided. Make sure your shoes are fastened tightly to ensure stability and prevent slipping during your workout.",
-	"Begin pedaling at a slow pace to warm up your muscles and gradually increase your speed and resistance as you feel more comfortable. Aim for a steady rhythm that elevates your heart rate without overexerting yourself.",
-	"Finally, cool down by gradually decreasing your speed and resistance for about 5 minutes, allowing your heart rate to return to normal. Stretch your legs and lower back after your workout to enhance flexibility and prevent muscle soreness.",
+	"Start by adjusting the seat height of the stationary bike to ensure your knees are slightly bent at the lowest pedal position. Stand next to the bike, raise or lower the seat so it aligns with your hip joint, and secure it in place.",
+	"Next, adjust the handlebars to a comfortable height. This should allow you to maintain a natural grip without straining your back or shoulders while cycling. Ensure they are securely tightened after adjustment.",
+	"Secure your feet into the pedal straps or slip them into the clipless pedals if your bike has them. Make sure your feet are positioned correctly to avoid slipping during your workout. Adjust the straps for a snug fit without being too tight.",
+	"Begin pedaling slowly to warm up your muscles and get comfortable with the bike. Gradually increase your speed and resistance as you settle into your workout, aiming to maintain a steady rhythm.",
+	"As you approach the end of your workout, gradually decrease your speed and resistance to cool down. Spend a few minutes pedaling at a slower pace to help your heart rate return to normal before stepping off the bike.",
 ]
 

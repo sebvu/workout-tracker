@@ -18,12 +18,12 @@ class Exercise {
   parseOptionalVectorArray(toml::array *arr);
 
   public:
-  Exercise(toml::table &exercise);
+  Exercise(const toml::table &exercise);
 
-  std::string getName() const;
+  const std::string getName() const;
   const std::optional<std::vector<std::string>> &getPrimaryMuscles() const;
   const std::optional<std::vector<std::string>> &getSecondaryMuscles() const;
-  std::string getCommentary() const;
+  const std::string getCommentary() const;
   const std::optional<std::vector<std::string>> &getInstructions() const;
 };
 
@@ -34,7 +34,7 @@ class ExerciseCategory {
   const int totalExercises;
 
   public:
-  ExerciseCategory(toml::table &category);
+  ExerciseCategory(const toml::table &category);
 
   int getTotalExercise() const;
   const std::vector<Exercise> &getExerciseList() const;
@@ -47,7 +47,7 @@ class Exercises {
   std::vector<ExerciseCategory> exerciseCategories;
 
   public:
-  Exercises(toml::table &config);
+  Exercises(const toml::table &config);
 
   int getTotalExercise() const;
   const std::vector<ExerciseCategory> &getExerciseCategories() const;

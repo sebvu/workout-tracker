@@ -9,5 +9,4 @@ test/
 exec-main
 compile_commands.json
 creds.py
-requirements.txt
 ideas.txt

@@ -15,7 +15,7 @@ class Exercise {
   std::optional<std::vector<std::string>> instructions;
 
   std::optional<std::vector<std::string>>
-  parseOptionalVectorArray(toml::array *arr);
+  parseOptionalVectorArray(const toml::array *arr);
 
   public:
   Exercise(const toml::table &exercise);
@@ -36,20 +36,23 @@ class ExerciseCategory {
   public:
   ExerciseCategory(const toml::table &category);
 
+  const std::string getName() const;
   int getTotalExercise() const;
   const std::vector<Exercise> &getExerciseList() const;
   void printExercises() const;
 };
 
-class Exercises {
+class ExerciseTable {
   private:
   const int totalExercises;
+  const int totalCategories;
   std::vector<ExerciseCategory> exerciseCategories;
 
   public:
-  Exercises(const toml::table &config);
+  ExerciseTable(const toml::table &config);
 
   int getTotalExercise() const;
+  int getTotalCategories() const;
   const std::vector<ExerciseCategory> &getExerciseCategories() const;
   void printCategories() const;
 };

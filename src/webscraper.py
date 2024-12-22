@@ -213,7 +213,7 @@ def writeToFile(file, sections) -> None:
 
     file.write(f"{header}\n\n# total exercises: {total}")
     printSummary()
-    file.write(f"\n\ntotal = {total}\n\n")
+    file.write(f"\n\ntotalExercises = {total}\n\n")
 
     for section in sections:
         if counter != 1:

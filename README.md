@@ -52,6 +52,7 @@ instructions = [
 ```
 
 - once you add a new toml table snippet, run `make` once more!
+  - or if you just want to pull the latest changes without redoing make, you can just do `make enums`
 
 <hr />
 

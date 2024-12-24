@@ -1,10 +1,7 @@
 #ifndef EXERCISES_HPP
 #define EXERCISES_HPP
-
-#include "toml.hpp"
-#include <optional>
-#include <string>
-#include <vector>
+#include <toml++/toml.hpp>
+//
 
 class Exercise {
   private:
@@ -13,7 +10,6 @@ class Exercise {
   std::optional<std::vector<std::string>> secondary_muscles;
   const std::string commentary;
   std::optional<std::vector<std::string>> instructions;
-
   std::optional<std::vector<std::string>>
   parseOptionalVectorArray(const toml::array *arr);
 
@@ -21,11 +17,17 @@ class Exercise {
   Exercise(const toml::table &exercise);
 
   const std::string getName() const;
+
   const std::optional<std::vector<std::string>> &getPrimaryMuscles() const;
+
   const std::optional<std::vector<std::string>> &getSecondaryMuscles() const;
+
   const std::string getCommentary() const;
+
   const std::optional<std::vector<std::string>> &getInstructions() const;
 };
+
+//
 
 class ExerciseCategory {
   private:
@@ -37,24 +39,12 @@ class ExerciseCategory {
   ExerciseCategory(const toml::table &category);
 
   const std::string getName() const;
+
   int getTotalExercise() const;
+
   const std::vector<Exercise> &getExerciseList() const;
+
   void printExercises() const;
 };
 
-class ExerciseTable {
-  private:
-  const int totalExercises;
-  const int totalCategories;
-  std::vector<ExerciseCategory> exerciseCategories;
-
-  public:
-  ExerciseTable(const toml::table &config);
-
-  int getTotalExercise() const;
-  int getTotalCategories() const;
-  const std::vector<ExerciseCategory> &getExerciseCategories() const;
-  void printCategories() const;
-};
-
-#endif  // EXERCISES_HPP
+#endif

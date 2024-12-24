@@ -1,9 +1,9 @@
 #include "exceptions.hpp"
 #include "exercises.hpp"
 #include "helpers.hpp"
-#include "toml.hpp"
 #include <cstdlib>
 #include <iostream>
+#include <toml++/toml.hpp>
 
 int main(int argc, char *argv[]) {
   try {
@@ -14,13 +14,7 @@ int main(int argc, char *argv[]) {
 
     const toml::table exercisesToml = getExercises(configToml);
 
-    ExerciseTable tbl = ExerciseTable(exercisesToml);
-
-    std::vector<ExerciseCategory> test = tbl.getExerciseCategories();
-
-    ExerciseCategory bruh = test[5];
-
-    bruh.printExercises();
+    std::cout << "works" << std::endl;
 
   } catch (const toml::parse_error &err) {
     std::cerr << "Error parsing file '" << err.source().path << "':\n"

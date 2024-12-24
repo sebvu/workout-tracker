@@ -4,7 +4,7 @@
 
 # important paths for project (DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING)
 [config.important]
-toml_path = "./toml/"            # explicit path to toml directory
+toml_path = "./toml/"            # root path to toml directory
 exercise_file = "exercises.toml" # name of file containing exercises
 
 #############################################################

@@ -10,3 +10,5 @@ exec-main
 compile_commands.json
 creds.py
 ideas.txt
+customEnums.hpp
+webScraper.py

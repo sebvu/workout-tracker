@@ -1,7 +1,7 @@
 #ifndef HELPERS_HPP
 #define HELPERS_HPP
-#include "toml.hpp"
 #include <string>
+#include <toml++/toml.hpp>
 
 void checkArguments(int argc, char *argv[]);
 

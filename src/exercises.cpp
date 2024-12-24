@@ -1,14 +1,7 @@
 #include "exercises.hpp"
 #include <iostream>
 
-/* Exercise
- * variables:
- * const std::string name;
- * std::optional<std::vector<std::string>> primary_muscles;
- * std::optional<std::vector<std::string>> secondary_muscles;
- * const std::string commentary;
- * std::optional<std::vector<std::string>> instructions;
- * */
+// Exercise
 
 Exercise::Exercise(const toml::table &exercise)
   : name(exercise["name"].as_string()->value_or("undefined")),
@@ -57,12 +50,7 @@ Exercise::getInstructions() const {
   return instructions;
 }
 
-/* ExerciseCategory
- * variables:
- * const std::string categoryName;
- * std::vector<Exercise> exerciseList;
- * const int totalExercises;
- * */
+// ExerciseCategory
 
 ExerciseCategory::ExerciseCategory(const toml::table &category)
   : categoryName(category["name"].as_string()->value_or("undefined")),
@@ -80,36 +68,5 @@ const std::vector<Exercise> &ExerciseCategory::getExerciseList() const {
 void ExerciseCategory::printExercises() const {
   for (const auto &exercise : exerciseList) {
     std::cout << exercise.getName() << std::endl;
-  }
-}
-
-/* ExerciseTable
- * variables:
- * const int totalExercises;
- * const int totalCategories;
- * std::vector<ExerciseCategory> exerciseCategories;
- * */
-
-ExerciseTable::ExerciseTable(const toml::table &config)
-  : totalExercises(config["totalExercises"].as_integer()->value_or(-1)),
-    totalCategories(config["totalCategories"].as_integer()->value_or(-1)) {
-  for (int i = 0; i < totalCategories; i++) {
-    exerciseCategories.push_back(
-      ExerciseCategory(*config["category"][i].as_table()));
-  }
-}
-
-int ExerciseTable::getTotalExercise() const { return totalExercises; }
-
-int ExerciseTable::getTotalCategories() const { return totalCategories; }
-
-const std::vector<ExerciseCategory> &
-ExerciseTable::getExerciseCategories() const {
-  return exerciseCategories;
-}
-
-void ExerciseTable::printCategories() const {
-  for (const auto &category : exerciseCategories) {
-    std::cout << category.getName() << std::endl;
   }
 }

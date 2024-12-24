@@ -37,6 +37,7 @@ if "custom" in configData["config"]:
 
 ### CUSTOMENUMS.HPP ###
 
+print("Creating customEnums.hpp")
 
 # write the header guards
 
@@ -57,3 +58,5 @@ for categoryName, exerciseNames in categories.items():
     customEnums.write("\n};")
 
 customEnums.write("\n\n#endif // CUSTOMENUMS_HPP")
+
+print("customEnums.hpp created!")

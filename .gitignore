@@ -4,6 +4,7 @@ env/
 __pycache__/
 .cache/
 test/
+enums/
 
 # files
 exec-main

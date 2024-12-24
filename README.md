@@ -33,5 +33,5 @@ just for tracking workouts and making my own workout plan the CS way
 
 notes
 
-- configuration options are in `config.toml`, but there isn't anything to configure yet
+- configuration options are in `config.toml`
 - added back `webscraper.py` (sorry for how messy it is)

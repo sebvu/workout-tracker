@@ -6,7 +6,7 @@ OBJECTS = $(SOURCES:src/%.cpp=obj/%.o) # gets all sources and replaces src/%.cpp
 TARGET = exec-main
 CONFIG_FILE = config.toml
 ENUMS_CREATOR = ./helpers/enums_creator.py
-SCRAPER = ./helpers/webscraper.py
+SCRAPER = ./helpers/webScraper.py
 
 # phony is important for making sure that commands get run even if there is a conflicting file name
 # like make all, make clean, etc..

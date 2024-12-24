@@ -2,13 +2,11 @@ import tomllib
 from pathlib import Path
 
 PARENT_DIR = Path(__file__).resolve().parent.parent
-CUSTOM_ENUMS = PARENT_DIR / "include" / "customEnums.hpp"
 CONFIG_TOML = PARENT_DIR / "config.toml"
 EXERCISES_TOML = PARENT_DIR / "toml" / "exercises.toml"
 
-# create a customEnums.hpp file with all relevant enums
+# create a enums folder with all relevant enums
 
-customEnums = open(CUSTOM_ENUMS, "w")
 configToml = open(CONFIG_TOML, "rb")
 exercisesTOML = open(EXERCISES_TOML, "rb")
 
@@ -35,28 +33,23 @@ if "custom" in configData["config"]:
         categories[category].append(custom["name"]).sort()
         
 
-### CUSTOMENUMS.HPP ###
-
-print("Creating customEnums.hpp")
+### VARIANT ENUMS ###
 
 # write the header guards
 
-customEnums.write("#ifndef CUSTOMENUMS_HPP\n#define CUSTOMENUMS_HPP\n\n")
-
-# muscle groups
-customEnums.write("enum class MuscleGroup {")
-keys_list = categories.keys()
-for categoryName in keys_list:
-    customEnums.write(f"\n\t{categoryName.replace(" ", "_")},")
-customEnums.write("\n};")
-
 # sub groups
 for categoryName, exerciseNames in categories.items():
-    customEnums.write(f"\n\nenum class {categoryName.replace(" ", "")}Exercise {{")
-    for name in exerciseNames:
-        customEnums.write(f"\n\t{name.replace(" ", "_").replace("-", "_").replace("(", "").replace(")", "")},")
-    customEnums.write("\n};")
-
-customEnums.write("\n\n#endif // CUSTOMENUMS_HPP")
-
-print("customEnums.hpp created!")
+    newName = categoryName.replace(" ", "")
+    fileName = newName[0].lower() + newName[1:]
+    # include to enumsVarian
+    with open(f"{PARENT_DIR}/include/enums/{fileName}.hpp", "w") as enumsFile:
+        # header guard
+        enumsFile.write(f"#ifndef {newName.upper()}_HPP\n#define {newName.upper()}_HPP\n\n")
+        # enum class
+        fullCategoryName = f"{categoryName.replace(" ", "")}"
+        # appending names to enumNameArray
+        enumsFile.write(f"enum class {fullCategoryName} {{")
+        for name in exerciseNames:
+            enumsFile.write(f"\n\t{name.replace(" ", "_").replace("-", "_").replace("(", "").replace(")", "")},")
+        enumsFile.write("\n};")
+        enumsFile.write(f"\n\n#endif // {newName.upper()}_HPP")

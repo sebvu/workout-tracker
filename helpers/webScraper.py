@@ -5,6 +5,7 @@
 import json
 import re
 import time
+from pathlib import Path
 
 import openai
 import requests
@@ -12,11 +13,12 @@ from bs4 import BeautifulSoup
 
 import creds
 
-API_KEY = creds.API_KEY
 
 # GLOBAL VARIABLES
+API_KEY = creds.API_KEY
+PARENT_DIR = Path(__file__).resolve().parent.parent
 MAIN_URL = "https://www.strengthlog.com/exercise-directory/"
-FILE_TO_OPEN = "../toml/exercises.toml"
+FILE_TO_OPEN = PARENT_DIR / "toml" / "exercises.toml"
 CLEAR = "\033[0m\n"
 LIGHTPURPLE = "\033[1;36m"
 BLUE = "\033[1;34m"
@@ -49,6 +51,7 @@ def findSections(SOUP) -> list:
             orderedListBlock = idBlockParent.find_next("ol")
             listExerciseItems = orderedListBlock.find_all("li")
             for listAnchor in listExerciseItems:
+                # different listAnchor from prev
                 listAnchor = listAnchor.find("a")
                 totalExercises += 1
                 tempExerciseURLPair = {

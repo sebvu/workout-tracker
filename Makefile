@@ -7,7 +7,6 @@ TARGET = exec-main
 CONFIG_FILE = config.toml
 ENUMS_CREATOR = $(CURDIR)/helpers/enumsCreator.py
 CUSTOM_ENUMS = $(CURDIR)/include/customEnums.hpp
-SCRAPER = $(CURDIR)/helpers/webScraper.py
 
 # phony is important for making sure that commands get run even if there is a conflicting file name
 # like make all, make clean, etc..
@@ -33,9 +32,6 @@ obj:
 
 clean:
 	rm -rf obj $(TARGET) $(CUSTOM_ENUMS)
-
-scrape:
-	$(PYTHON) $(SCRAPER)
 
 run:
 	@if [ ! -f $(CONFIG_FILE) ]; then \

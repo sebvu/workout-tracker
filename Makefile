@@ -1,12 +1,12 @@
 CXX = g++
 PYTHON = python
-CXXFLAGS = -Iinclude -Iinclude/enums -Wall -Wextra -O2
+CXXFLAGS = -Iinclude -Iinclude/enums -Ilib -Wall -Wextra -O2
 SOURCES = $(wildcard src/*.cpp) # pulls all iterations of .cpp in src
 OBJECTS = $(SOURCES:src/%.cpp=obj/%.o) # gets all sources and replaces src/%.cpp to obj/%.o
 TARGET = exec-main
 CONFIG_FILE = config.toml
 ENUMS_CREATOR = $(CURDIR)/helpers/enumsCreator.py
-CUSTOM_ENUMS = $(CURDIR)/include/enums/
+CUSTOM_ENUMS = $(CURDIR)/include/enums
 
 # phony is important for making sure that commands get run even if there is a conflicting file name
 # like make all, make clean, etc..
@@ -41,7 +41,7 @@ run:
 	elif [ ! -f $(CONFIG_FILE) ]; then \
 		echo "Config file not found. Please refer to https://github.com/sebvu/workout-tracker for config file."; \
 		exit 1; \
-	elif [ ! -f $(CUSTOM_ENUMS) ]; then \
+	elif [ ! -d $(CUSTOM_ENUMS) ]; then \
 		echo  "Custom enums has not been created. Please run make enums first."; \
 		exit 1; \
 	fi; \

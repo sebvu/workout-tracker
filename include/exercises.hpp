@@ -1,6 +1,8 @@
 #ifndef EXERCISES_HPP
 #define EXERCISES_HPP
+#include "variantEnums.hpp"
 #include <toml++/toml.hpp>
+#include <variant>
 //
 
 class Exercise {
@@ -10,8 +12,13 @@ class Exercise {
   std::optional<std::vector<std::string>> secondary_muscles;
   const std::string commentary;
   std::optional<std::vector<std::string>> instructions;
+
+  // helper function
   std::optional<std::vector<std::string>>
   parseOptionalVectorArray(const toml::array *arr);
+
+  // optional variant enum that is category specific
+  ExerciseVariant exerciseVariant;
 
   public:
   Exercise(const toml::table &exercise);
@@ -31,8 +38,25 @@ class Exercise {
 
 class ExerciseCategory {
   private:
+  enum class MuscleGroup {
+    Chest,
+    Shoulder,
+    Biceps,
+    Triceps,
+    Legs,
+    Back,
+    Glute,
+    Abs,
+    Calves,
+    ForearmFlexors,
+    ForearmExtensors,
+    CardioTraining,
+  };
+
   const std::string categoryName;
+
   std::vector<Exercise> exerciseList;
+
   const int totalExercises;
 
   public:

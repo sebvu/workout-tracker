@@ -61,10 +61,13 @@ ExerciseCategory::ExerciseCategory(const toml::table &category)
 }
 
 const std::string ExerciseCategory::getName() const { return categoryName; }
+
 int ExerciseCategory::getTotalExercise() const { return totalExercises; }
+
 const std::vector<Exercise> &ExerciseCategory::getExerciseList() const {
   return exerciseList;
 }
+
 void ExerciseCategory::printExercises() const {
   for (const auto &exercise : exerciseList) {
     std::cout << exercise.getName() << std::endl;

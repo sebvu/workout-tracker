@@ -6,6 +6,21 @@
 #include <toml++/toml.hpp>
 
 int main(int argc, char *argv[]) {
+  enum class MuscleGroup {
+    Chest,
+    Shoulder,
+    Biceps,
+    Triceps,
+    Legs,
+    Back,
+    Glute,
+    Abs,
+    Calves,
+    ForearmFlexors,
+    ForearmExtensors,
+    CardioTraining,
+  };
+
   try {
     // check for valid arguments
     checkArguments(argc, argv);

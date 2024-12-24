@@ -1,16 +1,22 @@
 CXX = g++
-CXXFLAGS = -Iinclude -Ilib -Wall -Wextra -O2
+PYTHON = python
+CXXFLAGS = -Iinclude -Wall -Wextra -O2
 SOURCES = $(wildcard src/*.cpp) # pulls all iterations of .cpp in src
 OBJECTS = $(SOURCES:src/%.cpp=obj/%.o) # gets all sources and replaces src/%.cpp to obj/%.o
 TARGET = exec-main
 CONFIG_FILE = config.toml
+ENUMS_CREATOR = ./helpers/enums_creator.py
+SCRAPER = ./helpers/webscraper.py
 
 # phony is important for making sure that commands get run even if there is a conflicting file name
 # like make all, make clean, etc..
 # some common ones are; all, clean, install, test, run.
-.PHONY: all clean
+.PHONY: all clean run-enums
 
-all: $(TARGET)
+all: run-enums $(TARGET)
+
+run-enums:
+	$(PYTHON) $(ENUMS_CREATOR)
 
 $(TARGET): $(OBJECTS)
 	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $(TARGET)
@@ -26,6 +32,9 @@ obj:
 
 clean:
 	rm -rf obj $(TARGET)
+
+scrape:
+	$(PYTHON) $(SCRAPER)
 
 run:
 	./$(TARGET) $(CONFIG_FILE) 

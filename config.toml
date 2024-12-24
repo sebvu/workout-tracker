@@ -1,4 +1,3 @@
-# configuration options for project
 # DO NOT MOVE THIS FROM ROOT PROJECT DIRECTORY
 
 [config]
@@ -7,3 +6,33 @@
 [config.important]
 toml_path = "./toml/"            # explicit path to toml directory
 exercise_file = "exercises.toml" # name of file containing exercises
+
+#############################################################
+# custom workout configurations
+# pre-set categories: you MUST choose from the list below
+# - Chest           - Legs          - Calve
+# - Shoulder        - Back          - Forearm Flexors
+# - Biceps          - Glute         - Forearm Extensors
+# - Triceps         - Abs           - Cardio Training
+
+# config parameters
+# [[config.custom]]         # put all new configuration options under this table array 
+# category = ""             # string | muscle group from pre-set categories (must choose category listed above)
+# name = ""                 # string | name of the exercise movement
+# primary_muscles = []      # string array | primary muscle groups worked
+# secondary_muscles = []    # string array | secondary muscle groups worked (OPTIONAL)
+# commentary = ""           # string | general commentary/description about the exercise
+# instructions = []         # string array | instructions for performing the exercise
+
+# example config
+# [[config.custom]]
+# category = "Abs"
+# name = "Hallow Hold"
+# primary_muscles = ["Abs"]
+# commentary = "This is a great exercise for building core strength... etc"
+# instructions = [
+#   "Hold your body in a hollow position",
+#   "Keep your lower back pressed into the floor",
+#   "etc.. more copilot comments",
+# ]
+#############################################################

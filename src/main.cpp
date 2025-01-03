@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
     std::cerr << "Invalid argument usage: " << err.what() << std::endl;
     return EXIT_FAILURE;
   } catch (const InvalidArgumentCount &err) {
-    std::cerr << "Invalud argument count: " << err.what() << std::endl;
+    std::cerr << "Invalid argument count: " << err.what() << std::endl;
     return EXIT_FAILURE;
   } catch (const std::exception &err) {
     std::cerr << "Exception: " << err.what() << std::endl;

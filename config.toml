@@ -35,4 +35,6 @@ exercise_file = "exercises.toml" # name of file containing exercises
 #   "Keep your lower back pressed into the floor",
 #   "etc.. more copilot comments",
 # ]
+
+# NOTE: you must abide by the pre-set categories, there is no flexibility here
 #############################################################

@@ -15,6 +15,10 @@ CUSTOM_ENUMS = $(CURDIR)/include/enums
 
 all: enums $(TARGET)
 
+debug: CXXFLAGS += -g
+
+debug: all
+
 enums:
 	mkdir -p $(CUSTOM_ENUMS)
 	$(PYTHON) $(ENUMS_CREATOR)
@@ -33,6 +37,7 @@ obj:
 
 clean:
 	rm -rf obj $(TARGET) $(CUSTOM_ENUMS)
+
 
 run:
 	@if [ ! -f $(TARGET) ]; then \
